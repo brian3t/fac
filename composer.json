@@ -1,0 +1,83 @@
+{
+  "name": "yiisoft/yii2-app-basic",
+  "description": "Yii 2 Basic Project Template",
+  "keywords": [
+    "yii2",
+    "framework",
+    "basic",
+    "project template"
+  ],
+  "homepage": "http://www.yiiframework.com/",
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "support": {
+    "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+    "forum": "http://www.yiiframework.com/forum/",
+    "wiki": "http://www.yiiframework.com/wiki/",
+    "irc": "irc://irc.freenode.net/yii",
+    "source": "https://github.com/yiisoft/yii2"
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.2.0",
+    "ext-json": "*",
+    "yiisoft/yii2": ">=2.0.5",
+    "yiisoft/yii2-bootstrap": "*",
+    "yiisoft/yii2-swiftmailer": "*",
+    "kartik-v/yii2-widgets": "*",
+    "kartik-v/yii2-field-range": "*",
+    "vova07/yii2-console-runner-extension": "*",
+    "kartik-v/yii2-widget-growl": "^1.1",
+    "mootensai/yii2-enhanced-gii": "dev-master",
+    "kartik-v/yii2-date-range": "@dev",
+    "kartik-v/yii2-grid": "^3.1",
+    "cebe/markdown-latex": "~1.0.0",
+    "yiisoft/yii2-apidoc": "^2.0",
+    "kartik-v/yii2-datecontrol": "@dev",
+    "kartik-v/yii2-tree-manager": "dev-master",
+    "dektrium/yii2-user": "0.9.*@dev",
+    "voskobovich/yii2-many-many-behavior": "^3.2",
+    "electrolinux/phpquery": "^0.9.6",
+    "kartik-v/yii2-mpdf": "*",
+    "mpdf/mpdf": "^6.1",
+    "kartik-v/yii2-widget-datetimepicker": "*",
+    "jstayton/google-maps-geocoder": "^2.4",
+    "fabpot/goutte": "^3.2"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "*",
+    "yiisoft/yii2-gii": "*",
+    "yiisoft/yii2-faker": "*"
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "yii\\composer\\Installer::postCreateProject"
+    ]
+  },
+  "extra": {
+    "yii\\composer\\Installer::postCreateProject": {
+      "setPermission": [
+        {
+          "runtime": "0777",
+          "web/assets": "0777",
+          "yii": "0755"
+        }
+      ],
+      "generateCookieValidationKey": [
+        "config/web.php"
+      ]
+    },
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "usv\\yii2helper\\": "yii2helper/"
+    }
+  }
+}

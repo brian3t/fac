@@ -1,0 +1,205 @@
+{
+  "display_date": "Tuesday, October  2 - Tuesday, October  9",
+  "total_entries": 127,
+  "shows": [
+    {
+      "venue_name": "Hacienda Casa Blanca",
+      "image_url": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/447994/original/resize:96x72/crop:x0y31w1648h1236/hash:1529509901/orange_mike.jpg?1529509901",
+      "showtime": "2018/10/02 17:30:00",
+      "city": "El Cajon",
+      "state": "CA",
+      "venue_link": "/venue/1327761",
+      "show_id": 23341447,
+      "artists": [
+        {
+          "id": 38688766,
+          "name": "Michael J. Dwyer",
+          "headline": true,
+          "url": "https://www.reverbnation.com/michaeljdwyer"
+        }
+      ]
+    },
+    {
+      "venue_name": "Paradise Point Resort",
+      "image_url": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/5653632/original/resize:160x120/crop:x0y77w616h462/hash:1537978121/Ghost_Jazz_Trio_1.png?1537978121",
+      "showtime": "2018/10/02 18:00:00",
+      "city": "San Diego",
+      "state": "CA",
+      "venue_link": "#",
+      "show_id": 23970899,
+      "artists": [
+        {
+          "id": 39677910,
+          "name": "Ghost Jazz Trio",
+          "headline": true,
+          "url": "https://www.reverbnation.com/ghostjazztrio"
+        }
+      ]
+    },
+    {
+      "venue_name": "Hotel Indigo Del Mar",
+      "image_url": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/5340968/original/resize:160x120/crop:x439y195w2318h1739/hash:1532802125/1_Kathleen_Murray_Promo_RF_copy.JPG?1532802125",
+      "showtime": "2018/10/02 18:30:00",
+      "city": "Del Mar",
+      "state": "CA",
+      "venue_link": "/venue/hotelindigodelmar",
+      "show_id": 23882357,
+      "artists": [
+        {
+          "id": 39539960,
+          "name": "Kathleen Murray",
+          "headline": true,
+          "url": "https://www.reverbnation.com/kathleenmurray9"
+        }
+      ]
+    },
+    {
+      "venue_name": "Casa de Manana",
+      "image_url": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/3967565/original/resize:160x120/crop:x48y0w864h648/hash:1475432956/sophisticatstrio.jpg?1475432956",
+      "showtime": "2018/10/02 19:00:00",
+      "city": "La Jolla",
+      "state": "CA",
+      "venue_link": "#",
+      "show_id": 23980603,
+      "artists": [
+        {
+          "id": 39692495,
+          "name": "The Sophisticats of San DIego with Don Holcomb",
+          "headline": true,
+          "url": "https://www.reverbnation.com/donholcombandthesandiegosophisticats"
+        }
+      ]
+    },
+    {
+      "venue_name": "The Casbah",
+      "image_url": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/71845/original/resize:160x120/crop:x0y0w2840h2130/hash:1466545638/1451428257_DaleWatson0250photobySarahWilson.jpg?1466545638",
+      "showtime": "2018/10/02 19:00:00",
+      "city": "San Diego",
+      "state": "CA",
+      "venue_link": "/venue/967084",
+      "show_id": 23787172,
+      "artists": [
+        {
+          "id": 39390886,
+          "name": "Dale Watson",
+          "headline": true,
+          "url": "https://www.reverbnation.com/dalewatson"
+        },
+        {
+          "id": 39400869,
+          "name": "Dale Watson and His Lonestars",
+          "headline": false,
+          "url": "https://www.reverbnation.com/dalewatsonandhislonestars"
+        },
+        {
+          "id": 39400870,
+          "name": "Wayne Hancock",
+          "headline": false,
+          "url": "https://www.reverbnation.com/waynehancock"
+        }
+      ]
+    },
+    {
+      "venue_name": "710 Beach Club",
+      "image_url": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/678892/original/resize:160x120/crop:x73y2w1133h848/hash:1487637709/PS_Lights_new_promo_smlr_Thumbnail_image_.jpg?1487637709",
+      "showtime": "2018/10/02 20:00:00",
+      "city": "San Diego",
+      "state": "CA",
+      "venue_link": "/venue/710beachclub",
+      "show_id": 23975528,
+      "artists": [
+        {
+          "id": 39684955,
+          "name": "PULLMAN STANDARD",
+          "headline": true,
+          "url": "https://www.reverbnation.com/PULLMANSTANDARD"
+        }
+      ]
+    },
+    {
+      "venue_name": "Cal Coast Credit Union Open Air Theatre at SDSU",
+      "image_url": "https://gp1.wac.edgecastcdn.net/802892/production_static/20181002064108/images/v3/standard_resources/default_images/artist_small.png",
+      "showtime": "2018/10/02 20:00:00",
+      "city": "San Diego",
+      "state": "CA",
+      "venue_link": "#",
+      "show_id": 23299964,
+      "artists": [
+        {
+          "id": 38624578,
+          "name": "5 seconds of summer",
+          "headline": true,
+          "url": "https://www.reverbnation.com/5secondsofsummer"
+        }
+      ]
+    },
+    {
+      "venue_name": "The Merrow",
+      "image_url": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/1741250/original/resize:160x120/crop:x1313y0w501h376/hash:1511288889/Screen_Shot_2017-11-10_at_10_57_29_AM.png?1511288889",
+      "showtime": "2018/10/02 20:00:00",
+      "city": "San Diego",
+      "state": "CA",
+      "venue_link": "/venue/themerrow",
+      "show_id": 23979742,
+      "artists": [
+        {
+          "id": 39691177,
+          "name": "GoMannGo",
+          "headline": true,
+          "url": "https://www.reverbnation.com/gomanngomusic"
+        },
+        {
+          "id": 39691178,
+          "name": "The Rightovers",
+          "headline": false,
+          "url": ""
+        },
+        {
+          "id": 39691179,
+          "name": "Basscubs",
+          "headline": false,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "venue_name": "Mr. Peabody's Encinitas",
+      "image_url": "https://gp1.wac.edgecastcdn.net/802892/production_static/20181002064108/images/show_stock_images/0000.jpg",
+      "showtime": "2018/10/02 20:00:00",
+      "city": "Encinitas",
+      "state": "CA",
+      "venue_link": "/venue/peabodysencinitas",
+      "show_id": 23719922,
+      "artists": [
+        {
+          "id": 39292353,
+          "name": "Karaoke",
+          "headline": true,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "venue_name": "Prohibition",
+      "image_url": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/3981578/original/resize:160x120/crop:x0y0w756h566/hash:1467524721/1461597472_E0694166-AE0B-43F0-8ED0-966218024D8C-1314-0000015D04CE333B.jpg?1467524721",
+      "showtime": "2018/10/02 22:00:00",
+      "city": "San Diego",
+      "state": "CA",
+      "venue_link": "/venue/538529",
+      "show_id": 23424163,
+      "artists": [
+        {
+          "id": 38824574,
+          "name": "Robert Dove",
+          "headline": true,
+          "url": "https://www.reverbnation.com/robertdove"
+        }
+      ]
+    }
+  ],
+  "pages": {
+    "current_page": 1,
+    "pages": "1..11",
+    "total": 13
+  }
+}

@@ -1,0 +1,19 @@
+
+var ftGUID_3065939="3795B475E277F9";
+var ftConfID_3065939="0";
+var ftParams_3065939="ftx=&fty=&ftadz=&ftscw=&ft_custom=&ftOBA=1&ft_ifb=1&ft_domain=www.sandiegoreader.com&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fwww.sandiegoreader.com%2Fevents%2Fsearch%2F%3Fcategory%3DGenre%26start_date%3D2018-07-04%26end_date%3D2018-07-04%26q%3D&cachebuster=725209.7866108691";
+var ftKeyword_3065939="";
+var ftCustom_3065939="";
+var ftSection_3065939="";
+var ftSegment_3065939="um2";
+var ftSegmentList_3065939=[{s:'um2'}];
+var ftRuleMatch_3065939="0";
+var ftTimestamp_3065939="1530826016";
+var ftImp3065939 = {};
+ftImp3065939.privacy = "x";
+ftImp3065939.guidAge = "43";
+ftImp3065939.impID = "38389AA5DB9D5F";
+
+
+document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/306/3065939/2143130/js/j-3065939-2143130.js" id="ftscript_m3065939" name="ftscript_m3065939"></scr'+'ipt>');
+                    

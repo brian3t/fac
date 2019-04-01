@@ -1,0 +1,93 @@
+{
+  "api": {
+    "headers": [
+      "X-BONANZLE-API-DEV-NAME: ht8sOGbEl34L9jg",
+      "X-BONANZLE-API-CERT-NAME: AqTWp2Let1R8DSO"
+    ],
+    "url": "https://api.bonanza.com/api_requests/secure_request",
+    "query": {
+      "requesterCredentials": {
+        "bonanzleAuthToken": "Vi4VNUZLDl"
+      }
+    },
+    "actions": {
+      "get_orders": {
+        "request_query_vars": {
+          "getOrdersRequest": {
+            "orderRole": "seller",
+            "soldTimeFrom": ":day_from"
+          }
+        },
+        "return_params": {
+          "getOrdersResponse": {
+            "orderArray": ":orders"
+          }
+        }
+      },
+      "tracking_push": {
+        "request_query_vars": {
+          "completeSaleRequest": {
+            "shipment.shippingTrackingNumber": ":tracking_number",
+            "shipment.shippingCarrierUsed": ":tracking_carrier",
+            "transactionID": ":order.channel_refnum"
+          }
+        }
+      },
+      "update_quantity": {
+        "request_query_vars": {
+          "reviseFixedPriceItemRequest": {
+            "itemId": "sku",
+            "item.quantity": "quantity"
+          }
+        }
+      }
+    }
+  },
+  "MP_REF_NUM_COL": 0,
+  "order_structure": {
+    "orderID": "channel_refnum",
+    "shippingDetails": [
+      "amount"
+    ],
+    "taxAmount": ":taxAmount",
+    "itemArray": ":items"
+  },
+  "order_item_structure": {
+    "orderID": "channel_refnum",
+    "shippingAddress": {
+      "name": "ship_name"
+    }
+  },
+  "order_keys": {
+    "order": {
+      "orderID": "channel_refnum",
+      "paidTime": "channel_date_created",
+      "shippingAddress.name": "ship_first_name",
+      "shippingAddress.street1": "ship_address1",
+      "shippingAddress.street2": "ship_address2",
+      "shippingAddress.cityName": "ship_city",
+      "shippingAddress.stateOrProvince": "ship_state_match",
+      "shippingAddress.country": "ship_country_match",
+      "transactionArray.transaction.providerName": "pay_type",
+      "transactionArray.transaction.providerID": "pay_transaction_id",
+      "subtotal": "product_total",
+      "taxAmount": "tax_amt",
+      "shippingDetails.amount": "shipping_amt",
+      "shippingDetails.shippingService": "ship_service_code",
+      "total": "grand_total",
+      "amountSaved": "discount_amt",
+      "checkoutStatus.status": "status"
+    }
+  },
+  "order_item_array": "itemArray",
+  "order_item_array_key": "item",
+  "order_item_keys": {
+    "sku": "sku",
+    "title": "sku_description",
+    "itemID": "mp_item_id",
+    "price": "unit_price",
+    "quantity": "quantity"
+  },
+  "_comments": "$this->args['requesterCredentials']['bonanzleAuthToken'] = Vi4VNUZLDl;"
+}
+

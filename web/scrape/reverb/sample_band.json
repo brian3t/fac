@@ -1,0 +1,40 @@
+{
+  "id": 447994,
+  "name": "Michael J. Dwyer",
+  "homepage": "michaeljdwyer",
+  "share_url": "http://www.reverbnation.com/open_graph/artist/447994",
+  "type": "artist",
+  "location": {
+    "address": "6720 Vigo Drive",
+    "address2": "",
+    "city": "La Mesa",
+    "state": "CA",
+    "postal_code": "91942",
+    "country": "US",
+    "latitude": 32.7562904,
+    "longitude": -117.0517578,
+    "timezone_id": null
+  },
+  "homepage_url": "//www.reverbnation.com/michaeljdwyer",
+  "image": "//gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/447994/original/crop:x0y0w1648h2029/hash:1529509901/orange_mike.jpg?1529509901",
+  "thumbnail": "//gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/447994/original/resize:248x186/crop:x0y31w1648h1236/hash:1529509901/orange_mike.jpg?1529509901",
+  "bio": "For more than 30 years Michael J. Dwyer has been entertaining the masses whether in a large concert hall and stadium setting or a small intimate venue such as a pub or wine bar. Michael's music is influenced by the seminal artists he grew up with such as Bob Dylan, Bruce Springsteen, CSN\u0026Y, Neil Young, David Crosby, Joni Mitchell, CCR, Eric Clapton, Bob Marley and so many more.\nStylistically, Michael's music leans toward acoustic folk rock and Americana. Michael likes to \"get real\" with his audience and promotes a running dialog with the fans. \nMichael is playing primarily in the San Diego/Orange County areas. For booking information please call: 509-389-8246",
+  "cover_photo": {
+    "id": 511360,
+    "type": "ProfileCoverPhoto",
+    "url": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/profile_cover_photos/images/511360/original/crop:x0y0w1920h746/quality:90/hash:1465026455/1363492089_Mike_RoniLee_Event_copy.jpg?1465026455",
+    "thumbnail": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/profile_cover_photos/images/511360/original/resize:480x186/crop:x0y0w1920h746/quality:90/hash:1465026455/1363492089_Mike_RoniLee_Event_copy.jpg?1465026455"
+  },
+  "genres": [
+    "Indie",
+    "acoustic americana",
+    "acoustic folk-rock-Americana"
+  ],
+  "fb_share_url": "http://www.facebook.com/pages/page/169565466394413",
+  "ecomm_enabled": true,
+  "active_since": "2008/04/01",
+  "public_email": "michaeljaydwyer@icloud.com",
+  "booking_email": "michaeljaydwyer@icloud.com",
+  "mngt_email": "michaeljaydwyer@icloud.com",
+  "under_construction": false
+}

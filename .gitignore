@@ -1,0 +1,38 @@
+vendor
+web/docs
+config/db.php
+# phpstorm project files
+#.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+data
+config/params.php
+api/config/params.php
+api/assets/
+/web/index.php
+.sass-cache/*
+/web/.sass-cache/
+/web/less/.sass-cache/
+
+web/index.php
+api/index.php
