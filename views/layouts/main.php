@@ -122,7 +122,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; Entertainment Direct Metrics <?= date('Y') ?></p>
+        <p class="pull-left">&copy; RE Boost <?= date('Y') ?></p>
 
     </div>
 </footer>

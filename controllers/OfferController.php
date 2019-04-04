@@ -165,7 +165,7 @@ class OfferController extends Controller
         // Output the generated PDF to Browser
         if (!$browser) {
             $pdf->setHTMLHeader('<img src="http://admin.entertainmentdirectmetrics.com/img/logo_sml.png" alt="logo"> 
-<span style="font-size: 150%">Entertainment Direct Metrics</span>&emsp;&emsp; Offer '.$model->event_id);
+<span style="font-size: 150%">RE Boost</span>&emsp;&emsp; Offer '.$model->event_id);
             $pdf->WriteHTML(file_get_contents(__DIR__ . "/../web/css/bootstrap_print.css"), 1);
             $pdf->WriteHTML($output, 2);
             $date = (new \DateTime())->format('Ymd_h_i_s');
