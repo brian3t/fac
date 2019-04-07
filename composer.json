@@ -21,7 +21,7 @@
   "require": {
     "php": ">=7.2.0",
     "ext-json": "*",
-    "yiisoft/yii2": ">=2.0.5",
+    "yiisoft/yii2": "~2.0.17",
     "yiisoft/yii2-bootstrap": "*",
     "yiisoft/yii2-swiftmailer": "*",
     "kartik-v/yii2-widgets": "*",
