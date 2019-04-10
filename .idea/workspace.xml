@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/yii2helper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap3-dialog/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower-asset/inputmask/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower-asset/jquery/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower-asset/punycode/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower-asset/typeahead.js/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower-asset/yii2-pjax/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower/bootstrap/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower/bootstrap3-dialog/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower/inputmask/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower/jquery/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower/punycode/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower/typeahead.js/" />
+    <ignored path="$PROJECT_DIR$/vendor/bower/yii2-pjax/" />
+    <ignored path="$PROJECT_DIR$/vendor/cebe/js-search/" />
+    <ignored path="$PROJECT_DIR$/vendor/cebe/markdown/" />
+    <ignored path="$PROJECT_DIR$/vendor/cebe/markdown-latex/" />
+    <ignored path="$PROJECT_DIR$/vendor/composer/" />
+    <ignored path="$PROJECT_DIR$/vendor/creocoder/yii2-nested-sets/" />
+    <ignored path="$PROJECT_DIR$/vendor/dektrium/yii2-user/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/lexer/" />
+    <ignored path="$PROJECT_DIR$/vendor/egulias/email-validator/" />
+    <ignored path="$PROJECT_DIR$/vendor/electrolinux/phpquery/" />
+    <ignored path="$PROJECT_DIR$/vendor/ezyang/htmlpurifier/" />
+    <ignored path="$PROJECT_DIR$/vendor/fabpot/goutte/" />
+    <ignored path="$PROJECT_DIR$/vendor/fzaninotto/faker/" />
+    <ignored path="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/" />
+    <ignored path="$PROJECT_DIR$/vendor/guzzlehttp/promises/" />
+    <ignored path="$PROJECT_DIR$/vendor/guzzlehttp/psr7/" />
+    <ignored path="$PROJECT_DIR$/vendor/jstayton/google-maps-geocoder/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/bootstrap-fileinput/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/bootstrap-star-rating/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/bootstrap-tabs-x/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/dependent-dropdown/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/php-date-formatter/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-builder/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-date-range/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-datecontrol/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-dialog/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-dynagrid/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-export/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-field-range/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-grid/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-helpers/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-krajee-base/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-mpdf/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-sortable/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-tabs-x/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-tree-manager/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-activeform/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-affix/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-alert/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-colorinput/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-datepicker/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-datetimepicker/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-depdrop/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-fileinput/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-growl/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-rangeinput/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-rating/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-select2/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-sidenav/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-spinner/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-switchinput/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-timepicker/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-touchspin/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-typeahead/" />
+    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widgets/" />
+    <ignored path="$PROJECT_DIR$/vendor/mikevanriel/text-to-latex/" />
+    <ignored path="$PROJECT_DIR$/vendor/mootensai/yii2-enhanced-gii/" />
+    <ignored path="$PROJECT_DIR$/vendor/mootensai/yii2-jsblock/" />
+    <ignored path="$PROJECT_DIR$/vendor/mootensai/yii2-optimistic-lock-validator/" />
+    <ignored path="$PROJECT_DIR$/vendor/mootensai/yii2-relation-trait/" />
+    <ignored path="$PROJECT_DIR$/vendor/mootensai/yii2-uuid-behavior/" />
+    <ignored path="$PROJECT_DIR$/vendor/mpdf/mpdf/" />
+    <ignored path="$PROJECT_DIR$/vendor/nikic/php-parser/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/reflection/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpspec/php-diff/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/http-message/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/log/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/simple-cache/" />
+    <ignored path="$PROJECT_DIR$/vendor/scrivo/highlight.php/" />
+    <ignored path="$PROJECT_DIR$/vendor/setasign/fpdi/" />
+    <ignored path="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/browser-kit/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/css-selector/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/dom-crawler/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-ctype/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/" />
+    <ignored path="$PROJECT_DIR$/vendor/voskobovich/yii2-many-many-behavior/" />
+    <ignored path="$PROJECT_DIR$/vendor/vova07/yii2-console-runner-extension/" />
+    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2/" />
+    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-apidoc/" />
+    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-authclient/" />
+    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-bootstrap/" />
+    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-composer/" />
+    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-debug/" />
+    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-faker/" />
+    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-gii/" />
+    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-httpclient/" />
+    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-swiftmailer/" />
+    <ignored path="$PROJECT_DIR$/web/scrape/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="local8" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="local8" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-depdrop" />
+      <path value="$PROJECT_DIR$/vendor/bower/punycode" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-switchinput" />
+      <path value="$PROJECT_DIR$/vendor/bower/typeahead.js" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-sidenav" />
+      <path value="$PROJECT_DIR$/vendor/bower/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-sortable" />
+      <path value="$PROJECT_DIR$/vendor/bower/yii2-pjax" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-grid" />
+      <path value="$PROJECT_DIR$/vendor/bower/jquery" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-spinner" />
+      <path value="$PROJECT_DIR$/vendor/bower/bootstrap3-dialog" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-dialog" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/bootstrap-fileinput" />
+      <path value="$PROJECT_DIR$/vendor/bower/inputmask" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-tabs-x" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-select2" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-affix" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-mpdf" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/dependent-dropdown" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-colorinput" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-dynagrid" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-builder" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-fileinput" />
+      <path value="$PROJECT_DIR$/vendor/mikevanriel/text-to-latex" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-touchspin" />
+      <path value="$PROJECT_DIR$/vendor/mootensai/yii2-jsblock" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-growl" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-activeform" />
+      <path value="$PROJECT_DIR$/vendor/mootensai/yii2-relation-trait" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widgets" />
+      <path value="$PROJECT_DIR$/vendor/mootensai/yii2-uuid-behavior" />
+      <path value="$PROJECT_DIR$/vendor/mpdf/mpdf" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-alert" />
+      <path value="$PROJECT_DIR$/vendor/mootensai/yii2-optimistic-lock-validator" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-datecontrol" />
+      <path value="$PROJECT_DIR$/vendor/mootensai/yii2-enhanced-gii" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-apidoc" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-typeahead" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-export" />
+      <path value="$PROJECT_DIR$/vendor/cebe/js-search" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/bootstrap-tabs-x" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-helpers" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-tree-manager" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-timepicker" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-field-range" />
+      <path value="$PROJECT_DIR$/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-datetimepicker" />
+      <path value="$PROJECT_DIR$/vendor/cebe/markdown-latex" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-date-range" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/bootstrap-star-rating" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-rating" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-rangeinput" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/php-date-formatter" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-krajee-base" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-datepicker" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/vendor/voskobovich/yii2-many-many-behavior" />
+      <path value="$PROJECT_DIR$/vendor/setasign/fpdi" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-faker" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-authclient" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-debug" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-composer" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-gii" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-httpclient" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/creocoder/yii2-nested-sets" />
+      <path value="$PROJECT_DIR$/vendor/electrolinux/phpquery" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/vova07/yii2-console-runner-extension" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/dektrium/yii2-user" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/jstayton/google-maps-geocoder" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/fabpot/goutte" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/typeahead.js" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/yii2-pjax" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/punycode" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/bootstrap3-dialog" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/inputmask" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/jquery" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1" />
+    <option name="width" value="1922" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="" />
+      <created>1554751983606</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554751983606</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18104367" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Migrations" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3297414" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Remote Host" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.14110756" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/08293129-d841-4d5f-910e-51ceddd589e7/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
