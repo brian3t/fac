@@ -116,13 +116,32 @@ AppAsset::register($this);
             }
             ?>
         </div>
+        <script src="/js/tinymce/tinymce.min.js"></script>
+        <script>
+            tinymce.init({
+                selector: '#tiny',
+                skin: 'oxide',
+                width: 600,
+                height: 300,
+                plugins: [
+                    'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
+                    'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+                    'save table contextmenu directionality emoticons template paste textcolor'
+                ],
+                toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons'
+            });
+
+
+        </script>
+        <textarea id="tiny">Next, use our Get Started docs to setup Tiny!</textarea>
+
         <?= $content ?>
     </div>
 </div>
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; RE Boost <?= date('Y') ?></p>
+        <p class="pull-left">&copy; Web Factory <?= date('Y') ?></p>
 
     </div>
 </footer>

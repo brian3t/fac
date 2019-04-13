@@ -2,784 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/yii2helper.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/AutoloadExample.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/PHPHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/grid/EditColumn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/i18n/ViewFormatter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/models/ModelB3tTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2helper/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/modules/v1/controllers/CompanyController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/modules/v1/controllers/EventController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/modules/v1/controllers/InventoryController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/modules/v1/controllers/OfferController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/modules/v1/controllers/OrderController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/modules/v1/controllers/SettlementController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/modules/v1/controllers/TrackingController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/modules/v1/controllers/VenueController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/sample_data/order_acknowledge.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/sample_data/order_pull.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mp/bonanza.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mp/loehmanns.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/BandCommentController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/BandController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/BandEventController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/BandFollowController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/CompanyController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/CustomerController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/EventController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/InventoryController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/InventoryDetailController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/MarketingController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/MkRadioController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/MkTelevisionController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/MpController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/OfferController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/SettlementController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/TrackingController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/VenueController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/erm_api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Band.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BandComment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BandEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BandFollow.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BandRate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Company.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Customer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/CustomerQuery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Event.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/EventQuery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Marketing.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/MkRadio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/MkTelevision.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Offer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Settlement.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/UserEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Venue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Band.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/BandComment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/BandEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/BandFollow.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/BandRate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Company.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Customer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Event.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Inventory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/InventoryDetail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/InventoryMp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Marketing.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/MkRadio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/MkTelevision.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Mp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Offer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Order.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/OrderItem.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/OrderPayment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/OrderReturn.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/OrderReturnItem.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/OrderShipment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/OrderShipmentPackage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/OrderShipmentPackageItem.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Settlement.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Tracking.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/UserEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Venue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp/Agent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-comment/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-comment/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-comment/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-comment/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-comment/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-comment/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-event/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-event/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-event/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-event/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-event/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-event/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-follow/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-follow/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-follow/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-follow/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-follow/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band-follow/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_dataBandComment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_dataBandEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_dataBandFollow.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_dataBandRate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_expand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_formBandComment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_formBandEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_formBandFollow.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_formBandRate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/band/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_dataCompanyUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_dataOffer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_dataUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_dataVenue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_expand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_formOffer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_formUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_formVenue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_pdf.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/saveAsNew.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/company/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/customer/_dataOrder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/customer/_detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/customer/_expand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/customer/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/customer/_formOrder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/customer/_pdf.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/customer/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/customer/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/customer/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/customer/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/customer/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/_dataBandEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/_dataUserEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/_detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/_expand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/_formBandEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/_formUserEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/_pdf.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/event/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/_dataMkRadio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/_dataMkTelevision.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/_detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/_expand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/_formMkRadio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/_formMkTelevision.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/marketing/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-radio/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-radio/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-radio/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-radio/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-radio/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-radio/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-television/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-television/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-television/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-television/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-television/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mk-television/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mp/_dataOrder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mp/_detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mp/_expand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mp/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mp/_formOrder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mp/_pdf.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mp/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mp/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mp/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mp/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mp/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/offer/_detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/offer/_expand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/offer/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/offer/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/offer/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/offer/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/offer/print.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/offer/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/offer/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/settlement/_detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/settlement/_expand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/settlement/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/settlement/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/settlement/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/settlement/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/settlement/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/settlement/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tracking/_detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tracking/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tracking/_pdf.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tracking/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tracking/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tracking/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tracking/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tracking/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user-event/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user-event/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user-event/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user-event/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user-event/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user-event/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/venue/_dataEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/venue/_detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/venue/_expand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/venue/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/venue/_formEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/venue/_script.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/venue/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/venue/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/venue/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/venue/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/less/config.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-020345.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-020356.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-020409.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-020416.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-020438.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-024743.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-024903.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-025805.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-123527.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-123542.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-123550.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/SHOEMETRO-ORDER-20160411-123552.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/class.bonanza.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/getOrders.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mp/tmp/processTracking.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/1551-37064-15222-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/1923733555584840111" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/300x250.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/728966273829404" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/8DLM15202_TurfClub_TixGiveaway_SDReader_658x358_v3_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/Anthony_Green_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/AuthenticationService.Authenticate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/Cirque-It_658x358_1_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/Equalizer_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/Exit_Game_658x358_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/Snow_Tha_Product_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/Sorry_to_Bother_You_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/TheAquabatscontest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/TimelineLite.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/TweenLite.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/WLDLFE_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/afr(1).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/afr(2).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/afr.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/analytics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/anim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/button.efa03583c158eb89fd00b8c75a70efae.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/cDyyloiRSzM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/collie_buddz_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/container(1).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/container(2).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/container(3).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/container(4).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/container.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/cookie_push(1).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/cookie_push(2).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/cookie_push(3).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/cookie_push.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/createjs-2015.11.26.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/css-reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/cssplugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/dv-measurements231.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/dvtp_src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/easepack.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/edge.3.0.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/empty(1).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/empty(2).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/empty.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/ext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/f(1).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/f(2).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/f(3).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/f(4).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/f.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/fbevents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/follow_button.bed9e19e565ca3b578705de9e73c29ed.en.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/ftpagefold_v4.7.2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/gpt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/hotjar-668957.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/html5API.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/impression_pixel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/index_edge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/index_edgeActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/index_edgePreload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/j-3065939-2143130.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/jquery.min(1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/jquery.multiple.select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/jsonp.jsonp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/l" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/l(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/l(2)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/l(3)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/l(4)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/l(5)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/lH1ibRl5GKq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/lg(1).php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/lg(2).php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/lg.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/like.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/linkid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/mc-validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/mobile_detect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/modules-b909a0a0c35c91be4150585a8f64f593.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/multiple-select.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/nai_big.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/nai_small.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/pdf_uploads_484679_484679_Belly_Up_658x358_SDR_B_D75_V1_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/print.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/pubads_impl_225.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/pubads_impl_rendering_225.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/quant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/rules-p-5drqipoAB-6F2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/rules-p-a4LDpi_DEopn-.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/saved_resource" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/saved_resource(1).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/saved_resource(2).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/saved_resource(3).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/saved_resource(4).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/saved_resource(5).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/saved_resource(6).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/saved_resource.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/search-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/stats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/t2tv7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/timeline.35155ed6aa6e065422c11b2526f1caf9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/visit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/webfont.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/widget_iframe.bed9e19e565ca3b578705de9e73c29ed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Eventsearch_SanDiegoReader_files/widgets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/0022.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/1451358410_802473973195963_3753893514957569405_n(1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/1451358410_802473973195963_3753893514957569405_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/1451428257_DaleWatson0250photobySarahWilson.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/1461597472_E0694166-AE0B-43F0-8ED0-966218024D8C-1314-0000015D04CE333B.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/1_Kathleen_Murray_Promo_RF_copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/30jx6e8KIxc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/32x32_light.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/727280160637499" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/Eric_Evans_-_2_1283401185(1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/Eric_Evans_-_2_1283401185.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/Ghost_Jazz_Trio_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/PS_Lights_new_promo_smlr_Thumbnail_image_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/Screen_Shot_2017-11-10_at_10_57_29_AM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/ZMNY_COM_CARD_BACK_PRINTcopy(1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/ZMNY_COM_CARD_BACK_PRINTcopy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/analytics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/artist_2358833-1393037004(1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/artist_2358833-1393037004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/artist_profile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/artist_profile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/artist_small.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/button.3ebb4253c7cb2cc3c9eaac42044fc82c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/charts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/controls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/css(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(1).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(10).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(11).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(12).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(13).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(14).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(15).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(16).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(17).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(18).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(19).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(2).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(20).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(3).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(4).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(5).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(6).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(7).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(8).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f(9).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/f.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/fbevents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/foundation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/geo_location_utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/geocoder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/google_map_embed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/gtm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/iframe_api" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/iframe_api(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/local_scene.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/marker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/marketing.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/mixpanel-2.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/music_player.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/onion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/orange_mike.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/overlay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/pixel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/places_impl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/player.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/received_10155358367202756(1).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/received_10155358367202756.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/saved_resource.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/sdk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/sophisticatstrio.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/spotlight.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/stats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/sticky_nav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/sync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/v3_common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/v3_extras.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/v4_foundation-datauri.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/v4_required-datauri.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/v4_to_v3-datauri.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/video_player(1).js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/video_player.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/widget_iframe.dfd87ccf5e4cb67cb5cb5553619dfa4a.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/www-widgetapi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Local Shows from ReverbNation Artists_files/zurb_foundation-datauri.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/14034565584798363863" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/14611948508729388408" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/16719829483912245573" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/3272013617863649795" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/658x358_1_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/728966273829404" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/9026593495067014379" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/AuthenticationService.Authenticate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/Boots_in_the_Park_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/DeepPurple_JP_658_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/GrubbysPoke-658x358_3_t670_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/Halloween_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/Magic_Men_Live_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/Night_school_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/StaticMapService.GetMapImage" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/Thrice_contest_R7C49PF_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/VIVA-WELLNESS-658x358-spa-wellness_1_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/ViewportInfoService(1).GetViewportInfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/ViewportInfoService.GetViewportInfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/Wombats_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/_tHSwAOpqmTwfI1WS7recxqJJ5Xshpubsfk27v0SDX4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/amp-analytics-0.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/amp4ads-host-v0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/amp4ads-v0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/analytics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/anchor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/bframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/button.460b6e50c797f0f03177332228ca7d20.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/cDyyloiRSzM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/f(1).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/f.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/fbevents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/follow_button.b510f289fb017e5dfdc7fdb287a0ae4b.en.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/gpt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/harvest-festival-2018-658x358_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/hotjar-668957.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/images_3_t240.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/init_embed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/jsonp.jsonp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/jtmf_fall18_ad_658x358px_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/l" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/l(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/l(2)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/l(3)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/l(4)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/lH1ibRl5GKq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/like.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/linkid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/mc-validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/mobile_detect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/modules-7c2ed69a3573b337643b226c6eca3460.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/mp2v3DK3INU.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/onion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/overlay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/pdf_uploads_517893_517893_Fist_Combat_SDR_D_D75_V1a_1_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/place.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/print.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/pubads_impl_246.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/pubads_impl_rendering_246.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/quant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/rcj-da10bd4908deb9e19dfde013ec3fe4ff.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/recaptcha__en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/rules-p-5drqipoAB-6F2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/rules-p-a4LDpi_DEopn-.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(1).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(10).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(11).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(12).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(13).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(2).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(3).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(4).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(5).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(6).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(7).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(8).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource(9).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/saved_resource.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/sdk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/search-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/search_impl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/stats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/styles__ltr.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/timeline.b0a587d0d4f12c2689ad7e638140e2c7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/view" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/view(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/view(2)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/view(3)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/view(4)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/widget_iframe.b510f289fb017e5dfdc7fdb287a0ae4b.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/Opera Appreciation Class _ San Diego Reader_files/widgets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/14611948508729388408" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/15070912689269215933" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/16825974186656348786" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/1e2RywyANNe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/22780250_10157130973673312_2755209511867830927_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/2pEw_Io-mKw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/3351605147608854774" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/34aYjee05MW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/619242937173153121" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/728966273829404" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/8320897019014267989" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/8DLM15202_TurfClub_TixGiveaway_SDReader_658x358_v3_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/Anthony_Green_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/AuthenticationService.Authenticate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/Cirque-It_658x358_1_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/Exit_Game_658x358_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/KTlasBVE4J5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/Snow_Tha_Product_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/TheAquabatscontest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/The_Meg_Contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/UMKeVJzNpAT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/Y39TCM91WYHH8FShYCFKLOVvr0vNrQXkMWBOfmkGQEQ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/analytics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/anchor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/bframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/button.bf357a6ba1a5f1fa0ddb61377ae3add5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/cDyyloiRSzM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/collie_buddz_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/comments.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/f(1).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/f(2).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/f(3).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/f(4).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/f.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/fKeLj8EnY6m.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/fQhAleBKaXi.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/fbevents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/follow_button.7a5ca036ea5299f1d2ebb2234731e35e.en.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/gpt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/hBJma3wXPGk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/hotjar-668957.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/jsonp.jsonp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/l" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/l(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/l(2)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/l(3)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/l(4)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/l(5)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/lH1ibRl5GKq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/like.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/linkid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/mc-validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/missimpos_2_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/mobile_detect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/modules-cf5028eda4f4b4aeb82e5b7555a3b16e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/pdf_uploads_484679_484679_Belly_Up_658x358_SDR_B_D75_V1_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/print.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/pubads_impl_231.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/pubads_impl_rendering_231.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/quant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/recaptcha__en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/rules-p-5drqipoAB-6F2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/rules-p-a4LDpi_DEopn-.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/saved_resource(1).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/saved_resource(10).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/saved_resource(2).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/saved_resource(3).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/saved_resource(4).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/saved_resource(5).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/saved_resource(6).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/saved_resource(7).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/saved_resource(8).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/saved_resource(9).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/saved_resource.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/sdk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/search-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/sh.e4e8af4de595fdb10ec1459d.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/stats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/styles__ltr.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/tempginger_t658.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/timeline.35155ed6aa6e065422c11b2526f1caf9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/widget_iframe.7a5ca036ea5299f1d2ebb2234731e35e.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/widgets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/xgRuIZYfQtP.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/band_gg_cowgirl_files/xozy-ptIv4J.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/0FwgLGi25wG.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/15030169013067429187" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/15070912689269215933" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/16643858357614516358" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/16719829483912245573" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/17089681703804924532" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/1e2RywyANNe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/22780250_10157130973673312_2755209511867830927_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/2pEw_Io-mKw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/34aYjee05MW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/3G3C8cnTyV6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/728966273829404" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/8065815446918598795" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/8DLM15202_TurfClub_TixGiveaway_SDReader_658x358_v3_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/A00_7566_t240.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/Anthony_Green_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/Cirque-It_658x358_1_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/Exit_Game_658x358_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/KTlasBVE4J5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/KkQTSUzuEkO.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/Snow_Tha_Product_contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/TheAquabatscontest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/The_Meg_Contest_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/UMKeVJzNpAT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/Y39TCM91WYHH8FShYCFKLOVvr0vNrQXkMWBOfmkGQEQ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/analytics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/anchor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/bframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/button.bf357a6ba1a5f1fa0ddb61377ae3add5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/cb_scout5_hdpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/collie_buddz_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/comments.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/controls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/css(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/f(1).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/f(2).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/f(3).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/f(4).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/f.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/fKeLj8EnY6m.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/fQhAleBKaXi.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/fbevents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/follow_button.7a5ca036ea5299f1d2ebb2234731e35e.en.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/google4_hdpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/gpt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/hBJma3wXPGk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/hotjar-668957.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/jsonp.jsonp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/l" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/l(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/l(2)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/l(3)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/l(4)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/l(5)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/like.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/linkid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/mapcnt6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/marker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/marker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/mc-validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/missimpos_2_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/mobile_detect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/modules-cf5028eda4f4b4aeb82e5b7555a3b16e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/onion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/pdf_uploads_484679_484679_Belly_Up_658x358_SDR_B_D75_V1_r298x205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/print.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/pubads_impl_231.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/pubads_impl_rendering_231.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/quant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/recaptcha__en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/rules-p-5drqipoAB-6F2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/rules-p-a4LDpi_DEopn-.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource(1).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource(10).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource(11).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource(2).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource(3).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource(4).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource(5).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource(6).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource(7).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource(8).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource(9).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/saved_resource.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/sdk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/search-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/sh.e4e8af4de595fdb10ec1459d.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/stats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/styles__ltr.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/sv9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/tempginger_r125x145.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/timeline.35155ed6aa6e065422c11b2526f1caf9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/tmapctrl4_hdpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/tmapctrl_hdpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/vt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/vt(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/vt(2)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/vt(3)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/widget_iframe.7a5ca036ea5299f1d2ebb2234731e35e.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/widgets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/gingercowgirl_files/xozy-ptIv4J.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/reverb/sample_band.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/reverb_ev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scrape/reverb_local_scene_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/web/favicon.ico" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap/" />
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap3-dialog/" />
@@ -914,7 +161,11 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fac8" type="feb32156:DbDataSourceImpl" />
+        <item name="MySQL - fac@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - fac@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="fac: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
@@ -922,16 +173,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/less/customless.less">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/less/sass/screen.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/less/sass/print.scss">
           <provider selected="true" editor-type-id="text-editor" />
@@ -949,14 +190,15 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/static/genres.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-495" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/static/genres_all.csv">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -964,12 +206,48 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/tinymce/tinymce.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="8" column="1684" lean-forward="true" selection-start-line="8" selection-start-column="1684" selection-end-line="8" selection-end-column="1684" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apigennow.sh">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="121" column="34" lean-forward="true" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>RE Boost</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -978,6 +256,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh" />
+        <option value="$PROJECT_DIR$/views/layouts/main.php" />
       </list>
     </option>
   </component>
@@ -1106,7 +385,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1166,6 +444,11 @@
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="tmp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1176,19 +459,43 @@
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="tinymce" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="tinymce" type="462c0819:PsiDirectoryNode" />
+              <item name="skins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="tinymce" type="462c0819:PsiDirectoryNode" />
+              <item name="skins" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
@@ -1205,23 +512,24 @@
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
               <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="1bab20e5-f86f-43ce-8c58-e98b7eb6ff63" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1230,8 +538,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/soft/programming/mysql-8.0.12-linux-glibc2.12-x86_64/bin/mysql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sql" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sql" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1245,8 +559,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="restore_db_fr_dropbox.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+  <component name="RunManager" selected="Bash.restore_db_fr_dropbox.sh">
+    <configuration name="restore_db_8_fr_dropbox.sh" type="BashConfigurationType" factoryName="Bash">
+      <module name="fac" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sql" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="restore_db_fr_dropbox.sh" type="BashConfigurationType" factoryName="Bash">
       <module name="fac" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
       <option name="INTERPRETER_PATH" value="/usr/bin/env" />
@@ -1259,11 +586,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Bash.restore_db_fr_dropbox.sh" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Bash.restore_db_fr_dropbox.sh" />
+      <item itemvalue="Bash.restore_db_8_fr_dropbox.sh" />
+    </list>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1276,16 +602,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
+    <frame x="-1" y="-1" width="1922" height="1065" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18423855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.185836" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32908705" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1311,33 +637,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1bab20e5-f86f-43ce-8c58-e98b7eb6ff63/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://1bab20e5-f86f-43ce-8c58-e98b7eb6ff63/schema/fac/table/website">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Band.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/base/Band.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1476,6 +775,9 @@
     <entry file="file://$PROJECT_DIR$/web/less/config.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/erm_api.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/less/customless.less">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1492,21 +794,91 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/static/genres.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/static/genres_all.csv">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apigennow.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/static/genres_all.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/erm_api.iml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="uml://DATABASE/f6de8775-1c47-4b8a-911f-111459e555cc">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>f6de8775-1c47-4b8a-911f-111459e555cc</OriginalElement>
+          <nodes>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.gallery</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.event_tmp</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.band_follow</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.band_event</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.page</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.band_rate</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.microsite</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.band_comment</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.website</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.microsite_menu</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.token</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.project_menu</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.property</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.user</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.band</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.widget</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.user_event</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.event</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.social_account</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.venue</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.profile</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.project</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6549375709421112" x="445.5" y="430.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+          </Categories>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apigennow.sh">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/tinymce/tinymce.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="8" column="1684" lean-forward="true" selection-start-line="8" selection-start-column="1684" selection-end-line="8" selection-end-column="1684" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="121" column="34" lean-forward="true" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
