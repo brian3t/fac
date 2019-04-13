@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/.idea/yii2helper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/AutoloadExample.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/PHPHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/grid/EditColumn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/i18n/ViewFormatter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/models/ModelB3tTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii2helper/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/web/favicon.ico" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap/" />
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap3-dialog/" />
@@ -195,10 +172,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/static/genres_all.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -215,20 +189,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/tinymce/tinymce.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="8" column="1684" lean-forward="true" selection-start-line="8" selection-start-column="1684" selection-end-line="8" selection-end-column="1684" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="121" column="34" lean-forward="true" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+            <state relative-caret-position="715">
+              <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -477,30 +442,6 @@
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="tinymce" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="tinymce" type="462c0819:PsiDirectoryNode" />
-              <item name="skins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="tinymce" type="462c0819:PsiDirectoryNode" />
-              <item name="skins" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="less" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -520,11 +461,6 @@
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -538,9 +474,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -587,8 +523,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Bash.restore_db_fr_dropbox.sh" />
       <item itemvalue="Bash.restore_db_8_fr_dropbox.sh" />
+      <item itemvalue="Bash.restore_db_fr_dropbox.sh" />
     </list>
   </component>
   <component name="TaskManager">
@@ -602,16 +538,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1922" height="1065" extended-state="6" />
+    <frame x="0" y="0" width="2560" height="1419" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.185836" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18824464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32908705" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960285" weight="0.32874617" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -620,7 +556,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Migrations" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.33836207" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3297414" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50039715" side_tool="true" weight="0.32874617" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3297414" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -630,75 +566,43 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Remote Host" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.14110756" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.14098491" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/base/Band.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/BandController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/BandCommentController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/models/base/Band.php" />
+    <entry file="file://$PROJECT_DIR$/controllers/BandController.php" />
+    <entry file="file://$PROJECT_DIR$/controllers/BandCommentController.php" />
     <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-868" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/SettlementController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1483" />
-      </provider>
-    </entry>
-    <entry file="das://1bab20e5-f86f-43ce-8c58-e98b7eb6ff63/schema/fac/table/project">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/SettlementController.php" />
+    <entry file="das://1bab20e5-f86f-43ce-8c58-e98b7eb6ff63/schema/fac/table/project" />
     <entry file="file://$PROJECT_DIR$/api/base/RopResponse.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/modules/v1/controllers/EventController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modules/v1/controllers/CompanyController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/v1/controllers/EventController.php" />
+    <entry file="file://$PROJECT_DIR$/api/modules/v1/controllers/CompanyController.php" />
     <entry file="file://$PROJECT_DIR$/api/modules/v1/controllers/BandController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-28" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/sample_data/order_acknowledge.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sample_data/order_acknowledge.json" />
     <entry file="file://$PROJECT_DIR$/api/modules/v1/Module.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-373" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/base/BandComment.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/base/OrderPayment.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/base/Settlement.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/BandComment.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/models/base/BandComment.php" />
+    <entry file="file://$PROJECT_DIR$/models/base/OrderPayment.php" />
+    <entry file="file://$PROJECT_DIR$/models/base/Settlement.php" />
+    <entry file="file://$PROJECT_DIR$/models/BandComment.php" />
     <entry file="file://$PROJECT_DIR$/api/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -709,29 +613,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Customer.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Customer.php" />
     <entry file="file://$PROJECT_DIR$/models/ContactForm.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Event.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Event.php" />
     <entry file="file://$PROJECT_DIR$/models/DektriumUser.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Marketing.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Marketing.php" />
     <entry file="file://$PROJECT_DIR$/models/LoginForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-45" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Settlement.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Settlement.php" />
     <entry file="file://$PROJECT_DIR$/models/Profile.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -743,26 +639,10 @@
         <state relative-caret-position="-103" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/user-event/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user-event/_script.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user-event/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user-event/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user-event/_form.php" />
+    <entry file="file://$PROJECT_DIR$/views/user-event/_script.php" />
+    <entry file="file://$PROJECT_DIR$/views/user-event/index.php" />
+    <entry file="file://$PROJECT_DIR$/views/user-event/view.php" />
     <entry file="file://$PROJECT_DIR$/tmp/test.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -772,36 +652,13 @@
     <entry file="file://$PROJECT_DIR$/web/common/library/unix/convert_xlsx.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/less/config.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erm_api.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/less/config.rb" />
+    <entry file="file://$PROJECT_DIR$/erm_api.iml" />
     <entry file="file://$PROJECT_DIR$/web/less/customless.less">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/less/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/less/sass/print.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/less/sass/ie.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/less/sass/custom.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/genres.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/genres_all.csv">
-      <provider editor-type-id="text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/apigennow.sh">
       <provider selected="true" editor-type-id="text-editor">
@@ -809,16 +666,6 @@
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/genres_all.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="uml://DATABASE/f6de8775-1c47-4b8a-911f-111459e555cc">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -851,13 +698,33 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.6549375709421112" x="445.5" y="430.5" />
+          <settings layout="Hierarchic Group" zoom="0.6549375709421112" x="446.0" y="431.0" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/tinymce/tinymce.min.js" />
+    <entry file="file://$PROJECT_DIR$/web/less/sass/print.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/less/sass/ie.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/less/sass/custom.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/genres.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/genres_all.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/genres_all.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh">
       <provider selected="true" editor-type-id="text-editor">
@@ -866,17 +733,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/tinymce/tinymce.min.js">
+    <entry file="file://$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="8" column="1684" lean-forward="true" selection-start-line="8" selection-start-column="1684" selection-end-line="8" selection-end-column="1684" />
+        <state relative-caret-position="105">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="121" column="34" lean-forward="true" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+        <state relative-caret-position="715">
+          <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
         </state>
       </provider>
     </entry>
