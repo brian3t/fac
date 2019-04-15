@@ -3,15 +3,15 @@
 namespace app\models\base;
 
 /**
- * This is the base model class for table "user_group".
+ * This is the base model class for table "widget".
  *
  * @property integer $id
+ * @property integer $project_id
  * @property string $name
- * @property string $logo
- *
- * @property \app\models\User[] $users
+ * @property string $content
+ * @property string $shortcode
  */
-class UserGroup extends \yii\db\ActiveRecord
+class Widget extends \yii\db\ActiveRecord
 {
     use \mootensai\relation\RelationTrait;
 
@@ -23,7 +23,7 @@ class UserGroup extends \yii\db\ActiveRecord
     public function relationNames()
     {
         return [
-            'users'
+            ''
         ];
     }
 
@@ -33,7 +33,9 @@ class UserGroup extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'logo'], 'string', 'max' => 255]
+            [['project_id'], 'integer'],
+            [['name', 'shortcode'], 'string', 'max' => 255],
+            [['content'], 'string', 'max' => 8000]
         ];
     }
 
@@ -42,7 +44,7 @@ class UserGroup extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'user_group';
+        return 'widget';
     }
 
     /**
@@ -52,16 +54,10 @@ class UserGroup extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'project_id' => 'Project ID',
             'name' => 'Name',
-            'logo' => 'Logo',
+            'content' => 'Content',
+            'shortcode' => 'Shortcode',
         ];
     }
-    
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUsers()
-    {
-        return $this->hasMany(\app\models\User::className(), ['group_id' => 'id'])->inverseOf('group');
-    }
-    }
+}

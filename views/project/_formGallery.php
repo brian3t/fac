@@ -1,4 +1,4 @@
-<div class="form-group" id="add-band-follow">
+<div class="form-group" id="add-gallery">
 <?php
 
 use kartik\builder\TabularForm;
@@ -14,7 +14,7 @@ $dataProvider = new ArrayDataProvider([
 ]);
 echo TabularForm::widget([
     'dataProvider' => $dataProvider,
-    'formName' => 'BandFollow',
+    'formName' => 'Gallery',
     'checkboxColumn' => false,
     'actionColumn' => false,
     'attributeDefaults' => [
@@ -22,13 +22,15 @@ echo TabularForm::widget([
     ],
     'attributes' => [
         "id" => ['type' => TabularForm::INPUT_HIDDEN, 'columnOptions' => ['hidden'=>true]],
-        'band_id' => [
-            'label' => 'Band',
+        'name' => ['type' => TabularForm::INPUT_TEXT],
+        'file_path' => ['type' => TabularForm::INPUT_TEXT],
+        'microsite_id' => [
+            'label' => 'Microsite',
             'type' => TabularForm::INPUT_WIDGET,
             'widgetClass' => \kartik\widgets\Select2::className(),
             'options' => [
-                'data' => \yii\helpers\ArrayHelper::map(\app\models\Band::find()->orderBy('name')->asArray()->all(), 'id', 'name'),
-                'options' => ['placeholder' => 'Choose Band'],
+                'data' => \yii\helpers\ArrayHelper::map(\app\models\Microsite::find()->orderBy('id')->asArray()->all(), 'id', 'id'),
+                'options' => ['placeholder' => 'Choose Microsite'],
             ],
             'columnOptions' => ['width' => '200px']
         ],
@@ -38,7 +40,7 @@ echo TabularForm::widget([
             'value' => function($model, $key) {
                 return
                     Html::hiddenInput('Children[' . $key . '][id]', (!empty($model['id'])) ? $model['id'] : "") .
-                    Html::a('<i class="glyphicon glyphicon-trash"></i>', '#', ['title' =>  'Delete', 'onClick' => 'delRowBandFollow(' . $key . '); return false;', 'id' => 'band-follow-del-btn']);
+                    Html::a('<i class="glyphicon glyphicon-trash"></i>', '#', ['title' =>  'Delete', 'onClick' => 'delRowGallery(' . $key . '); return false;', 'id' => 'gallery-del-btn']);
             },
         ],
     ],
@@ -48,7 +50,7 @@ echo TabularForm::widget([
             'type' => GridView::TYPE_DEFAULT,
             'before' => false,
             'footer' => false,
-            'after' => Html::button('<i class="glyphicon glyphicon-plus"></i>' . 'Add Band Follow', ['type' => 'button', 'class' => 'btn btn-success kv-batch-create', 'onClick' => 'addRowBandFollow()']),
+            'after' => Html::button('<i class="glyphicon glyphicon-plus"></i>' . 'Add Gallery', ['type' => 'button', 'class' => 'btn btn-success kv-batch-create', 'onClick' => 'addRowGallery()']),
         ]
     ]
 ]);

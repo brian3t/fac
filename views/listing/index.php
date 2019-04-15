@@ -7,7 +7,7 @@ use kartik\export\ExportMenu;
 use kartik\grid\GridView;
 use yii\helpers\Html;
 
-$this->title = 'User';
+$this->title = 'Listing';
 $this->params['breadcrumbs'][] = $this->title;
 $search = "$('.search-button').click(function(){
 	$('.search-form').toggle(1000);
@@ -15,73 +15,39 @@ $search = "$('.search-button').click(function(){
 });";
 $this->registerJs($search);
 ?>
-<div class="user-index">
+<div class="listing-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create User', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Listing', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-    <?php
+<?php 
     $gridColumn = [
         ['class' => 'yii\grid\SerialColumn'],
         ['attribute' => 'id', 'visible' => false],
-        [
-            'attribute' => 'group_id',
-            'label' => 'Group',
-            'value' => function($model){
-                if ($model->group)
-                {return $model->group->name;}
-                else
-                {return NULL;}
-            },
-            'filterType' => GridView::FILTER_SELECT2,
-            'filter' => \yii\helpers\ArrayHelper::map(\app\models\UserGroup::find()->asArray()->all(), 'id', 'name'),
-            'filterWidgetOptions' => [
-                'pluginOptions' => ['allowClear' => true],
-            ],
-            'filterInputOptions' => ['placeholder' => 'User group', 'id' => 'grid--group_id']
-        ],
-        'username',
-        'email:email',
-        'password_hash',
-        'auth_key',
-        'confirmed_at',
-        'unconfirmed_email:email',
-        'blocked_at',
-        'registration_ip',
-        'flags',
-        'first_name',
-        'last_name',
-        'note',
-        'phone_number_type',
-        'phone_number',
-        'birthdate',
-        'birth_month',
-        'birth_year',
-        'website_url:url',
-        'twitter_id',
-        'facebook_id',
-        'instagram_id',
-        'google_id',
+        'name',
         'address1',
         'address2',
+        'country_code',
         'city',
-        'state',
-        'zipcode',
-        'country',
-        'last_login_at',
-        'role',
+        'district',
+        'area',
+        'property_type',
+        'developer_id',
+        'postal_code',
+        'total_unit',
+        'tenure',
         [
             'class' => 'yii\grid\ActionColumn',
         ],
-    ];
+    ]; 
     ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => $gridColumn,
         'pjax' => true,
-        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-user']],
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-listing']],
         'panel' => [
             'type' => GridView::TYPE_PRIMARY,
             'heading' => '<span class="glyphicon glyphicon-book"></span>  ' . Html::encode($this->title),

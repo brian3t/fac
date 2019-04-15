@@ -1,4 +1,4 @@
-<div class="form-group" id="add-user-event">
+<div class="form-group" id="add-microsite-menu">
 <?php
 
 use kartik\builder\TabularForm;
@@ -14,7 +14,7 @@ $dataProvider = new ArrayDataProvider([
 ]);
 echo TabularForm::widget([
     'dataProvider' => $dataProvider,
-    'formName' => 'UserEvent',
+    'formName' => 'MicrositeMenu',
     'checkboxColumn' => false,
     'actionColumn' => false,
     'attributeDefaults' => [
@@ -22,25 +22,15 @@ echo TabularForm::widget([
     ],
     'attributes' => [
         "id" => ['type' => TabularForm::INPUT_HIDDEN, 'columnOptions' => ['hidden'=>true]],
-        'event_id' => [
-            'label' => 'Event',
-            'type' => TabularForm::INPUT_WIDGET,
-            'widgetClass' => \kartik\widgets\Select2::className(),
-            'options' => [
-                'data' => \yii\helpers\ArrayHelper::map(\app\models\Event::find()->orderBy('name')->asArray()->all(), 'id', 'name'),
-                'options' => ['placeholder' => 'Choose Event'],
-            ],
-            'columnOptions' => ['width' => '200px']
-        ],
-        'is_going' => ['type' => TabularForm::INPUT_TEXT],
-        'comment' => ['type' => TabularForm::INPUT_TEXT],
+        'name' => ['type' => TabularForm::INPUT_TEXT],
+        'order' => ['type' => TabularForm::INPUT_TEXT],
         'del' => [
             'type' => 'raw',
             'label' => '',
             'value' => function($model, $key) {
                 return
                     Html::hiddenInput('Children[' . $key . '][id]', (!empty($model['id'])) ? $model['id'] : "") .
-                    Html::a('<i class="glyphicon glyphicon-trash"></i>', '#', ['title' =>  'Delete', 'onClick' => 'delRowUserEvent(' . $key . '); return false;', 'id' => 'user-event-del-btn']);
+                    Html::a('<i class="glyphicon glyphicon-trash"></i>', '#', ['title' =>  'Delete', 'onClick' => 'delRowMicrositeMenu(' . $key . '); return false;', 'id' => 'microsite-menu-del-btn']);
             },
         ],
     ],
@@ -50,7 +40,7 @@ echo TabularForm::widget([
             'type' => GridView::TYPE_DEFAULT,
             'before' => false,
             'footer' => false,
-            'after' => Html::button('<i class="glyphicon glyphicon-plus"></i>' . 'Add User Event', ['type' => 'button', 'class' => 'btn btn-success kv-batch-create', 'onClick' => 'addRowUserEvent()']),
+            'after' => Html::button('<i class="glyphicon glyphicon-plus"></i>' . 'Add Microsite Menu', ['type' => 'button', 'class' => 'btn btn-success kv-batch-create', 'onClick' => 'addRowMicrositeMenu()']),
         ]
     ]
 ]);

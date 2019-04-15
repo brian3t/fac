@@ -1,4 +1,4 @@
-<div class="form-group" id="add-band-comment">
+<div class="form-group" id="add-gallery">
 <?php
 
 use kartik\builder\TabularForm;
@@ -14,7 +14,7 @@ $dataProvider = new ArrayDataProvider([
 ]);
 echo TabularForm::widget([
     'dataProvider' => $dataProvider,
-    'formName' => 'BandComment',
+    'formName' => 'Gallery',
     'checkboxColumn' => false,
     'actionColumn' => false,
     'attributeDefaults' => [
@@ -22,24 +22,25 @@ echo TabularForm::widget([
     ],
     'attributes' => [
         "id" => ['type' => TabularForm::INPUT_HIDDEN, 'columnOptions' => ['hidden'=>true]],
-        'band_id' => [
-            'label' => 'Band',
+        'name' => ['type' => TabularForm::INPUT_TEXT],
+        'file_path' => ['type' => TabularForm::INPUT_TEXT],
+        'project_id' => [
+            'label' => 'Project',
             'type' => TabularForm::INPUT_WIDGET,
             'widgetClass' => \kartik\widgets\Select2::className(),
             'options' => [
-                'data' => \yii\helpers\ArrayHelper::map(\app\models\Band::find()->orderBy('name')->asArray()->all(), 'id', 'name'),
-                'options' => ['placeholder' => 'Choose Band'],
+                'data' => \yii\helpers\ArrayHelper::map(\app\models\Project::find()->orderBy('name')->asArray()->all(), 'id', 'name'),
+                'options' => ['placeholder' => 'Choose Project'],
             ],
             'columnOptions' => ['width' => '200px']
         ],
-        'comment' => ['type' => TabularForm::INPUT_TEXT],
         'del' => [
             'type' => 'raw',
             'label' => '',
             'value' => function($model, $key) {
                 return
                     Html::hiddenInput('Children[' . $key . '][id]', (!empty($model['id'])) ? $model['id'] : "") .
-                    Html::a('<i class="glyphicon glyphicon-trash"></i>', '#', ['title' =>  'Delete', 'onClick' => 'delRowBandComment(' . $key . '); return false;', 'id' => 'band-comment-del-btn']);
+                    Html::a('<i class="glyphicon glyphicon-trash"></i>', '#', ['title' =>  'Delete', 'onClick' => 'delRowGallery(' . $key . '); return false;', 'id' => 'gallery-del-btn']);
             },
         ],
     ],
@@ -49,7 +50,7 @@ echo TabularForm::widget([
             'type' => GridView::TYPE_DEFAULT,
             'before' => false,
             'footer' => false,
-            'after' => Html::button('<i class="glyphicon glyphicon-plus"></i>' . 'Add Band Comment', ['type' => 'button', 'class' => 'btn btn-success kv-batch-create', 'onClick' => 'addRowBandComment()']),
+            'after' => Html::button('<i class="glyphicon glyphicon-plus"></i>' . 'Add Gallery', ['type' => 'button', 'class' => 'btn btn-success kv-batch-create', 'onClick' => 'addRowGallery()']),
         ]
     ]
 ]);

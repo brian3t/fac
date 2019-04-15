@@ -2,7 +2,6 @@
 
 namespace app\models\base;
 
-use Yii;
 use yii\behaviors\TimestampBehavior;
 
 /**
@@ -141,7 +140,7 @@ class User extends \yii\db\ActiveRecord
      */
     public function getProjects()
     {
-        return $this->hasMany(\app\models\Project::className(), ['user_id' => 'id']);
+        return $this->hasMany(\app\models\Project::className(), ['user_id' => 'id'])->inverseOf('user');
     }
         
     /**
@@ -149,7 +148,7 @@ class User extends \yii\db\ActiveRecord
      */
     public function getGroup()
     {
-        return $this->hasOne(\app\models\UserGroup::className(), ['id' => 'group_id']);
+        return $this->hasOne(\app\models\UserGroup::className(), ['id' => 'group_id'])->inverseOf('users');
     }
     
     /**

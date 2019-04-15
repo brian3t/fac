@@ -1,0 +1,185 @@
+<?php
+
+namespace app\models\base;
+
+/**
+ * This is the base model class for table "project".
+ *
+ * @property integer $id
+ * @property integer $user_id
+ * @property string $name
+ * @property string $url
+ * @property string $country_code
+ * @property string $logo
+ * @property string $favicon
+ * @property string $type
+ * @property string $biz_contact_name
+ * @property integer $does_enable_phone_display
+ * @property integer $does_enable_email_display
+ * @property string $phone
+ * @property string $email
+ * @property string $sms
+ * @property string $whatsapp
+ * @property string $wechatid
+ * @property string $wechat_image
+ * @property string $phone2
+ * @property string $email2
+ * @property string $phone3
+ * @property string $email3
+ * @property string $footer
+ * @property integer $does_use_footer
+ * @property string $credit_text
+ * @property integer $does_use_credit_text
+ * @property string $default_page_title
+ * @property string $default_meta_description
+ * @property string $default_meta_keywords
+ * @property integer $404page_id
+ * @property integer $thankspage_id
+ * @property string $g_search_site_verification
+ * @property string $g_global_site_tags
+ * @property string $g_remarketing_tag
+ * @property string $facebook_pixel_code
+ * @property integer $does_enable_custom_robots
+ * @property string $custom_robots
+ * @property string $facebook
+ * @property string $youtube
+ * @property string $instagram
+ * @property string $linkedin
+ * @property string $twitter
+ * @property string $googleplus
+ *
+ * @property \app\models\Gallery[] $galleries
+ * @property \app\models\Microsite[] $microsites
+ * @property \app\models\Page[] $pages
+ * @property \app\models\User $user
+ */
+class Project extends \yii\db\ActiveRecord
+{
+    use \mootensai\relation\RelationTrait;
+
+
+    /**
+    * This function helps \mootensai\relation\RelationTrait runs faster
+    * @return array relation names of this model
+    */
+    public function relationNames()
+    {
+        return [
+            'galleries',
+            'microsites',
+            'pages',
+            'user'
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function rules()
+    {
+        return [
+            [['user_id'], 'required'],
+            [['user_id', '404page_id', 'thankspage_id'], 'integer'],
+            [['type'], 'string'],
+            [['name', 'url', 'logo', 'facebook_pixel_code', 'custom_robots'], 'string', 'max' => 800],
+            [['country_code'], 'string', 'max' => 2],
+            [['favicon', 'biz_contact_name', 'wechat_image'], 'string', 'max' => 255],
+            [['does_enable_phone_display', 'does_enable_email_display', 'does_use_footer', 'does_use_credit_text', 'does_enable_custom_robots'], 'string', 'max' => 1],
+            [['phone', 'sms', 'whatsapp', 'phone2', 'phone3'], 'string', 'max' => 18],
+            [['email', 'email2', 'email3', 'facebook', 'youtube', 'instagram', 'linkedin', 'twitter', 'googleplus'], 'string', 'max' => 80],
+            [['wechatid'], 'string', 'max' => 25],
+            [['footer', 'credit_text', 'default_page_title', 'default_meta_description', 'default_meta_keywords', 'g_search_site_verification', 'g_global_site_tags', 'g_remarketing_tag'], 'string', 'max' => 2000]
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public static function tableName()
+    {
+        return 'project';
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'user_id' => 'User ID',
+            'name' => 'Name',
+            'url' => 'Url',
+            'country_code' => 'Country Code',
+            'logo' => 'Logo',
+            'favicon' => 'Favicon',
+            'type' => 'Type',
+            'biz_contact_name' => 'Biz Contact Name',
+            'does_enable_phone_display' => 'Does Enable Phone Display',
+            'does_enable_email_display' => 'Does Enable Email Display',
+            'phone' => 'Phone',
+            'email' => 'Email',
+            'sms' => 'Sms',
+            'whatsapp' => 'Whatsapp',
+            'wechatid' => 'Wechatid',
+            'wechat_image' => 'Wechat Image',
+            'phone2' => 'Phone2',
+            'email2' => 'Email2',
+            'phone3' => 'Phone3',
+            'email3' => 'Email3',
+            'footer' => 'Footer',
+            'does_use_footer' => 'Does Use Footer',
+            'credit_text' => 'Credit Text',
+            'does_use_credit_text' => 'Does Use Credit Text',
+            'default_page_title' => 'Default Page Title',
+            'default_meta_description' => 'Default Meta Description',
+            'default_meta_keywords' => 'Default Meta Keywords',
+            '404page_id' => '404page ID',
+            'thankspage_id' => 'Thankspage ID',
+            'g_search_site_verification' => 'G Search Site Verification',
+            'g_global_site_tags' => 'G Global Site Tags',
+            'g_remarketing_tag' => 'G Remarketing Tag',
+            'facebook_pixel_code' => 'Facebook Pixel Code',
+            'does_enable_custom_robots' => 'Does Enable Custom Robots',
+            'custom_robots' => 'Custom Robots',
+            'facebook' => 'Facebook',
+            'youtube' => 'Youtube',
+            'instagram' => 'Instagram',
+            'linkedin' => 'Linkedin',
+            'twitter' => 'Twitter',
+            'googleplus' => 'Googleplus',
+        ];
+    }
+    
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getGalleries()
+    {
+        return $this->hasMany(\app\models\Gallery::className(), ['project_id' => 'id'])->inverseOf('project');
+    }
+        
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getMicrosites()
+    {
+        return $this->hasMany(\app\models\Microsite::className(), ['project_id' => 'id'])->inverseOf('project');
+    }
+        
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPages()
+    {
+        return $this->hasMany(\app\models\Page::className(), ['project_id' => 'id'])->inverseOf('project');
+    }
+        
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getUser()
+    {
+        return $this->hasOne(\app\models\User::className(), ['id' => 'user_id'])->inverseOf('projects');
+    }
+    }

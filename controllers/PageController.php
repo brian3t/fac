@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\models\User;
+use app\models\Page;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\filters\VerbFilter;
@@ -10,9 +10,9 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 
 /**
- * UserController implements the CRUD actions for User model.
+ * PageController implements the CRUD actions for Page model.
  */
-class UserController extends Controller
+class PageController extends Controller
 {
     public function behaviors()
     {
@@ -23,30 +23,17 @@ class UserController extends Controller
                     'delete' => ['post'],
                 ],
             ],
-            'access' => [
-                'class' => \yii\filters\AccessControl::className(),
-                'rules' => [
-                    [
-                        'allow' => true,
-                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'add-offer', 'add-settlement', 'add-social-account', 'add-token'],
-                        'roles' => ['@']
-                    ],
-                    [
-                        'allow' => false
-                    ]
-                ]
-            ]
         ];
     }
 
     /**
-     * Lists all User models.
+     * Lists all Page models.
      * @return mixed
      */
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => User::find(),
+            'query' => Page::find(),
         ]);
 
         return $this->render('index', [
@@ -55,38 +42,34 @@ class UserController extends Controller
     }
 
     /**
-     * Displays a single User model.
+     * Displays a single Page model.
      * @param integer $id
      * @return mixed
      */
     public function actionView($id)
     {
         $model = $this->findModel($id);
-        $providerSocialAccount = new \yii\data\ArrayDataProvider([
-            'allModels' => $model->socialAccounts,
+        $providerMicrositeMenu = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->micrositeMenus,
         ]);
-        $providerToken = new \yii\data\ArrayDataProvider([
-            'allModels' => $model->tokens,
-        ]);
-        $providerProject = new \yii\data\ArrayDataProvider([
-            'allModels' => $model->projects,
+        $providerProjectMenu = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->projectMenus,
         ]);
         return $this->render('view', [
             'model' => $this->findModel($id),
-            'providerSocialAccount' => $providerSocialAccount,
-            'providerToken' => $providerToken,
-            'providerProject' => $providerProject,
+            'providerMicrositeMenu' => $providerMicrositeMenu,
+            'providerProjectMenu' => $providerProjectMenu,
         ]);
     }
 
     /**
-     * Creates a new User model.
+     * Creates a new Page model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new User();
+        $model = new Page();
 
         if ($model->loadAll(Yii::$app->request->post()) && $model->saveAll()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -98,7 +81,7 @@ class UserController extends Controller
     }
 
     /**
-     * Updates an existing User model.
+     * Updates an existing Page model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -117,7 +100,7 @@ class UserController extends Controller
     }
 
     /**
-     * Deletes an existing User model.
+     * Deletes an existing Page model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -131,56 +114,16 @@ class UserController extends Controller
 
     
     /**
-     * Finds the User model based on its primary key value.
+     * Finds the Page model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return User the loaded model
+     * @return Page the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = User::findOne($id)) !== null) {
+        if (($model = Page::findOne($id)) !== null) {
             return $model;
-        } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
-        }
-    }
-
-    /**
-     * Action to load a tabular form grid
-     * for Project
-     * @author Yohanes Candrajaya <moo.tensai@gmail.com>
-     * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
-     *
-     * @return mixed
-     */
-   public function actionAddProject()
-   {
-       if (Yii::$app->request->isAjax) {
-           $row = Yii::$app->request->post('Project');
-           if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('_action') == 'load' && empty($row)) || Yii::$app->request->post('_action') == 'add')
-               $row[] = [];
-           return $this->renderAjax('_formProject', ['row' => $row]);
-       } else {
-           throw new NotFoundHttpException('The requested page does not exist.');
-       }
-   }
-
-    /**
-    * Action to load a tabular form grid
-    * for SocialAccount
-    * @author Yohanes Candrajaya <moo.tensai@gmail.com>
-    * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
-    *
-    * @return mixed
-    */
-    public function actionAddSocialAccount()
-    {
-        if (Yii::$app->request->isAjax) {
-            $row = Yii::$app->request->post('SocialAccount');
-            if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('_action') == 'load' && empty($row)) || Yii::$app->request->post('_action') == 'add')
-                $row[] = [];
-            return $this->renderAjax('_formSocialAccount', ['row' => $row]);
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
@@ -188,19 +131,39 @@ class UserController extends Controller
     
     /**
     * Action to load a tabular form grid
-    * for Token
+    * for MicrositeMenu
     * @author Yohanes Candrajaya <moo.tensai@gmail.com>
     * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
     *
     * @return mixed
     */
-    public function actionAddToken()
+    public function actionAddMicrositeMenu()
     {
         if (Yii::$app->request->isAjax) {
-            $row = Yii::$app->request->post('Token');
+            $row = Yii::$app->request->post('MicrositeMenu');
             if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('_action') == 'load' && empty($row)) || Yii::$app->request->post('_action') == 'add')
                 $row[] = [];
-            return $this->renderAjax('_formToken', ['row' => $row]);
+            return $this->renderAjax('_formMicrositeMenu', ['row' => $row]);
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+    
+    /**
+    * Action to load a tabular form grid
+    * for ProjectMenu
+    * @author Yohanes Candrajaya <moo.tensai@gmail.com>
+    * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
+    *
+    * @return mixed
+    */
+    public function actionAddProjectMenu()
+    {
+        if (Yii::$app->request->isAjax) {
+            $row = Yii::$app->request->post('ProjectMenu');
+            if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('_action') == 'load' && empty($row)) || Yii::$app->request->post('_action') == 'add')
+                $row[] = [];
+            return $this->renderAjax('_formProjectMenu', ['row' => $row]);
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }

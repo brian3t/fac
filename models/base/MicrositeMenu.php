@@ -3,15 +3,16 @@
 namespace app\models\base;
 
 /**
- * This is the base model class for table "user_group".
+ * This is the base model class for table "microsite_menu".
  *
  * @property integer $id
+ * @property integer $page_id
  * @property string $name
- * @property string $logo
+ * @property integer $order
  *
- * @property \app\models\User[] $users
+ * @property \app\models\Page $page
  */
-class UserGroup extends \yii\db\ActiveRecord
+class MicrositeMenu extends \yii\db\ActiveRecord
 {
     use \mootensai\relation\RelationTrait;
 
@@ -23,7 +24,7 @@ class UserGroup extends \yii\db\ActiveRecord
     public function relationNames()
     {
         return [
-            'users'
+            'page'
         ];
     }
 
@@ -33,7 +34,10 @@ class UserGroup extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'logo'], 'string', 'max' => 255]
+            [['page_id'], 'required'],
+            [['page_id'], 'integer'],
+            [['name'], 'string', 'max' => 255],
+            [['order'], 'string', 'max' => 2]
         ];
     }
 
@@ -42,7 +46,7 @@ class UserGroup extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'user_group';
+        return 'microsite_menu';
     }
 
     /**
@@ -52,16 +56,17 @@ class UserGroup extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'page_id' => 'Page ID',
             'name' => 'Name',
-            'logo' => 'Logo',
+            'order' => 'Order',
         ];
     }
     
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getUsers()
+    public function getPage()
     {
-        return $this->hasMany(\app\models\User::className(), ['group_id' => 'id'])->inverseOf('group');
+        return $this->hasOne(\app\models\Page::className(), ['id' => 'page_id'])->inverseOf('micrositeMenus');
     }
     }

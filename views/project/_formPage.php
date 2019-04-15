@@ -1,4 +1,4 @@
-<div class="form-group" id="add-band-rate">
+<div class="form-group" id="add-page">
 <?php
 
 use kartik\builder\TabularForm;
@@ -14,7 +14,7 @@ $dataProvider = new ArrayDataProvider([
 ]);
 echo TabularForm::widget([
     'dataProvider' => $dataProvider,
-    'formName' => 'BandRate',
+    'formName' => 'Page',
     'checkboxColumn' => false,
     'actionColumn' => false,
     'attributeDefaults' => [
@@ -22,25 +22,24 @@ echo TabularForm::widget([
     ],
     'attributes' => [
         "id" => ['type' => TabularForm::INPUT_HIDDEN, 'columnOptions' => ['hidden'=>true]],
-        'band_id' => [
-            'label' => 'Band',
+        'microsite_id' => [
+            'label' => 'Microsite',
             'type' => TabularForm::INPUT_WIDGET,
             'widgetClass' => \kartik\widgets\Select2::className(),
             'options' => [
-                'data' => \yii\helpers\ArrayHelper::map(\app\models\Band::find()->orderBy('name')->asArray()->all(), 'id', 'name'),
-                'options' => ['placeholder' => 'Choose Band'],
+                'data' => \yii\helpers\ArrayHelper::map(\app\models\Microsite::find()->orderBy('id')->asArray()->all(), 'id', 'id'),
+                'options' => ['placeholder' => 'Choose Microsite'],
             ],
             'columnOptions' => ['width' => '200px']
         ],
-        'rate' => ['type' => TabularForm::INPUT_TEXT],
-        'comment' => ['type' => TabularForm::INPUT_TEXT],
+        'name' => ['type' => TabularForm::INPUT_TEXT],
         'del' => [
             'type' => 'raw',
             'label' => '',
             'value' => function($model, $key) {
                 return
                     Html::hiddenInput('Children[' . $key . '][id]', (!empty($model['id'])) ? $model['id'] : "") .
-                    Html::a('<i class="glyphicon glyphicon-trash"></i>', '#', ['title' =>  'Delete', 'onClick' => 'delRowBandRate(' . $key . '); return false;', 'id' => 'band-rate-del-btn']);
+                    Html::a('<i class="glyphicon glyphicon-trash"></i>', '#', ['title' =>  'Delete', 'onClick' => 'delRowPage(' . $key . '); return false;', 'id' => 'page-del-btn']);
             },
         ],
     ],
@@ -50,7 +49,7 @@ echo TabularForm::widget([
             'type' => GridView::TYPE_DEFAULT,
             'before' => false,
             'footer' => false,
-            'after' => Html::button('<i class="glyphicon glyphicon-plus"></i>' . 'Add Band Rate', ['type' => 'button', 'class' => 'btn btn-success kv-batch-create', 'onClick' => 'addRowBandRate()']),
+            'after' => Html::button('<i class="glyphicon glyphicon-plus"></i>' . 'Add Page', ['type' => 'button', 'class' => 'btn btn-success kv-batch-create', 'onClick' => 'addRowPage()']),
         ]
     ]
 ]);

@@ -75,8 +75,8 @@ AppAsset::register($this);
             'items' => $admin_items,
         ],
         [
-            'label' => 'Bands',
-            'url' => '/band',
+            'label' => 'Agent Teams',
+            'url' => '/user-group',
         ],
         [
             'label' => 'Venues',
@@ -116,7 +116,7 @@ AppAsset::register($this);
             }
             ?>
         </div>
-        <script src="/js/tinymce/tinymce.min.js"></script>
+        <!--<script src="/js/tinymce/tinymce.min.js"></script>
         <script>
             tinymce.init({
                 selector: '#tiny',
@@ -130,10 +130,8 @@ AppAsset::register($this);
                 ],
                 toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons code'
             });
-
-
         </script>
-        <textarea id="tiny">Next, use our Get Started docs to setup Tiny!</textarea>
+        <textarea id="tiny">Next, use our Get Started docs to setup Tiny!</textarea>-->
 
         <?= $content ?>
     </div>

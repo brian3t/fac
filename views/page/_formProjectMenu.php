@@ -1,4 +1,4 @@
-<div class="form-group" id="add-venue">
+<div class="form-group" id="add-project-menu">
 <?php
 
 use kartik\builder\TabularForm;
@@ -14,7 +14,7 @@ $dataProvider = new ArrayDataProvider([
 ]);
 echo TabularForm::widget([
     'dataProvider' => $dataProvider,
-    'formName' => 'Venue',
+    'formName' => 'ProjectMenu',
     'checkboxColumn' => false,
     'actionColumn' => false,
     'attributeDefaults' => [
@@ -23,24 +23,13 @@ echo TabularForm::widget([
     'attributes' => [
         "id" => ['type' => TabularForm::INPUT_HIDDEN, 'columnOptions' => ['hidden'=>true]],
         'name' => ['type' => TabularForm::INPUT_TEXT],
-        'address1' => ['type' => TabularForm::INPUT_TEXT],
-        'address2' => ['type' => TabularForm::INPUT_TEXT],
-        'city' => ['type' => TabularForm::INPUT_TEXT],
-        'state' => ['type' => TabularForm::INPUT_TEXT],
-        'zip' => ['type' => TabularForm::INPUT_TEXT],
-        'description' => ['type' => TabularForm::INPUT_TEXT],
-        'phone' => ['type' => TabularForm::INPUT_TEXT],
-        'cost' => ['type' => TabularForm::INPUT_TEXT],
-        'website' => ['type' => TabularForm::INPUT_TEXT],
-        'twitter' => ['type' => TabularForm::INPUT_TEXT],
-        'facebook' => ['type' => TabularForm::INPUT_TEXT],
         'del' => [
             'type' => 'raw',
             'label' => '',
             'value' => function($model, $key) {
                 return
                     Html::hiddenInput('Children[' . $key . '][id]', (!empty($model['id'])) ? $model['id'] : "") .
-                    Html::a('<i class="glyphicon glyphicon-trash"></i>', '#', ['title' =>  'Delete', 'onClick' => 'delRowVenue(' . $key . '); return false;', 'id' => 'venue-del-btn']);
+                    Html::a('<i class="glyphicon glyphicon-trash"></i>', '#', ['title' =>  'Delete', 'onClick' => 'delRowProjectMenu(' . $key . '); return false;', 'id' => 'project-menu-del-btn']);
             },
         ],
     ],
@@ -50,7 +39,7 @@ echo TabularForm::widget([
             'type' => GridView::TYPE_DEFAULT,
             'before' => false,
             'footer' => false,
-            'after' => Html::button('<i class="glyphicon glyphicon-plus"></i>' . 'Add Venue', ['type' => 'button', 'class' => 'btn btn-success kv-batch-create', 'onClick' => 'addRowVenue()']),
+            'after' => Html::button('<i class="glyphicon glyphicon-plus"></i>' . 'Add Project Menu', ['type' => 'button', 'class' => 'btn btn-success kv-batch-create', 'onClick' => 'addRowProjectMenu()']),
         ]
     ]
 ]);
