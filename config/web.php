@@ -144,6 +144,7 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
+//        'ipFilters' => false,
         'allowedIPs' => ['127.0.0.1', '::1', '10.0.*', '192.168.*', '12.22.200.*', '209.242.153.*', '12.35.128.*'],
     ];
 }

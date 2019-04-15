@@ -2,10 +2,14 @@
 
 namespace app\models\base;
 
+use Yii;
+use yii\behaviors\TimestampBehavior;
+
 /**
  * This is the base model class for table "user".
  *
  * @property integer $id
+ * @property integer $group_id
  * @property string $username
  * @property string $email
  * @property string $password_hash
@@ -25,8 +29,6 @@ namespace app\models\base;
  * @property string $birthdate
  * @property integer $birth_month
  * @property integer $birth_year
- * @property string $favorite_genres
- * @property string $favorite_venue_types
  * @property string $website_url
  * @property string $twitter_id
  * @property string $facebook_id
@@ -39,14 +41,10 @@ namespace app\models\base;
  * @property string $zipcode
  * @property string $country
  * @property integer $last_login_at
+ * @property string $role
  *
- * @property \app\models\Band[] $bands
- * @property \app\models\BandComment[] $bandComments
- * @property \app\models\BandFollow[] $bandFollows
- * @property \app\models\BandRate[] $bandRates
- * @property \app\models\Event[] $events
- * @property \app\models\UserEvent[] $userEvents
- * @property \app\models\Venue[] $venues
+ * @property \app\models\Project[] $projects
+ * @property \app\models\UserGroup $group
  */
 class User extends \yii\db\ActiveRecord
 {
@@ -60,13 +58,8 @@ class User extends \yii\db\ActiveRecord
     public function relationNames()
     {
         return [
-            'bands',
-            'bandComments',
-            'bandFollows',
-            'bandRates',
-            'events',
-            'userEvents',
-            'venues'
+            'projects',
+            'group'
         ];
     }
 
@@ -76,15 +69,15 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['group_id', 'confirmed_at', 'blocked_at', 'created_at', 'updated_at', 'flags', 'birth_year', 'last_login_at'], 'integer'],
             [['username'], 'required'],
-            [['confirmed_at', 'blocked_at', 'created_at', 'updated_at', 'flags', 'birth_year', 'last_login_at'], 'integer'],
-            [['phone_number_type', 'favorite_genres', 'favorite_venue_types'], 'string'],
+            [['phone_number_type'], 'string'],
             [['birthdate'], 'safe'],
             [['username', 'email', 'unconfirmed_email', 'city'], 'string', 'max' => 255],
             [['password_hash'], 'string', 'max' => 60],
             [['auth_key'], 'string', 'max' => 32],
             [['registration_ip'], 'string', 'max' => 45],
-            [['first_name', 'last_name', 'twitter_id', 'facebook_id', 'instagram_id', 'google_id', 'state', 'country'], 'string', 'max' => 80],
+            [['first_name', 'last_name', 'twitter_id', 'facebook_id', 'instagram_id', 'google_id', 'state', 'country', 'role'], 'string', 'max' => 80],
             [['note', 'address1'], 'string', 'max' => 2000],
             [['phone_number', 'zipcode'], 'string', 'max' => 20],
             [['birth_month'], 'string', 'max' => 3],
@@ -109,6 +102,7 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'group_id' => 'Group ID',
             'username' => 'Username',
             'email' => 'Email',
             'password_hash' => 'Password Hash',
@@ -126,8 +120,6 @@ class User extends \yii\db\ActiveRecord
             'birthdate' => 'Birthdate',
             'birth_month' => 'Birth Month',
             'birth_year' => 'Birth Year',
-            'favorite_genres' => 'Favorite Genres',
-            'favorite_venue_types' => 'Favorite Venue Types',
             'website_url' => 'Website Url',
             'twitter_id' => 'Twitter ID',
             'facebook_id' => 'Facebook ID',
@@ -140,62 +132,39 @@ class User extends \yii\db\ActiveRecord
             'zipcode' => 'Zipcode',
             'country' => 'Country',
             'last_login_at' => 'Last Login At',
+            'role' => 'Role',
         ];
     }
     
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBands()
+    public function getProjects()
     {
-        return $this->hasMany(\app\models\Band::className(), ['user_id' => 'id']);
+        return $this->hasMany(\app\models\Project::className(), ['user_id' => 'id']);
     }
         
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBandComments()
+    public function getGroup()
     {
-        return $this->hasMany(\app\models\BandComment::className(), ['created_by' => 'id']);
+        return $this->hasOne(\app\models\UserGroup::className(), ['id' => 'group_id']);
     }
-        
+    
     /**
-     * @return \yii\db\ActiveQuery
+     * @inheritdoc
+     * @return array mixed
      */
-    public function getBandFollows()
+    public function behaviors()
     {
-        return $this->hasMany(\app\models\BandFollow::className(), ['user_id' => 'id']);
+        return [
+            'timestamp' => [
+                'class' => TimestampBehavior::className(),
+                'createdAtAttribute' => 'created_at',
+                'updatedAtAttribute' => 'updated_at',
+                'value' => new \yii\db\Expression('NOW()'),
+            ],
+        ];
     }
-        
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getBandRates()
-    {
-        return $this->hasMany(\app\models\BandRate::className(), ['user_id' => 'id']);
-    }
-        
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getEvents()
-    {
-        return $this->hasMany(\app\models\Event::className(), ['user_id' => 'id']);
-    }
-        
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUserEvents()
-    {
-        return $this->hasMany(\app\models\UserEvent::className(), ['user_id' => 'id']);
-    }
-        
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getVenues()
-    {
-        return $this->hasMany(\app\models\Venue::className(), ['user_id' => 'id']);
-    }
-    }
+}
