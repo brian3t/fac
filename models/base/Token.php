@@ -16,6 +16,18 @@ class Token extends \yii\db\ActiveRecord
 {
     use \mootensai\relation\RelationTrait;
 
+
+    /**
+    * This function helps \mootensai\relation\RelationTrait runs faster
+    * @return array relation names of this model
+    */
+    public function relationNames()
+    {
+        return [
+            'user'
+        ];
+    }
+
     /**
      * @inheritdoc
      */
@@ -28,7 +40,7 @@ class Token extends \yii\db\ActiveRecord
             [['user_id', 'code', 'type'], 'unique', 'targetAttribute' => ['user_id', 'code', 'type'], 'message' => 'The combination of User ID, Code and Type has already been taken.']
         ];
     }
-    
+
     /**
      * @inheritdoc
      */

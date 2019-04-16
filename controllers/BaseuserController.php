@@ -68,36 +68,20 @@ class BaseuserController extends Controller
     public function actionView($id)
     {
         $model = $this->findModel($id);
-        $providerBand = new \yii\data\ArrayDataProvider([
-           'allModels' => $model->bands,
-       ]);
-       $providerBandComment = new \yii\data\ArrayDataProvider([
-           'allModels' => $model->bandComments,
-       ]);
-       $providerBandFollow = new \yii\data\ArrayDataProvider([
-           'allModels' => $model->bandFollows,
-       ]);
-       $providerBandRate = new \yii\data\ArrayDataProvider([
-           'allModels' => $model->bandRates,
-       ]);
-       $providerEvent = new \yii\data\ArrayDataProvider([
-           'allModels' => $model->events,
-       ]);
-       $providerUserEvent = new \yii\data\ArrayDataProvider([
-           'allModels' => $model->userEvents,
-       ]);
-       $providerVenue = new \yii\data\ArrayDataProvider([
-           'allModels' => $model->venues,
-	   ]);
+        $providerSocialAccount = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->socialAccounts,
+        ]);
+        $providerToken = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->tokens,
+        ]);
+        $providerProject = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->projects,
+        ]);
         return $this->render('view', [
             'model' => $this->findModel($id),
-           'providerBand' => $providerBand,
-           'providerBandComment' => $providerBandComment,
-           'providerBandFollow' => $providerBandFollow,
-           'providerBandRate' => $providerBandRate,
-           'providerEvent' => $providerEvent,
-           'providerUserEvent' => $providerUserEvent,
-           'providerVenue' => $providerVenue,
+            'providerSocialAccount' => $providerSocialAccount,
+            'providerToken' => $providerToken,
+            'providerProject' => $providerProject,
         ]);
     }
     

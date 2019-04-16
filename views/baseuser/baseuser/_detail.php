@@ -20,10 +20,6 @@ use yii\widgets\DetailView;
     $gridColumn = [
         ['attribute' => 'id', 'visible' => true],
         'username',
-        [
-            'attribute' => 'company.name',
-            'label' => 'Company',
-        ],
         'email:email',
         'password_hash',
         'auth_key',

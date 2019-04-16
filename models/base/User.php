@@ -2,8 +2,6 @@
 
 namespace app\models\base;
 
-use yii\behaviors\TimestampBehavior;
-
 /**
  * This is the base model class for table "user".
  *
@@ -43,6 +41,7 @@ use yii\behaviors\TimestampBehavior;
  * @property string $role
  *
  * @property \app\models\Project[] $projects
+ * @property \app\models\SocialAccount[] $socialAccounts
  * @property \app\models\UserGroup $group
  */
 class User extends \yii\db\ActiveRecord
@@ -58,6 +57,7 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             'projects',
+            'socialAccounts',
             'group'
         ];
     }
@@ -146,24 +146,16 @@ class User extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
+    public function getSocialAccounts()
+    {
+        return $this->hasMany(\app\models\SocialAccount::className(), ['user_id' => 'id'])->inverseOf('user');
+    }
+        
+    /**
+     * @return \yii\db\ActiveQuery
+     */
     public function getGroup()
     {
         return $this->hasOne(\app\models\UserGroup::className(), ['id' => 'group_id'])->inverseOf('users');
     }
-    
-    /**
-     * @inheritdoc
-     * @return array mixed
-     */
-    public function behaviors()
-    {
-        return [
-            'timestamp' => [
-                'class' => TimestampBehavior::className(),
-                'createdAtAttribute' => 'created_at',
-                'updatedAtAttribute' => 'updated_at',
-                'value' => new \yii\db\Expression('NOW()'),
-            ],
-        ];
     }
-}

@@ -9,14 +9,7 @@ $items = [
         'content' => $this->render('_detail', [
             'model' => $model,
         ]),
-    ],
-        [
-        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Company'),
-        'content' => $this->render('_dataCompanyUser', [
-            'model' => $model,
-            'row' => $model->companyUser,
-        ]),
-    ],
+    ]
     ];
 echo TabsX::widget([
     'items' => $items,

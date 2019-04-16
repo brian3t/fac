@@ -9,7 +9,7 @@ export DB_HOST="127.0.0.1"
 export DB_PORT="3306"
 export DB_PASSWD="rTrapok)1"
 
-export MYSQLBIN="/usr/bin/mysql"
+export MYSQLBIN="/usr/bin/"
 
 echo "MySQL backup started at $(date +'%d-%m-%Y %H:%M:%S')"
 echo "Deleting old backup $(date +'%d-%m-%Y %H:%M:%S')"

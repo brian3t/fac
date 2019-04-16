@@ -27,7 +27,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'group_id')->widget(\kartik\widgets\Select2::classname(), [
         'data' => \yii\helpers\ArrayHelper::map(\app\models\UserGroup::find()->orderBy('id')->asArray()->all(), 'id', 'name'),
-        'options' => ['placeholder' => 'Choose User group'],
+        'options' => ['placeholder' => 'Choose Agent Team'],
         'pluginOptions' => [
             'allowClear' => true
         ],
@@ -36,8 +36,6 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'username')->textInput(['maxlength' => true, 'placeholder' => 'Username']) ?>
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true, 'placeholder' => 'Email']) ?>
-
-    <?= $form->field($model, 'password_hash')->textInput(['maxlength' => true, 'placeholder' => 'Password Hash']) ?>
 
     <?= $form->field($model, 'auth_key')->textInput(['maxlength' => true, 'placeholder' => 'Auth Key']) ?>
 

@@ -1,6 +1,7 @@
 <?php
 
 /* @var $this yii\web\View */
+
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 use kartik\export\ExportMenu;
@@ -29,11 +30,12 @@ $this->registerJs($search);
         [
             'attribute' => 'group_id',
             'label' => 'Group',
-            'value' => function($model){
-                if ($model->group)
-                {return $model->group->name;}
-                else
-                {return NULL;}
+            'value' => function ($model) {
+                if ($model->group) {
+                    return $model->group->name;
+                } else {
+                    return NULL;
+                }
             },
             'filterType' => GridView::FILTER_SELECT2,
             'filter' => \yii\helpers\ArrayHelper::map(\app\models\UserGroup::find()->asArray()->all(), 'id', 'name'),
@@ -42,9 +44,13 @@ $this->registerJs($search);
             ],
             'filterInputOptions' => ['placeholder' => 'User group', 'id' => 'grid--group_id']
         ],
-        'username',
+        [ 'attribute' => 'username',
+            'label' => 'Username',
+            'format'=>'raw',
+            'value' => function ($model) {
+               return "<a href='/baseuser/update?id=".  $model->id ."'>".$model->username."</a>";
+            }],
         'email:email',
-        'password_hash',
         'auth_key',
         'confirmed_at',
         'unconfirmed_email:email',
@@ -105,7 +111,7 @@ $this->registerJs($search);
                 'exportConfig' => [
                     ExportMenu::FORMAT_PDF => false
                 ]
-            ]) ,
+            ]),
         ],
     ]); ?>
 
