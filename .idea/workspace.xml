@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="Added models.&#10;Added views until user-group.">
+    <list default="true" id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/BaseuserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/BaseuserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Token.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Token.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/Token.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/base/Token.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/base/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/base/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/dump_db_to_dropbox.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sql/dump_db_to_dropbox.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/baseuser/baseuser/_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/baseuser/baseuser/_detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/baseuser/baseuser/_expand.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/baseuser/baseuser/_expand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/baseuser/baseuser/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/baseuser/baseuser/_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/baseuser/baseuser/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/baseuser/baseuser/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii2helper/grid/EditColumn.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii2helper/grid/EditColumn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/dump_db_to_dropbox.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sql/dump_db_to_dropbox_STH_WRONG_HERE.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap/" />
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap3-dialog/" />
@@ -148,18 +140,8 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - fac@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - fac@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="fac8" type="feb32156:DbDataSourceImpl" />
         <item name="fac: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - fac@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="fac: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="social_account: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -167,90 +149,87 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_form.php">
+        <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="1230">
+              <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-806">
-              <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_detail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_expand.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii2helper/grid/EditColumn.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-              <folding>
-                <element signature="e#39#58#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
+        <entry file="file://$PROJECT_DIR$/views/gallery/index.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/user-group/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/user-group/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/user-group/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/user-group/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="17" selection-start-line="7" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/dump_db8_to_dropbox.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/token">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/BaseuserController.php">
+        <entry file="file://$PROJECT_DIR$/sql/dump_db_to_dropbox_STH_WRONG_HERE.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="147" column="23" lean-forward="true" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/base/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-731">
-              <caret line="61" column="29" lean-forward="true" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="63" column="39" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="39" />
+            <state relative-caret-position="270">
+              <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -263,9 +242,6 @@
       <find>gii</find>
       <find>gridview</find>
       <find>User Group</find>
-      <find>editcolumn</find>
-      <find>band</find>
-      <find>bands</find>
     </findStrings>
     <replaceStrings>
       <replace>Agent Team</replace>
@@ -283,11 +259,14 @@
         <option value="$PROJECT_DIR$/models/base/Listing.php" />
         <option value="$PROJECT_DIR$/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/views/baseuser/user/_form.php" />
+        <option value="$PROJECT_DIR$/views/baseuser/baseuser/_form.php" />
         <option value="$PROJECT_DIR$/views/baseuser/user/_script.php" />
         <option value="$PROJECT_DIR$/views/baseuser/baseuser/_script.php" />
         <option value="$PROJECT_DIR$/views/baseuser/user/index.php" />
+        <option value="$PROJECT_DIR$/views/baseuser/baseuser/index.php" />
         <option value="$PROJECT_DIR$/views/baseuser/user/view.php" />
         <option value="$PROJECT_DIR$/views/baseuser/baseuser/view.php" />
+        <option value="$PROJECT_DIR$/runtime/logs/app.log" />
         <option value="$PROJECT_DIR$/runtime/logs/console.log" />
         <option value="$PROJECT_DIR$/views/user-group/index.php" />
         <option value="$PROJECT_DIR$/views/layouts/main.php" />
@@ -295,14 +274,7 @@
         <option value="$PROJECT_DIR$/views/user-group/update.php" />
         <option value="$PROJECT_DIR$/views/user-group/view.php" />
         <option value="$PROJECT_DIR$/sql/dump_db_to_dropbox.sh" />
-        <option value="$PROJECT_DIR$/yii2helper/grid/EditColumn.php" />
-        <option value="$PROJECT_DIR$/views/baseuser/baseuser/index.php" />
-        <option value="$PROJECT_DIR$/models/base/User.php" />
-        <option value="$PROJECT_DIR$/views/baseuser/baseuser/_form.php" />
-        <option value="$PROJECT_DIR$/views/baseuser/baseuser/_detail.php" />
-        <option value="$PROJECT_DIR$/views/baseuser/baseuser/_expand.php" />
-        <option value="$PROJECT_DIR$/controllers/BaseuserController.php" />
-        <option value="$PROJECT_DIR$/runtime/logs/app.log" />
+        <option value="$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh" />
       </list>
     </option>
   </component>
@@ -439,7 +411,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -461,29 +433,6 @@
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
@@ -540,19 +489,6 @@
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="user-group" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -562,25 +498,13 @@
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2helper" type="462c0819:PsiDirectoryNode" />
-              <item name="grid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2helper" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -612,7 +536,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Bash.dump db to dropbox">
+  <component name="RunManager" selected="Bash.restore_db_8_fr_dropbox.sh">
     <configuration name="dump db to dropbox" type="BashConfigurationType" factoryName="Bash">
       <module name="fac" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -673,27 +597,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555304573185</updated>
     </task>
-    <task id="LOCAL-00002" summary="Added models.&#10;Added views until user-group.">
-      <created>1555314227952</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1555314227952</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1922" height="1065" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49893844" visible="true" weight="0.19382322" />
-      <window_info id="Structure" order="1" sideWeight="0.50106156" side_tool="true" visible="true" weight="0.19382322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19382322" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960285" weight="0.3280255" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946752" weight="0.39915073" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960285" visible="true" weight="0.3275862" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915073" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -701,7 +619,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Migrations" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.33836207" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005325" side_tool="true" weight="0.39915073" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50039715" side_tool="true" weight="0.32874617" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32908705" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3297414" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -711,7 +629,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Remote Host" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.14057508" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.14057508" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -758,29 +676,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Upgrade packages" />
-    <MESSAGE value="Added models.&#10;Added views until user-group." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added models.&#10;Added views until user-group." />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade packages" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>$this-&gt;options['name_column']</expression-string>
-        <language-id>PHP</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>$this-&gt;options['name_column1']</expression-string>
-        <language-id>PHP</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>$this-&gt;options</expression-string>
-        <language-id>PHP</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
       <expression>
         <expression-string>$app-&gt;getModule('gii')</expression-string>
         <language-id>PHP</language-id>
@@ -789,6 +689,63 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/less/sass/screen.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apigennow.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/f6de8775-1c47-4b8a-911f-111459e555cc">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>f6de8775-1c47-4b8a-911f-111459e555cc</OriginalElement>
+          <nodes>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.gallery</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.event_tmp</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.band_follow</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.band_event</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.page</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.band_rate</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.microsite</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.band_comment</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.website</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.microsite_menu</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.token</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.project_menu</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.property</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.user</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.band</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.widget</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.user_event</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.event</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.social_account</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.venue</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.profile</node>
+            <node x="" y="">f6de8775-1c47-4b8a-911f-111459e555cc.TABLE:fac.project</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6549375709421112" x="446.0" y="431.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/tinymce/tinymce.min.js" />
+    <entry file="file://$PROJECT_DIR$/web/less/sass/print.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/less/sass/ie.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/less/sass/custom.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -796,11 +753,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/static/genres_all.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/static/genres_all.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -853,13 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/bin/composer">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -867,6 +813,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/token" />
     <entry file="file://$PROJECT_DIR$/models/base/Listing.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -881,8 +835,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_formBand.php" />
-    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_formUserEvent.php" />
+    <entry file="file://$PROJECT_DIR$/models/base/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="104" column="37" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_formBand.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_formUserEvent.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="160" column="45" selection-start-line="160" selection-start-column="45" selection-end-line="160" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="120" column="31" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/baseuser/user/_script.php" />
     <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_script.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -897,12 +876,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/baseuser/user/create.php" />
     <entry file="file://$PROJECT_DIR$/views/baseuser/user/index.php" />
+    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/baseuser/user/update.php" />
     <entry file="file://$PROJECT_DIR$/views/baseuser/user/view.php" />
-    <entry file="file://$PROJECT_DIR$/runtime/logs/console.log">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="147" column="15" selection-start-line="147" selection-start-column="15" selection-end-line="147" selection-end-column="15" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/logs/api.log">
+    <entry file="file://$PROJECT_DIR$/runtime/logs/console.log" />
+    <entry file="file://$PROJECT_DIR$/runtime/logs/api.log" />
+    <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sql/db_bkup_daily_8.sh" />
@@ -937,10 +929,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/dump_db_to_dropbox.sh">
+    <entry file="file://$PROJECT_DIR$/views/user-group/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+        <state relative-caret-position="1200">
+          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -958,103 +950,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/user-group/view.php">
+    <entry file="file://$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/user/admin/index.php">
+    <entry file="file://$PROJECT_DIR$/sql/dump_db_to_dropbox_STH_WRONG_HERE.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/update.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii2helper/grid/EditColumn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-          <folding>
-            <element signature="e#39#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-806">
-          <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_expand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="63" column="39" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/BaseuserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="147" column="23" lean-forward="true" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/base/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="61" column="29" lean-forward="true" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/token">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+        <state relative-caret-position="270">
+          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
         </state>
       </provider>
     </entry>
