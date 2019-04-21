@@ -14,7 +14,7 @@ namespace app\models\base;
  * @property string $subdomain
  * @property string $domain
  *
- * @property \app\models\Gallery[] $galleries
+ * @property \app\models\Gallery $gallery
  * @property \app\models\Listing $listing
  * @property \app\models\Project $project
  * @property \app\models\Page[] $pages
@@ -31,7 +31,7 @@ class Microsite extends \yii\db\ActiveRecord
     public function relationNames()
     {
         return [
-            'galleries',
+            'gallery',
             'listing',
             'project',
             'pages'
@@ -79,7 +79,7 @@ class Microsite extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getGalleries()
+    public function getGallery()
     {
         return $this->hasMany(\app\models\Gallery::className(), ['microsite_id' => 'id'])->inverseOf('microsite');
     }

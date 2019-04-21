@@ -14,7 +14,7 @@ $items = [
         'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Gallery'),
         'content' => $this->render('_dataGallery', [
             'model' => $model,
-            'row' => $model->galleries,
+            'row' => $model->gallery,
         ]),
     ],
                     [

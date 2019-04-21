@@ -2,12 +2,12 @@
 
 namespace app\controllers;
 
-use app\models\Page;
 use Yii;
+use app\models\Page;
 use yii\data\ActiveDataProvider;
-use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\filters\VerbFilter;
 
 /**
  * PageController implements the CRUD actions for Page model.
@@ -91,7 +91,7 @@ class PageController extends Controller
         $model = $this->findModel($id);
 
         if ($model->loadAll(Yii::$app->request->post()) && $model->saveAll()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index']);
         } else {
             return $this->render('update', [
                 'model' => $model,

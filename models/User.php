@@ -14,7 +14,11 @@ class User extends BaseUser
 
     public function getName()
     {
-        return $this->username;
+        $name_or_username = implode(' ', [$this->first_name, $this->last_name]);
+        if (empty($name_or_username)) {
+            $name_or_username = $this->username;
+        }
+        return $name_or_username;
     }
 
 }

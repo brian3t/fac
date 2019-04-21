@@ -3,9 +3,9 @@
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
+use yii\helpers\Html;
 use kartik\export\ExportMenu;
 use kartik\grid\GridView;
-use yii\helpers\Html;
 
 $this->title = 'Page';
 $this->params['breadcrumbs'][] = $this->title;
@@ -25,18 +25,6 @@ $this->registerJs($search);
 <?php 
     $gridColumn = [
         ['class' => 'yii\grid\SerialColumn'],
-        [
-            'class' => 'kartik\grid\ExpandRowColumn',
-            'width' => '50px',
-            'value' => function ($model, $key, $index, $column) {
-                return GridView::ROW_COLLAPSED;
-            },
-            'detail' => function ($model, $key, $index, $column) {
-                return Yii::$app->controller->renderPartial('_expand', ['model' => $model]);
-            },
-            'headerOptions' => ['class' => 'kartik-sheet-style'],
-            'expandOneOnly' => true
-        ],
         ['attribute' => 'id', 'visible' => false],
         [
                 'attribute' => 'project_id',
@@ -70,7 +58,9 @@ $this->registerJs($search);
                 ],
                 'filterInputOptions' => ['placeholder' => 'Microsite', 'id' => 'grid--microsite_id']
             ],
+        'type',
         'name',
+        'html:ntext',
         [
             'class' => 'yii\grid\ActionColumn',
         ],

@@ -50,11 +50,10 @@ $this->registerJs($search);
             'value' => function ($model) {
                return "<a href='/baseuser/update?id=".  $model->id ."'>".$model->username."</a>";
             }],
+        'first_name',
+        'last_name',
         'email:email',
-        'auth_key',
-        'confirmed_at',
-        'unconfirmed_email:email',
-        'blocked_at',
+        'confirmed_at:datetime',
         'registration_ip',
         'flags',
         'first_name',
@@ -63,8 +62,6 @@ $this->registerJs($search);
         'phone_number_type',
         'phone_number',
         'birthdate',
-        'birth_month',
-        'birth_year',
         'website_url:url',
         'twitter_id',
         'facebook_id',

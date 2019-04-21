@@ -37,15 +37,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true, 'placeholder' => 'Email']) ?>
 
-    <?= $form->field($model, 'auth_key')->textInput(['maxlength' => true, 'placeholder' => 'Auth Key']) ?>
-
-    <?= $form->field($model, 'confirmed_at')->textInput(['placeholder' => 'Confirmed At']) ?>
-
     <?= $form->field($model, 'unconfirmed_email')->textInput(['maxlength' => true, 'placeholder' => 'Unconfirmed Email']) ?>
-
-    <?= $form->field($model, 'blocked_at')->textInput(['placeholder' => 'Blocked At']) ?>
-
-    <?= $form->field($model, 'registration_ip')->textInput(['maxlength' => true, 'placeholder' => 'Registration Ip']) ?>
 
     <?= $form->field($model, 'flags')->textInput(['placeholder' => 'Flags']) ?>
 
@@ -71,10 +63,6 @@ use yii\widgets\ActiveForm;
         ],
     ]); ?>
 
-    <?= $form->field($model, 'birth_month')->textInput(['placeholder' => 'Birth Month']) ?>
-
-    <?= $form->field($model, 'birth_year')->textInput(['placeholder' => 'Birth Year']) ?>
-
     <?= $form->field($model, 'website_url')->textInput(['maxlength' => true, 'placeholder' => 'Website Url']) ?>
 
     <?= $form->field($model, 'twitter_id')->textInput(['maxlength' => true, 'placeholder' => 'Twitter']) ?>
@@ -96,8 +84,6 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'zipcode')->textInput(['maxlength' => true, 'placeholder' => 'Zipcode']) ?>
 
     <?= $form->field($model, 'country')->textInput(['maxlength' => true, 'placeholder' => 'Country']) ?>
-
-    <?= $form->field($model, 'last_login_at')->textInput(['placeholder' => 'Last Login At']) ?>
 
     <?= $form->field($model, 'role')->textInput(['maxlength' => true, 'placeholder' => 'Role']) ?>
 

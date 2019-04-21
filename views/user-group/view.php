@@ -66,8 +66,6 @@ if($providerUser->totalCount){
             'phone_number_type',
             'phone_number',
             'birthdate',
-            'birth_month',
-            'birth_year',
             'website_url:url',
             'twitter_id',
             'facebook_id',

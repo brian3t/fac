@@ -1,4 +1,10 @@
 <?php
+define('COUNTRIES', [
+    '' => 'Please select country',
+    'sg' => 'Singapore',
+    'us' => 'United States',
+    'vn' => 'Viet Nam'
+]);
 
 define('STATES', [
     '' => 'Unknown',

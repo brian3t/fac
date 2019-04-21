@@ -2,7 +2,8 @@
 
 namespace app\models;
 
-use app\models\base\Project as BaseProject;
+use Yii;
+use \app\models\base\Project as BaseProject;
 
 /**
  * This is the model class for table "project".

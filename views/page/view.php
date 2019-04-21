@@ -1,8 +1,8 @@
 <?php
 
-use kartik\grid\GridView;
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use kartik\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Page */
@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
     <div class="row">
-<?php 
+<?php
     $gridColumn = [
         ['attribute' => 'id', 'visible' => false],
         [
@@ -43,7 +43,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'attribute' => 'microsite.id',
             'label' => 'Microsite',
         ],
+        'type',
         'name',
+        'html:ntext',
     ];
     echo DetailView::widget([
         'model' => $model,
@@ -51,50 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
 ?>
     </div>
-    
-    <div class="row">
-<?php
-if($providerMicrositeMenu->totalCount){
-    $gridColumnMicrositeMenu = [
-        ['class' => 'yii\grid\SerialColumn'],
-            ['attribute' => 'id', 'visible' => false],
-                        'name',
-            'order',
-    ];
-    echo Gridview::widget([
-        'dataProvider' => $providerMicrositeMenu,
-        'pjax' => true,
-        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-microsite-menu']],
-        'panel' => [
-            'type' => GridView::TYPE_PRIMARY,
-            'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Microsite Menu'),
-        ],
-        'export' => false,
-        'columns' => $gridColumnMicrositeMenu
-    ]);
-}
-?>
 
-    </div>
-    <div class="row">
-        <h4>Microsite<?= ' '. Html::encode($this->title) ?></h4>
-    </div>
-    <?php 
-    $gridColumnMicrosite = [
-        ['attribute' => 'id', 'visible' => false],
-        [
-            'attribute' => 'project.name',
-            'label' => 'Project',
-        ],
-        'listing_id',
-        'is_using_project_domain',
-        'subdomain',
-        'domain',
-    ];
-    echo DetailView::widget([
-        'model' => $model->microsite,
-        'attributes' => $gridColumnMicrosite    ]);
-    ?>
     <div class="row">
         <h4>Project<?= ' '. Html::encode($this->title) ?></h4>
     </div>
@@ -103,25 +62,13 @@ if($providerMicrositeMenu->totalCount){
         ['attribute' => 'id', 'visible' => false],
         'user_id',
         'name',
+        'use_own_domain',
+        'domain',
         'url',
         'country_code',
         'logo',
         'favicon',
         'type',
-        'biz_contact_name',
-        'does_enable_phone_display',
-        'does_enable_email_display',
-        'phone',
-        'email',
-        'sms',
-        'whatsapp',
-        'wechatid',
-        'wechat_image',
-        'phone2',
-        'email2',
-        'phone3',
-        'email3',
-        'footer',
         'does_use_footer',
         'credit_text',
         'does_use_credit_text',
@@ -130,45 +77,10 @@ if($providerMicrositeMenu->totalCount){
         'default_meta_keywords',
         '404page_id',
         'thankspage_id',
-        'g_search_site_verification',
-        'g_global_site_tags',
-        'g_remarketing_tag',
-        'facebook_pixel_code',
-        'does_enable_custom_robots',
-        'custom_robots',
-        'facebook',
-        'youtube',
-        'instagram',
-        'linkedin',
-        'twitter',
-        'googleplus',
     ];
     echo DetailView::widget([
         'model' => $model->project,
         'attributes' => $gridColumnProject    ]);
     ?>
-    
-    <div class="row">
-<?php
-if($providerProjectMenu->totalCount){
-    $gridColumnProjectMenu = [
-        ['class' => 'yii\grid\SerialColumn'],
-            ['attribute' => 'id', 'visible' => false],
-                        'name',
-    ];
-    echo Gridview::widget([
-        'dataProvider' => $providerProjectMenu,
-        'pjax' => true,
-        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-project-menu']],
-        'panel' => [
-            'type' => GridView::TYPE_PRIMARY,
-            'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Project Menu'),
-        ],
-        'export' => false,
-        'columns' => $gridColumnProjectMenu
-    ]);
-}
-?>
 
-    </div>
 </div>

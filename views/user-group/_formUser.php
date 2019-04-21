@@ -56,8 +56,6 @@ echo TabularForm::widget([
                 ],
             ]
         ],
-        'birth_month' => ['type' => TabularForm::INPUT_TEXT],
-        'birth_year' => ['type' => TabularForm::INPUT_TEXT],
         'website_url' => ['type' => TabularForm::INPUT_TEXT],
         'twitter_id' => ['type' => TabularForm::INPUT_TEXT],
         'facebook_id' => ['type' => TabularForm::INPUT_TEXT],

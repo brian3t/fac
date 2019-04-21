@@ -11,7 +11,7 @@ use yii\widgets\ActiveForm;
     'viewParams' => [
         'class' => 'Gallery', 
         'relID' => 'gallery', 
-        'value' => \yii\helpers\Json::encode($model->galleries),
+        'value' => \yii\helpers\Json::encode($model->gallery),
         'isNewRecord' => ($model->isNewRecord) ? 1 : 0
     ]
 ]);
@@ -60,7 +60,7 @@ use yii\widgets\ActiveForm;
         [
             'label' => '<i class="glyphicon glyphicon-book"></i> ' . Html::encode('Gallery'),
             'content' => $this->render('_formGallery', [
-                'row' => \yii\helpers\ArrayHelper::toArray($model->galleries),
+                'row' => \yii\helpers\ArrayHelper::toArray($model->gallery),
             ]),
         ],
         [

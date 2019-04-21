@@ -1,8 +1,7 @@
 <?php
-
-use kartik\tabs\TabsX;
 use yii\helpers\Html;
-
+use kartik\tabs\TabsX;
+use yii\helpers\Url;
 $items = [
     [
         'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Project'),
@@ -14,7 +13,7 @@ $items = [
         'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Gallery'),
         'content' => $this->render('_dataGallery', [
             'model' => $model,
-            'row' => $model->galleries,
+            'row' => $model->gallery,
         ]),
     ],
             [

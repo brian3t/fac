@@ -1,10 +1,10 @@
 <div class="form-group" id="add-project-menu">
 <?php
-
-use kartik\builder\TabularForm;
 use kartik\grid\GridView;
+use kartik\builder\TabularForm;
 use yii\data\ArrayDataProvider;
 use yii\helpers\Html;
+use yii\widgets\Pjax;
 
 $dataProvider = new ArrayDataProvider([
     'allModels' => $row,

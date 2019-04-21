@@ -54,7 +54,6 @@ if (! empty($profile->avatar)):
 endif;
 ?>
 <?= $form->field($profile, 'avatarFile')->fileInput()->label('Upload new profile picture') ?>
-<?//= $form->field($profile, 'website') ?>
 <?= $form->field($profile, 'location') ?>
 <?= $form->field($profile, 'gravatar_email') ?>
 <?= $form->field($profile, 'bio')->textarea() ?>

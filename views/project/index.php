@@ -3,9 +3,9 @@
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
+use yii\helpers\Html;
 use kartik\export\ExportMenu;
 use kartik\grid\GridView;
-use yii\helpers\Html;
 
 $this->title = 'Project';
 $this->params['breadcrumbs'][] = $this->title;
@@ -51,8 +51,11 @@ $this->registerJs($search);
                 ],
                 'filterInputOptions' => ['placeholder' => 'User', 'id' => 'grid--user_id']
             ],
-        'name',
+        ['class' => \usv\yii2helper\grid\EditColumn::class, 'options' => ['is_edit' => true]],
+        'use_own_domain',
+        'domain',
         'url:url',
+        'full_url:url',
         'country_code',
         'logo',
         'favicon',

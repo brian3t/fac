@@ -2,12 +2,12 @@
 
 namespace app\controllers;
 
-use app\models\Project;
 use Yii;
+use app\models\Project;
 use yii\data\ActiveDataProvider;
-use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\filters\VerbFilter;
 
 /**
  * ProjectController implements the CRUD actions for Project model.
@@ -49,9 +49,6 @@ class ProjectController extends Controller
     public function actionView($id)
     {
         $model = $this->findModel($id);
-        $providerGallery = new \yii\data\ArrayDataProvider([
-            'allModels' => $model->galleries,
-        ]);
         $providerMicrosite = new \yii\data\ArrayDataProvider([
             'allModels' => $model->microsites,
         ]);
@@ -60,7 +57,7 @@ class ProjectController extends Controller
         ]);
         return $this->render('view', [
             'model' => $this->findModel($id),
-            'providerGallery' => $providerGallery,
+            'gallery' => $model->gallery,
             'providerMicrosite' => $providerMicrosite,
             'providerPage' => $providerPage,
         ]);
@@ -95,7 +92,7 @@ class ProjectController extends Controller
         $model = $this->findModel($id);
 
         if ($model->loadAll(Yii::$app->request->post()) && $model->saveAll()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index']);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -116,7 +113,7 @@ class ProjectController extends Controller
         return $this->redirect(['index']);
     }
 
-    
+
     /**
      * Finds the Project model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
@@ -132,7 +129,7 @@ class ProjectController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
-    
+
     /**
     * Action to load a tabular form grid
     * for Gallery
@@ -152,7 +149,7 @@ class ProjectController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
-    
+
     /**
     * Action to load a tabular form grid
     * for Microsite
@@ -172,7 +169,7 @@ class ProjectController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
-    
+
     /**
     * Action to load a tabular form grid
     * for Page

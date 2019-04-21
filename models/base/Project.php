@@ -2,13 +2,18 @@
 
 namespace app\models\base;
 
+use Yii;
+
 /**
  * This is the base model class for table "project".
  *
  * @property integer $id
  * @property integer $user_id
  * @property string $name
+ * @property integer $use_own_domain
+ * @property string $domain
  * @property string $url
+ * @property string $full_url
  * @property string $country_code
  * @property string $logo
  * @property string $favicon
@@ -48,7 +53,7 @@ namespace app\models\base;
  * @property string $twitter
  * @property string $googleplus
  *
- * @property \app\models\Gallery[] $galleries
+ * @property \app\models\Gallery $gallery
  * @property \app\models\Microsite[] $microsites
  * @property \app\models\Page[] $pages
  * @property \app\models\User $user
@@ -65,7 +70,7 @@ class Project extends \yii\db\ActiveRecord
     public function relationNames()
     {
         return [
-            'galleries',
+            'gallery',
             'microsites',
             'pages',
             'user'
@@ -81,12 +86,12 @@ class Project extends \yii\db\ActiveRecord
             [['user_id'], 'required'],
             [['user_id', '404page_id', 'thankspage_id'], 'integer'],
             [['type'], 'string'],
-            [['name', 'url', 'logo', 'facebook_pixel_code', 'custom_robots'], 'string', 'max' => 800],
+            [['name', 'url', 'full_url'], 'string', 'max' => 400],
+            [['use_own_domain', 'does_enable_phone_display', 'does_enable_email_display', 'does_use_footer', 'does_use_credit_text', 'does_enable_custom_robots'], 'string', 'max' => 1],
+            [['domain', 'email', 'email2', 'email3', 'facebook', 'youtube', 'instagram', 'linkedin', 'twitter', 'googleplus'], 'string', 'max' => 80],
             [['country_code'], 'string', 'max' => 2],
             [['favicon', 'biz_contact_name', 'wechat_image'], 'string', 'max' => 255],
-            [['does_enable_phone_display', 'does_enable_email_display', 'does_use_footer', 'does_use_credit_text', 'does_enable_custom_robots'], 'string', 'max' => 1],
             [['phone', 'sms', 'whatsapp', 'phone2', 'phone3'], 'string', 'max' => 18],
-            [['email', 'email2', 'email3', 'facebook', 'youtube', 'instagram', 'linkedin', 'twitter', 'googleplus'], 'string', 'max' => 80],
             [['wechatid'], 'string', 'max' => 25],
             [['footer', 'credit_text', 'default_page_title', 'default_meta_description', 'default_meta_keywords', 'g_search_site_verification', 'g_global_site_tags', 'g_remarketing_tag'], 'string', 'max' => 2000]
         ];
@@ -107,16 +112,19 @@ class Project extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'user_id' => 'User ID',
+            'user_id' => 'Agent',
             'name' => 'Name',
+            'use_own_domain' => 'Use Own Domain',
+            'domain' => 'Domain',
             'url' => 'Url',
-            'country_code' => 'Country Code',
+            'full_url' => 'Full Url',
+            'country_code' => 'Country',
             'logo' => 'Logo',
             'favicon' => 'Favicon',
             'type' => 'Type',
             'biz_contact_name' => 'Biz Contact Name',
-            'does_enable_phone_display' => 'Does Enable Phone Display',
-            'does_enable_email_display' => 'Does Enable Email Display',
+            'does_enable_phone_display' => 'Show Phone Number',
+            'does_enable_email_display' => 'Show Email',
             'phone' => 'Phone',
             'email' => 'Email',
             'sms' => 'Sms',
@@ -128,35 +136,35 @@ class Project extends \yii\db\ActiveRecord
             'phone3' => 'Phone3',
             'email3' => 'Email3',
             'footer' => 'Footer',
-            'does_use_footer' => 'Does Use Footer',
+            'does_use_footer' => 'Use Footer',
             'credit_text' => 'Credit Text',
-            'does_use_credit_text' => 'Does Use Credit Text',
+            'does_use_credit_text' => 'Use Credit Text',
             'default_page_title' => 'Default Page Title',
             'default_meta_description' => 'Default Meta Description',
             'default_meta_keywords' => 'Default Meta Keywords',
-            '404page_id' => '404page ID',
-            'thankspage_id' => 'Thankspage ID',
-            'g_search_site_verification' => 'G Search Site Verification',
-            'g_global_site_tags' => 'G Global Site Tags',
-            'g_remarketing_tag' => 'G Remarketing Tag',
+            '404page_id' => '404 Page',
+            'thankspage_id' => 'Thanks page',
+            'g_search_site_verification' => 'Google Search Site Verification',
+            'g_global_site_tags' => 'Google Global Site Tags',
+            'g_remarketing_tag' => 'Google Remarketing Tag',
             'facebook_pixel_code' => 'Facebook Pixel Code',
-            'does_enable_custom_robots' => 'Does Enable Custom Robots',
+            'does_enable_custom_robots' => 'Enable Custom Robots',
             'custom_robots' => 'Custom Robots',
             'facebook' => 'Facebook',
             'youtube' => 'Youtube',
             'instagram' => 'Instagram',
-            'linkedin' => 'Linkedin',
+            'linkedin' => 'LinkedIn',
             'twitter' => 'Twitter',
-            'googleplus' => 'Googleplus',
+            'googleplus' => 'Google Plus',
         ];
     }
     
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getGalleries()
+    public function getGallery()
     {
-        return $this->hasMany(\app\models\Gallery::className(), ['project_id' => 'id'])->inverseOf('project');
+        return $this->hasOne(\app\models\Gallery::className(), ['project_id' => 'id'])->inverseOf('project');
     }
         
     /**

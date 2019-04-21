@@ -24,8 +24,6 @@ namespace app\models\base;
  * @property string $phone_number_type
  * @property string $phone_number
  * @property string $birthdate
- * @property integer $birth_month
- * @property integer $birth_year
  * @property string $website_url
  * @property string $twitter_id
  * @property string $facebook_id
@@ -42,6 +40,7 @@ namespace app\models\base;
  *
  * @property \app\models\Project[] $projects
  * @property \app\models\SocialAccount[] $socialAccounts
+ * @property \app\models\Token[] $tokens
  * @property \app\models\UserGroup $group
  */
 class User extends \yii\db\ActiveRecord
@@ -68,7 +67,7 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['group_id', 'confirmed_at', 'blocked_at', 'created_at', 'updated_at', 'flags', 'birth_year', 'last_login_at'], 'integer'],
+            [['group_id', 'confirmed_at', 'blocked_at', 'created_at', 'updated_at', 'flags', 'last_login_at'], 'integer'],
             [['username'], 'required'],
             [['phone_number_type'], 'string'],
             [['birthdate'], 'safe'],
@@ -79,7 +78,6 @@ class User extends \yii\db\ActiveRecord
             [['first_name', 'last_name', 'twitter_id', 'facebook_id', 'instagram_id', 'google_id', 'state', 'country', 'role'], 'string', 'max' => 80],
             [['note', 'address1'], 'string', 'max' => 2000],
             [['phone_number', 'zipcode'], 'string', 'max' => 20],
-            [['birth_month'], 'string', 'max' => 3],
             [['website_url'], 'string', 'max' => 400],
             [['address2'], 'string', 'max' => 800],
             [['username'], 'unique']
@@ -101,7 +99,7 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'group_id' => 'Group ID',
+            'group_id' => 'Agent Team',
             'username' => 'Username',
             'email' => 'Email',
             'password_hash' => 'Password Hash',
@@ -117,8 +115,6 @@ class User extends \yii\db\ActiveRecord
             'phone_number_type' => 'Phone Number Type',
             'phone_number' => 'Phone Number',
             'birthdate' => 'Birthdate',
-            'birth_month' => 'Birth Month',
-            'birth_year' => 'Birth Year',
             'website_url' => 'Website Url',
             'twitter_id' => 'Twitter ID',
             'facebook_id' => 'Facebook ID',
@@ -150,7 +146,15 @@ class User extends \yii\db\ActiveRecord
     {
         return $this->hasMany(\app\models\SocialAccount::className(), ['user_id' => 'id'])->inverseOf('user');
     }
-        
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getTokens()
+    {
+        return $this->hasMany(\app\models\Token::className(), ['user_id' => 'id'])->inverseOf('user');
+    }
+
     /**
      * @return \yii\db\ActiveQuery
      */

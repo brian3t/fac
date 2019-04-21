@@ -2,13 +2,17 @@
 
 namespace app\models\base;
 
+use Yii;
+
 /**
  * This is the base model class for table "page".
  *
  * @property integer $id
  * @property integer $project_id
  * @property integer $microsite_id
+ * @property string $type
  * @property string $name
+ * @property string $html
  *
  * @property \app\models\MicrositeMenu[] $micrositeMenus
  * @property \app\models\Microsite $microsite
@@ -41,6 +45,7 @@ class Page extends \yii\db\ActiveRecord
     {
         return [
             [['project_id', 'microsite_id'], 'integer'],
+            [['type', 'html'], 'string'],
             [['name'], 'string', 'max' => 255]
         ];
     }
@@ -62,7 +67,9 @@ class Page extends \yii\db\ActiveRecord
             'id' => 'ID',
             'project_id' => 'Project ID',
             'microsite_id' => 'Microsite ID',
+            'type' => 'Type',
             'name' => 'Name',
+            'html' => 'Html',
         ];
     }
     

@@ -71,7 +71,7 @@ class Gallery extends \yii\db\ActiveRecord
      */
     public function getMicrosite()
     {
-        return $this->hasOne(\app\models\Microsite::className(), ['id' => 'microsite_id'])->inverseOf('galleries');
+        return $this->hasOne(\app\models\Microsite::className(), ['id' => 'microsite_id'])->inverseOf('gallery');
     }
         
     /**
@@ -79,6 +79,6 @@ class Gallery extends \yii\db\ActiveRecord
      */
     public function getProject()
     {
-        return $this->hasOne(\app\models\Project::className(), ['id' => 'project_id'])->inverseOf('galleries');
+        return $this->hasOne(\app\models\Project::className(), ['id' => 'project_id'])->inverseOf('gallery');
     }
     }

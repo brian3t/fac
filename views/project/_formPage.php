@@ -1,10 +1,10 @@
 <div class="form-group" id="add-page">
 <?php
-
-use kartik\builder\TabularForm;
 use kartik\grid\GridView;
+use kartik\builder\TabularForm;
 use yii\data\ArrayDataProvider;
 use yii\helpers\Html;
+use yii\widgets\Pjax;
 
 $dataProvider = new ArrayDataProvider([
     'allModels' => $row,
@@ -22,7 +22,7 @@ echo TabularForm::widget([
     ],
     'attributes' => [
         "id" => ['type' => TabularForm::INPUT_HIDDEN, 'columnOptions' => ['hidden'=>true]],
-        'microsite_id' => [
+        /*'microsite_id' => [
             'label' => 'Microsite',
             'type' => TabularForm::INPUT_WIDGET,
             'widgetClass' => \kartik\widgets\Select2::className(),
@@ -31,8 +31,23 @@ echo TabularForm::widget([
                 'options' => ['placeholder' => 'Choose Microsite'],
             ],
             'columnOptions' => ['width' => '200px']
+        ],*/
+        'type' => ['type' => TabularForm::INPUT_DROPDOWN_LIST,
+            'items' => [ 'home' => 'Home', 'about' => 'About', 'content' => 'Content', 'blank' => 'Blank', ],
+            'options' => [
+                'columnOptions' => ['width' => '185px'],
+                'options' => ['placeholder' => 'Choose Type'],
+            ]
         ],
         'name' => ['type' => TabularForm::INPUT_TEXT],
+        'html' => ['type' => 'raw', 'value' => function ($model) {
+            $id = $model['id'] ?? null;
+            if (is_int($id) && $id > 0) {
+                return Html::a('WYSIWYG edit', "/page/update?id=$id");
+            } else {
+                return '';
+            }
+        }],
         'del' => [
             'type' => 'raw',
             'label' => '',

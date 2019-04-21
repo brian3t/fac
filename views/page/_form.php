@@ -7,24 +7,9 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\Page */
 /* @var $form yii\widgets\ActiveForm */
 
-\mootensai\components\JsBlock::widget(['viewFile' => '_script', 'pos'=> \yii\web\View::POS_END, 
-    'viewParams' => [
-        'class' => 'MicrositeMenu', 
-        'relID' => 'microsite-menu', 
-        'value' => \yii\helpers\Json::encode($model->micrositeMenus),
-        'isNewRecord' => ($model->isNewRecord) ? 1 : 0
-    ]
-]);
-\mootensai\components\JsBlock::widget(['viewFile' => '_script', 'pos'=> \yii\web\View::POS_END, 
-    'viewParams' => [
-        'class' => 'ProjectMenu', 
-        'relID' => 'project-menu', 
-        'value' => \yii\helpers\Json::encode($model->projectMenus),
-        'isNewRecord' => ($model->isNewRecord) ? 1 : 0
-    ]
-]);
+$this->registerJsFile('/js/tinymce/tinymce.min.js', ['depends' => \yii\web\JqueryAsset::class, 'position' => \yii\web\View::POS_END]);
+$this->registerJsFile('/js/page_update.js', ['depends' => \yii\web\JqueryAsset::class, 'position' => \yii\web\View::POS_END]);
 ?>
-
 <div class="page-form">
 
     <?php $form = ActiveForm::begin(); ?>
@@ -35,50 +20,29 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'project_id')->widget(\kartik\widgets\Select2::classname(), [
         'data' => \yii\helpers\ArrayHelper::map(\app\models\Project::find()->orderBy('id')->asArray()->all(), 'id', 'name'),
-        'options' => ['placeholder' => 'Choose Project'],
+        'options' => ['placeholder' => 'Choose Project','disabled'=>true],
         'pluginOptions' => [
             'allowClear' => true
         ],
-    ]); ?>
+    ])->label('Project'); ?>
 
-    <?= $form->field($model, 'microsite_id')->widget(\kartik\widgets\Select2::classname(), [
+    <?php /*= $form->field($model, 'microsite_id')->widget(\kartik\widgets\Select2::classname(), [
         'data' => \yii\helpers\ArrayHelper::map(\app\models\Microsite::find()->orderBy('id')->asArray()->all(), 'id', 'id'),
         'options' => ['placeholder' => 'Choose Microsite'],
         'pluginOptions' => [
             'allowClear' => true
         ],
-    ]); ?>
+    ]); */ ?>
+
+    <?= $form->field($model, 'type')->dropDownList([ 'home' => 'Home', 'about' => 'About', 'content' => 'Content', 'blank' => 'Blank', ], ['prompt' => '']) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true, 'placeholder' => 'Name']) ?>
 
-    <?php
-    $forms = [
-        [
-            'label' => '<i class="glyphicon glyphicon-book"></i> ' . Html::encode('MicrositeMenu'),
-            'content' => $this->render('_formMicrositeMenu', [
-                'row' => \yii\helpers\ArrayHelper::toArray($model->micrositeMenus),
-            ]),
-        ],
-        [
-            'label' => '<i class="glyphicon glyphicon-book"></i> ' . Html::encode('ProjectMenu'),
-            'content' => $this->render('_formProjectMenu', [
-                'row' => \yii\helpers\ArrayHelper::toArray($model->projectMenus),
-            ]),
-        ],
-    ];
-    echo kartik\tabs\TabsX::widget([
-        'items' => $forms,
-        'position' => kartik\tabs\TabsX::POS_ABOVE,
-        'encodeLabels' => false,
-        'pluginOptions' => [
-            'bordered' => true,
-            'sideways' => true,
-            'enableCache' => false,
-        ],
-    ]);
-    ?>
+    <?= $form->field($model, 'html')->textarea(['rows' => 6]) ?>
+
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::a(Yii::t('app', 'Cancel'), Yii::$app->request->referrer , ['class'=> 'btn btn-danger']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

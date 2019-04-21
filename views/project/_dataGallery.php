@@ -1,10 +1,9 @@
 <?php
-
 use kartik\grid\GridView;
 use yii\data\ArrayDataProvider;
 
-$dataProvider = new ArrayDataProvider([
-        'allModels' => $model->galleries,
+    $dataProvider = new ArrayDataProvider([
+        'allModels' => $model->gallery,
         'key' => 'id'
     ]);
     $gridColumns = [

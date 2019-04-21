@@ -1,8 +1,8 @@
 <?php
 
-use kartik\grid\GridView;
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use kartik\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Project */
@@ -40,7 +40,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'label' => 'User',
         ],
         'name',
-        'url:url',
+        'use_own_domain',
+        'domain',
+        'url',
+        'full_url:url',
         'country_code',
         'logo',
         'favicon',
@@ -89,30 +92,9 @@ $this->params['breadcrumbs'][] = $this->title;
     
     <div class="row">
 <?php
-if($providerGallery->totalCount){
-    $gridColumnGallery = [
-        ['class' => 'yii\grid\SerialColumn'],
-            ['attribute' => 'id', 'visible' => false],
-            'name',
-            'file_path',
-            [
-                'attribute' => 'microsite.id',
-                'label' => 'Microsite'
-            ],
-                ];
-    echo Gridview::widget([
-        'dataProvider' => $providerGallery,
-        'pjax' => true,
-        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-gallery']],
-        'panel' => [
-            'type' => GridView::TYPE_PRIMARY,
-            'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Gallery'),
-        ],
-        'export' => false,
-        'columns' => $gridColumnGallery
-    ]);
-}
-?>
+if($gallery): ?>
+    Gallery: <?= $gallery->name ?>
+<?php endif; ?>
 
     </div>
     
@@ -174,45 +156,5 @@ if($providerPage->totalCount){
 
     </div>
     <div class="row">
-        <h4>User<?= ' '. Html::encode($this->title) ?></h4>
-    </div>
-    <?php 
-    $gridColumnUser = [
-        ['attribute' => 'id', 'visible' => false],
-        'group_id',
-        'username',
-        'email:email',
-        'password_hash',
-        'auth_key',
-        'confirmed_at',
-        'unconfirmed_email',
-        'blocked_at',
-        'registration_ip',
-        'flags',
-        'first_name',
-        'last_name',
-        'note',
-        'phone_number_type',
-        'phone_number',
-        'birthdate',
-        'birth_month',
-        'birth_year',
-        'website_url',
-        'twitter_id',
-        'facebook_id',
-        'instagram_id',
-        'google_id',
-        'address1',
-        'address2',
-        'city',
-        'state',
-        'zipcode',
-        'country',
-        'last_login_at',
-        'role',
-    ];
-    echo DetailView::widget([
-        'model' => $model->user,
-        'attributes' => $gridColumnUser    ]);
-    ?>
+        <h4>Managed by Agent <?= $model->user->getName() ?> </h4>
 </div>

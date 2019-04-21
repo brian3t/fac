@@ -1,9 +1,8 @@
 <?php
-
 use kartik\grid\GridView;
 use yii\data\ArrayDataProvider;
 
-$dataProvider = new ArrayDataProvider([
+    $dataProvider = new ArrayDataProvider([
         'allModels' => $model->pages,
         'key' => 'id'
     ]);
@@ -14,7 +13,9 @@ $dataProvider = new ArrayDataProvider([
                 'attribute' => 'microsite.id',
                 'label' => 'Microsite'
             ],
+        'type',
         'name',
+        'html:ntext',
         [
             'class' => 'yii\grid\ActionColumn',
             'controller' => 'page'

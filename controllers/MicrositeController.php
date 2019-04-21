@@ -49,15 +49,12 @@ class MicrositeController extends Controller
     public function actionView($id)
     {
         $model = $this->findModel($id);
-        $providerGallery = new \yii\data\ArrayDataProvider([
-            'allModels' => $model->galleries,
-        ]);
         $providerPage = new \yii\data\ArrayDataProvider([
             'allModels' => $model->pages,
         ]);
         return $this->render('view', [
             'model' => $this->findModel($id),
-            'providerGallery' => $providerGallery,
+            'gallery' => $model->gallery,
             'providerPage' => $providerPage,
         ]);
     }

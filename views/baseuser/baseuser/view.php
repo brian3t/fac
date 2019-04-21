@@ -7,7 +7,10 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\User */
 
-$this->title = $model->username;
+$this->title = implode(' ' , [$model->first_name, $model->last_name]);
+if (empty($this->title)){
+    $this->title = ucwords($model->username);
+}
 $this->params['breadcrumbs'][] = ['label' => 'User', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -15,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
         <div class="col-sm-9">
-            <h2><?= 'User'.' '. Html::encode($this->title) ?></h2>
+            <h2><?= 'User' . ' ' . Html::encode($this->title) ?></h2>
         </div>
         <div class="col-sm-3" style="margin-top: 15px">
 
@@ -41,9 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'username',
             'email:email',
-            'password_hash',
-            'auth_key',
-            'confirmed_at',
+            'confirmed_at:datetime',
             'unconfirmed_email:email',
             'blocked_at',
             'registration_ip',
@@ -54,8 +55,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'phone_number_type',
             'phone_number',
             'birthdate',
-            'birth_month',
-            'birth_year',
             'website_url:url',
             'twitter_id',
             'facebook_id',
@@ -67,7 +66,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'state',
             'zipcode',
             'country',
-            'last_login_at',
+            'last_login_at:datetime',
             'role',
         ];
         echo DetailView::widget([
@@ -79,7 +78,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
         <?php
-        if($providerProject->totalCount){
+        if ($providerProject->totalCount) {
             $gridColumnProject = [
                 ['class' => 'yii\grid\SerialColumn'],
                 ['attribute' => 'id', 'visible' => false],
@@ -140,7 +139,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     </div>
     <div class="row">
-        <h4>UserGroup<?= ' '. Html::encode($this->title) ?></h4>
+        <h4>Agent Team of<?= ' ' . Html::encode($this->title) ?></h4>
     </div>
     <?php
     $gridColumnUserGroup = [
@@ -148,8 +147,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'name',
         'logo',
     ];
-    echo DetailView::widget([
-        'model' => $model->group,
-        'attributes' => $gridColumnUserGroup    ]);
+    if (is_object($model->group)) {
+        echo DetailView::widget([
+            'model' => $model->group,
+            'attributes' => $gridColumnUserGroup]);
+    }
     ?>
 </div>

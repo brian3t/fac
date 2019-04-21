@@ -79,16 +79,10 @@ AppAsset::register($this);
             'url' => '/user-group',
         ],
         [
-            'label' => 'Venues',
-            'url' => '/venue',
-        ],
-        [
-            'label' => 'Events',
-            'url' => '/event',
+            'label' => 'Projects',
+            'url' => '/project',
         ],
         ['label' => 'Raw User data', 'url' => '/user'],
-        ['label' => 'Webapp', 'url' => 'https://app.livenout.usvsolutions.com', 'linkOptions' => ['target' => '_blank'],
-        ]
     ]);
 
     echo Nav::widget([
@@ -116,23 +110,6 @@ AppAsset::register($this);
             }
             ?>
         </div>
-        <!--<script src="/js/tinymce/tinymce.min.js"></script>
-        <script>
-            tinymce.init({
-                selector: '#tiny',
-                skin: 'oxide',
-                width: 600,
-                height: 300,
-                plugins: [
-                    'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker code',
-                    'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
-                    'save table contextmenu directionality emoticons template paste textcolor'
-                ],
-                toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons code'
-            });
-        </script>
-        <textarea id="tiny">Next, use our Get Started docs to setup Tiny!</textarea>-->
-
         <?= $content ?>
     </div>
 </div>

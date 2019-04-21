@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use kartik\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Project */
@@ -24,7 +25,10 @@ use yii\widgets\DetailView;
             'label' => 'User',
         ],
         'name',
-        'url:url',
+        'use_own_domain',
+        'domain',
+        'url',
+        'full_url:url',
         'country_code',
         'logo',
         'favicon',
