@@ -101,6 +101,8 @@ use yii\widgets\ActiveForm;
 
         <?= $form->field($model, 'email3')->textInput(['maxlength' => true, 'placeholder' => 'Email3']) ?>
 
+        <?= $form->field($model, 'template_header')->textarea(['maxlength' => true, 'placeholder' => 'Template Header']) ?>
+
         <?= $form->field($model, 'does_use_footer')->checkbox() ?>
 
         <?= $form->field($model, 'footer')->textInput(['maxlength' => true, 'placeholder' => 'Footer']) ?>

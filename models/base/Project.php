@@ -2,8 +2,6 @@
 
 namespace app\models\base;
 
-use Yii;
-
 /**
  * This is the base model class for table "project".
  *
@@ -85,7 +83,7 @@ class Project extends \yii\db\ActiveRecord
         return [
             [['user_id'], 'required'],
             [['user_id', '404page_id', 'thankspage_id'], 'integer'],
-            [['type'], 'string'],
+            [['type', 'footer', 'credit_text', 'default_page_title', 'default_meta_description', 'default_meta_keywords', 'g_search_site_verification', 'g_global_site_tags', 'g_remarketing_tag'], 'string'],
             [['name', 'url', 'full_url'], 'string', 'max' => 400],
             [['use_own_domain', 'does_enable_phone_display', 'does_enable_email_display', 'does_use_footer', 'does_use_credit_text', 'does_enable_custom_robots'], 'string', 'max' => 1],
             [['domain', 'email', 'email2', 'email3', 'facebook', 'youtube', 'instagram', 'linkedin', 'twitter', 'googleplus'], 'string', 'max' => 80],
@@ -93,7 +91,6 @@ class Project extends \yii\db\ActiveRecord
             [['favicon', 'biz_contact_name', 'wechat_image'], 'string', 'max' => 255],
             [['phone', 'sms', 'whatsapp', 'phone2', 'phone3'], 'string', 'max' => 18],
             [['wechatid'], 'string', 'max' => 25],
-            [['footer', 'credit_text', 'default_page_title', 'default_meta_description', 'default_meta_keywords', 'g_search_site_verification', 'g_global_site_tags', 'g_remarketing_tag'], 'string', 'max' => 2000]
         ];
     }
 
@@ -135,6 +132,7 @@ class Project extends \yii\db\ActiveRecord
             'email2' => 'Email2',
             'phone3' => 'Phone3',
             'email3' => 'Email3',
+            'template_header' => 'Template Header',
             'footer' => 'Footer',
             'does_use_footer' => 'Use Footer',
             'credit_text' => 'Credit Text',

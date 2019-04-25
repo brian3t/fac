@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="Added full_url&#10;Tinymce for Page editing&#10;#todo: full_url generation - use WPF hosting">
-      <change afterPath="$PROJECT_DIR$/web/js/project_update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fac.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fac.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ProjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/project/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/project/_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/project/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/project/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/base/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/base/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/magnific.pupup.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/magnific.pupup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/owl.carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/slicknav.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/css/slicknav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/js/active.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/js/active.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/js/google.map.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/js/google.map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/sass/_index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/sass/_index.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/sass/_main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/sass/_main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/assets/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/assets/sass/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap/" />
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap3-dialog/" />
@@ -143,12 +157,14 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - fac@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="fac8" type="feb32156:DbDataSourceImpl" />
+        <item name="fac: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - fac@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="fac8" type="feb32156:DbDataSourceImpl" />
         <item name="fac: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="project: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -156,41 +172,94 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/static/templates/flattheme/index.html">
+        <entry file="file://$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+            <state relative-caret-position="105">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/microsite_menu">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true">
-                <filter text="" />
-              </filtering>
+        <entry file="file://$PROJECT_DIR$/models/constants.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f6de8775-1c47-4b8a-911f-111459e555cc/console.sql">
+        <entry file="file://$PROJECT_DIR$/api/modules/v1/controllers/BandController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="105">
+              <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/ProjectController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1bab20e5-f86f-43ce-8c58-e98b7eb6ff63/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/base/Project.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Project.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#30#38#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/gallery">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true">
-                <filter text="" />
-              </filtering>
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/dump_db8_to_dropbox.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/dump_db_to_dropbox_STH_WRONG_HERE.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -232,7 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/web.php" />
         <option value="$PROJECT_DIR$/models/base/Listing.php" />
         <option value="$PROJECT_DIR$/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/views/baseuser/user/_form.php" />
@@ -271,18 +339,19 @@
         <option value="$PROJECT_DIR$/web/js/page_update.js" />
         <option value="$PROJECT_DIR$/views/page/view.php" />
         <option value="$PROJECT_DIR$/controllers/PageController.php" />
-        <option value="$PROJECT_DIR$/models/base/Project.php" />
         <option value="$PROJECT_DIR$/views/project/index.php" />
         <option value="$PROJECT_DIR$/views/project/_detail.php" />
         <option value="$PROJECT_DIR$/views/project/view.php" />
         <option value="$PROJECT_DIR$/runtime/logs/app.log" />
         <option value="$PROJECT_DIR$/views/project/update.php" />
         <option value="$PROJECT_DIR$/web/js/project_update.js" />
-        <option value="$PROJECT_DIR$/controllers/ProjectController.php" />
-        <option value="$PROJECT_DIR$/models/Project.php" />
         <option value="$PROJECT_DIR$/views/project/_form.php" />
         <option value="$PROJECT_DIR$/web/static/templates/flattheme/index.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f6de8775-1c47-4b8a-911f-111459e555cc/console.sql" />
+        <option value="$PROJECT_DIR$/controllers/ProjectController.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1bab20e5-f86f-43ce-8c58-e98b7eb6ff63/console.sql" />
+        <option value="$PROJECT_DIR$/models/base/Project.php" />
+        <option value="$PROJECT_DIR$/models/Project.php" />
       </list>
     </option>
   </component>
@@ -297,7 +366,6 @@
       <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-depdrop" />
       <path value="$PROJECT_DIR$/vendor/bower/punycode" />
       <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-switchinput" />
-      <path value="$PROJECT_DIR$/vendor/bower/typeahead.js" />
       <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-sidenav" />
       <path value="$PROJECT_DIR$/vendor/bower/bootstrap" />
       <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-sortable" />
@@ -305,7 +373,6 @@
       <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-grid" />
       <path value="$PROJECT_DIR$/vendor/bower/jquery" />
       <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-spinner" />
-      <path value="$PROJECT_DIR$/vendor/bower/bootstrap3-dialog" />
       <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-dialog" />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/kartik-v/bootstrap-fileinput" />
@@ -402,6 +469,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/bower/typeahead.js" />
+      <path value="$PROJECT_DIR$/vendor/bower/bootstrap3-dialog" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -419,6 +488,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -476,17 +546,6 @@
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -496,214 +555,6 @@
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="kartik-v" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="kartik-v" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2-builder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="kartik-v" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="mootensai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="mootensai" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2-relation-trait" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="yiisoft" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="yiisoft" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="yiisoft" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="yiisoft" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="yiisoft" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2" type="462c0819:PsiDirectoryNode" />
-              <item name="widgets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="baseuser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="baseuser" type="462c0819:PsiDirectoryNode" />
-              <item name="baseuser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user-group" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-              <item name="custom.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="flattheme" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2helper" type="462c0819:PsiDirectoryNode" />
-              <item name="grid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -715,14 +566,13 @@
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
               <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="f6de8775-1c47-4b8a-911f-111459e555cc" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="1bab20e5-f86f-43ce-8c58-e98b7eb6ff63" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -826,15 +676,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1922" height="1065" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1517572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19808307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960285" weight="0.3269639" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3286638" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960285" weight="0.3265086" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946752" weight="0.39915073" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -843,9 +694,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Migrations" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.33836207" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005325" side_tool="true" visible="true" weight="0.32908705" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32908705" />
-      <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49946752" visible="true" weight="0.32908705" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50106496" side_tool="true" visible="true" weight="0.33728448" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3286638" />
+      <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49893504" visible="true" weight="0.33728448" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -853,7 +704,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Remote Host" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.14270501" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.23322684" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -924,93 +775,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user-group/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="574" column="27" selection-start-line="574" selection-start-column="27" selection-end-line="574" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user/admin/_user.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/base/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="108" column="29" lean-forward="true" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user/admin/_profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/baseuser/baseuser/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1022,13 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="39" selection-start-line="10" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modules/v1/controllers/BandController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1115,13 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="45" column="64" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
@@ -1212,27 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/base/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504">
-          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/ProjectController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/project/_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1247,28 +976,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/microsite_menu">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
+    <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/microsite_menu" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f6de8775-1c47-4b8a-911f-111459e555cc/console.sql" />
+    <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/gallery" />
+    <entry file="file://$PROJECT_DIR$/views/gallery/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f6de8775-1c47-4b8a-911f-111459e555cc/console.sql">
+    <entry file="file://$PROJECT_DIR$/views/user-group/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="195">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/gallery">
+    <entry file="file://$PROJECT_DIR$/views/user-group/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user-group/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="83" column="10" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user-group/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/restore_db_fr_dropbox.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/restore_db_8_fr_dropbox.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/v1/controllers/BandController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/dump_db8_to_dropbox.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/dump_db_to_dropbox_STH_WRONG_HERE.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/ProjectController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1bab20e5-f86f-43ce-8c58-e98b7eb6ff63/schema/fac/table/project">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true">
             <filter text="" />
           </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1bab20e5-f86f-43ce-8c58-e98b7eb6ff63/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/base/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#30#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
         </state>
       </provider>
     </entry>

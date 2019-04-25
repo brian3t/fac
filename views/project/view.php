@@ -1,8 +1,8 @@
 <?php
 
+use kartik\grid\GridView;
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-use kartik\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Project */
@@ -61,6 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'email2:email',
         'phone3',
         'email3:email',
+        'template_header',
         'footer',
         'does_use_footer',
         'credit_text',

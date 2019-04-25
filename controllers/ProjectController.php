@@ -9,6 +9,8 @@ use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 
+require_once realpath(dirname(__DIR__)). "/models/constants.php";
+
 /**
  * ProjectController implements the CRUD actions for Project model.
  */
