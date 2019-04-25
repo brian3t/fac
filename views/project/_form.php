@@ -54,13 +54,18 @@ use yii\widgets\ActiveForm;
 
         <?= $form->field($model, 'name')->textInput(['maxlength' => true, 'placeholder' => 'Name']) ?>
 
-        <?= $form->field($model, 'use_own_domain')->checkbox() ?>
+        <?= $form->field($model, 'use_own_domain')->checkbox(['disabled' => 'disabled']) ?>
 
-        <?= $form->field($model, 'domain')->textInput(['maxlength' => true, 'placeholder' => 'Domain']) ?>
+        <?php $domain_display = 'none';
+        if ($model->use_own_domain) {
+            $domain_display = 'block';
+        }
+        ?>
+        <?= $form->field($model, 'domain', ['options' => ['style' => "display:$domain_display"]])->textInput(['maxlength' => true, 'placeholder' => 'Domain']); ?>
 
         <?= $form->field($model, 'url')->textInput(['maxlength' => true, 'placeholder' => 'Url']) ?>
 
-        <?= $form->field($model, 'full_url')->textInput(['maxlength' => true, 'placeholder' => 'Full url is generated automatically by system', 'disabled' => true]) ?>
+        <?= $form->field($model, 'full_url')->textInput(['maxlength' => true, 'placeholder' => 'Full url is generated automatically by system after saving', 'disabled' => true]) ?>
 
         <?= $form->field($model, 'country_code')->dropDownList(COUNTRIES) ?>
 
@@ -174,7 +179,7 @@ use yii\widgets\ActiveForm;
     </div>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-        <?= Html::a( 'Preview', $model->full_url, ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Preview', $model->full_url, ['class' => 'btn btn-success']) ?>
         <?= Html::a(Yii::t('app', 'Cancel'), Yii::$app->request->referrer, ['class' => 'btn btn-danger']) ?>
     </div>
 
