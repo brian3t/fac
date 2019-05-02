@@ -73,7 +73,7 @@ use yii\widgets\ActiveForm;
 
         <?= $form->field($model, 'favicon')->textInput(['maxlength' => true, 'placeholder' => 'Favicon']) ?>
 
-        <?= $form->field($model, 'type')->dropDownList(['normal' => 'Normal', 'template' => 'Template', 'cloned' => 'Cloned',], ['prompt' => '']) ?>
+        <?= $form->field($model, 'type')->dropDownList(['normal' => 'Normal', 'template' => 'Template', 'cloned' => 'Cloned',], ['normal' => ['selected'=>true]]) ?>
 
         <?= $form->field($model, 'biz_contact_name')->textInput(['maxlength' => true, 'placeholder' => 'Biz Contact Name']) ?>
 

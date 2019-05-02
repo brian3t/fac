@@ -3,9 +3,9 @@
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-use yii\helpers\Html;
 use kartik\export\ExportMenu;
 use kartik\grid\GridView;
+use yii\helpers\Html;
 
 $this->title = 'Project';
 $this->params['breadcrumbs'][] = $this->title;
@@ -73,31 +73,10 @@ $this->registerJs($search);
         'email2:email',
         'phone3',
         'email3:email',
-        'footer',
-        'does_use_footer',
-        'credit_text',
-        'does_use_credit_text',
-        'default_page_title',
-        'default_meta_description',
-        'default_meta_keywords',
-        '404page_id',
-        'thankspage_id',
-        'g_search_site_verification',
-        'g_global_site_tags',
-        'g_remarketing_tag',
-        'facebook_pixel_code',
-        'does_enable_custom_robots',
-        'custom_robots',
-        'facebook',
-        'youtube',
-        'instagram',
-        'linkedin',
-        'twitter',
-        'googleplus',
         [
             'class' => 'yii\grid\ActionColumn',
         ],
-    ]; 
+    ];
     ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

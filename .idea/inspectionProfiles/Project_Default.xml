@@ -6,7 +6,9 @@
       <option name="CODING_STANDARD" value="Custom" />
       <option name="CUSTOM_RULESET_PATH" value="$USER_HOME$/Dropbox/_dtmp/soft/_ubuntu/phpruleset.xml" />
       <option name="WARNING_HIGHLIGHT_LEVEL_NAME" value="WEAK WARNING" />
+      <option name="EXTENSIONS" value="php,js,css,inc" />
     </inspection_tool>
+    <inspection_tool class="PhpDocMissingThrowsInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PhpUnhandledExceptionInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
   </profile>
 </component>

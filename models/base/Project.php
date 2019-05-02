@@ -85,7 +85,7 @@ class Project extends \yii\db\ActiveRecord
             [['user_id', '404page_id', 'thankspage_id'], 'integer'],
             [['type', 'footer', 'credit_text', 'default_page_title', 'default_meta_description', 'default_meta_keywords', 'g_search_site_verification', 'g_global_site_tags', 'g_remarketing_tag'], 'string'],
             [['name', 'url', 'full_url'], 'string', 'max' => 400],
-            [['use_own_domain', 'does_enable_phone_display', 'does_enable_email_display', 'does_use_footer', 'does_use_credit_text', 'does_enable_custom_robots'], 'string', 'max' => 1],
+            [['does_enable_phone_display', 'does_enable_email_display', 'does_use_footer', 'does_use_credit_text', 'does_enable_custom_robots'], 'string', 'max' => 1],
             [['domain', 'email', 'email2', 'email3', 'facebook', 'youtube', 'instagram', 'linkedin', 'twitter', 'googleplus'], 'string', 'max' => 80],
             [['country_code'], 'string', 'max' => 2],
             [['favicon', 'biz_contact_name', 'wechat_image'], 'string', 'max' => 255],

@@ -3,19 +3,22 @@
 namespace app\controllers;
 
 use app\models\Project;
+use usv\yii2helper\PHPHelper;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 
-require_once realpath(dirname(__DIR__)). "/models/constants.php";
+require_once realpath(dirname(__DIR__)) . "/models/constants.php";
 
 /**
  * ProjectController implements the CRUD actions for Project model.
  */
 class ProjectController extends Controller
 {
+    const TEMPLATE_FOLDER = '../../static/templates/flattheme';//relative to current project site directory
+
     public function behaviors()
     {
         return [
@@ -65,6 +68,7 @@ class ProjectController extends Controller
         ]);
     }
 
+
     /**
      * Creates a new Project model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -75,12 +79,24 @@ class ProjectController extends Controller
         $model = new Project();
 
         if ($model->loadAll(Yii::$app->request->post()) && $model->saveAll()) {
+            //we create project sites folder
+            //FUTURE: then create sites-available, enable site, then restart apache
+            chdir('../web/sites');
+            $norm_url = PHPHelper::dbNormalizeString($model->url);
+            mkdir($norm_url);
+            chdir($norm_url);
+            $template_folder = self::TEMPLATE_FOLDER;
+            $template_folder_real = realpath($template_folder);
+            $norm_url_real = realpath(dirname('.'));
+            exec("cp -Rp $template_folder_real/* $norm_url_real");
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
             ]);
         }
+
     }
 
     /**
@@ -94,6 +110,8 @@ class ProjectController extends Controller
         $model = $this->findModel($id);
         $post_params = Yii::$app->request->post();
         if ($model->loadAll($post_params) && $model->saveAll()) {
+            //todob rename folder here
+
             return $this->redirect(['index']);
         } else {
             return $this->render('update', [
@@ -110,7 +128,16 @@ class ProjectController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->deleteWithRelated();
+        $model = $this->findModel($id);
+        chdir('../web/sites');
+        $norm_url = PHPHelper::dbNormalizeString($model->url);
+        chdir($norm_url);
+        $norm_url_real = realpath(dirname("."));
+        if (strlen($norm_url_real) > 4) //we only delete non-system folders!!!
+        {
+            exec("rm -rf $norm_url_real");
+        }
+        $model->deleteWithRelated();
 
         return $this->redirect(['index']);
     }
@@ -133,18 +160,18 @@ class ProjectController extends Controller
     }
 
     /**
-    * Action to load a tabular form grid
-    * for Gallery
-    * @author Yohanes Candrajaya <moo.tensai@gmail.com>
-    * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
-    *
-    * @return mixed
-    */
+     * Action to load a tabular form grid
+     * for Gallery
+     * @return mixed
+     * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
+     *
+     * @author Yohanes Candrajaya <moo.tensai@gmail.com>
+     */
     public function actionAddGallery()
     {
         if (Yii::$app->request->isAjax) {
             $row = Yii::$app->request->post('Gallery');
-            if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('_action') == 'load' && empty($row)) || Yii::$app->request->post('_action') == 'add')
+            if ((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('_action') == 'load' && empty($row)) || Yii::$app->request->post('_action') == 'add')
                 $row[] = [];
             return $this->renderAjax('_formGallery', ['row' => $row]);
         } else {
@@ -153,18 +180,18 @@ class ProjectController extends Controller
     }
 
     /**
-    * Action to load a tabular form grid
-    * for Microsite
-    * @author Yohanes Candrajaya <moo.tensai@gmail.com>
-    * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
-    *
-    * @return mixed
-    */
+     * Action to load a tabular form grid
+     * for Microsite
+     * @return mixed
+     * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
+     *
+     * @author Yohanes Candrajaya <moo.tensai@gmail.com>
+     */
     public function actionAddMicrosite()
     {
         if (Yii::$app->request->isAjax) {
             $row = Yii::$app->request->post('Microsite');
-            if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('_action') == 'load' && empty($row)) || Yii::$app->request->post('_action') == 'add')
+            if ((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('_action') == 'load' && empty($row)) || Yii::$app->request->post('_action') == 'add')
                 $row[] = [];
             return $this->renderAjax('_formMicrosite', ['row' => $row]);
         } else {
@@ -173,18 +200,18 @@ class ProjectController extends Controller
     }
 
     /**
-    * Action to load a tabular form grid
-    * for Page
-    * @author Yohanes Candrajaya <moo.tensai@gmail.com>
-    * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
-    *
-    * @return mixed
-    */
+     * Action to load a tabular form grid
+     * for Page
+     * @return mixed
+     * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
+     *
+     * @author Yohanes Candrajaya <moo.tensai@gmail.com>
+     */
     public function actionAddPage()
     {
         if (Yii::$app->request->isAjax) {
             $row = Yii::$app->request->post('Page');
-            if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('_action') == 'load' && empty($row)) || Yii::$app->request->post('_action') == 'add')
+            if ((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('_action') == 'load' && empty($row)) || Yii::$app->request->post('_action') == 'add')
                 $row[] = [];
             return $this->renderAjax('_formPage', ['row' => $row]);
         } else {
