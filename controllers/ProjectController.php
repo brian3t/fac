@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Project;
+use app\models\Template;
 use usv\yii2helper\PHPHelper;
 use Yii;
 use yii\data\ActiveDataProvider;
@@ -17,8 +18,6 @@ require_once realpath(dirname(__DIR__)) . "/models/constants.php";
  */
 class ProjectController extends Controller
 {
-    const TEMPLATE_FOLDER = '../../static/templates/flattheme';//relative to current project site directory
-
     public function behaviors()
     {
         return [
@@ -85,10 +84,12 @@ class ProjectController extends Controller
             $norm_url = PHPHelper::dbNormalizeString($model->url);
             mkdir($norm_url);
             chdir($norm_url);
-            $template_folder = self::TEMPLATE_FOLDER;
+            $template_folder = Template::$TEMPLATE_FOLDER;
             $template_folder_real = realpath($template_folder);
             $norm_url_real = realpath(dirname('.'));
-            exec("cp -Rp $template_folder_real/* $norm_url_real");
+            if (strlen($template_folder_real) > 4) {
+                exec("cp -Rp $template_folder_real/* $norm_url_real");
+            }
 
             return $this->redirect(['view', 'id' => $model->id]);
         } else {

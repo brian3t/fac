@@ -54,7 +54,7 @@ use yii\widgets\ActiveForm;
 
         <?= $form->field($model, 'name')->textInput(['maxlength' => true, 'placeholder' => 'Name']) ?>
 
-        <?= $form->field($model, 'use_own_domain')->checkbox(['disabled' => 'disabled']) ?>
+<!--        --><?php //echo $form->field($model, 'use_own_domain')->checkbox(['disabled' => 'disabled']) ?>
 
         <?php $domain_display = 'none';
         if ($model->use_own_domain) {

@@ -10,9 +10,25 @@ use usv\yii2helper\PHPHelper;
  */
 class Project extends BaseProject
 {
-    public function gotoFolder(){
+    private const DEFAULT_THEME = 'flattheme';
+    public function gotoFolder()
+    {
         chdir('../web/sites');
         $norm_url = PHPHelper::dbNormalizeString($this->url);
         chdir($norm_url);
+    }
+
+    public function afterSave($insert, $changedAttributes)
+    {
+        parent::afterSave($insert, $changedAttributes);
+        if ($insert) {
+            //create default pages
+            $page = new Page();
+            //index
+            $page->setAttributes(['project_id' => $this->id, 'name' => 'Home', 'type' => 'home']);
+            $template = new Template(self::DEFAULT_THEME);
+            $page->html = $template->getHtml('home');
+            $page->save();
+        }
     }
 }
