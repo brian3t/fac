@@ -3,6 +3,7 @@
 namespace app\models;
 
 use app\models\base\Project as BaseProject;
+use usv\yii2helper\models\ModelB3tTrait;
 use usv\yii2helper\PHPHelper;
 
 /**
@@ -10,7 +11,8 @@ use usv\yii2helper\PHPHelper;
  */
 class Project extends BaseProject
 {
-    private const DEFAULT_THEME = 'flattheme';
+    use ModelB3tTrait;
+    public static $SITES_DIR = '/var/www/fac/web/sites/';
     public function gotoFolder()
     {
         chdir('../web/sites');
@@ -18,17 +20,16 @@ class Project extends BaseProject
         chdir($norm_url);
     }
 
-    public function afterSave($insert, $changedAttributes)
+    public function afterSaveAll($insert)
     {
-        parent::afterSave($insert, $changedAttributes);
         if ($insert) {
             //create default pages
             $page = new Page();
             //index
             $page->setAttributes(['project_id' => $this->id, 'name' => 'Home', 'type' => 'home']);
-            $template = new Template(self::DEFAULT_THEME);
+            $template = new Template();
             $page->html = $template->getHtml('home');
-            $page->save();
+            $page->saveAndLogError();
         }
     }
 }

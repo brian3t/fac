@@ -15,15 +15,16 @@ namespace app\models;
  */
 class Template
 {
-    public static $TEMPLATE_FOLDER = './static/templates/';//relative to current project site directory
+    public static $TEMPLATE_FOLDER = '/var/www/fac/web/static/templates/';//relative to current project site directory
 
+    const DEFAULT_TEMPLATE = 'flattheme';
     const PAGE_TYPES = ['index', '404', 'about'];
     public $path = '';
 
-    public function __construct($name)
+    public function __construct($name = self::DEFAULT_TEMPLATE)
     {
         $this->name = $name;
-        $this->path = self::$TEMPLATE_FOLDER . "/$name";
+        $this->path = self::$TEMPLATE_FOLDER . "$name/";
     }
 
     /**

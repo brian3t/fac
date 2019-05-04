@@ -83,12 +83,11 @@ class ProjectController extends Controller
             chdir('../web/sites');
             $norm_url = PHPHelper::dbNormalizeString($model->url);
             mkdir($norm_url);
-            chdir($norm_url);
-            $template_folder = Template::$TEMPLATE_FOLDER;
-            $template_folder_real = realpath($template_folder);
-            $norm_url_real = realpath(dirname('.'));
-            if (strlen($template_folder_real) > 4) {
-                exec("cp -Rp $template_folder_real/* $norm_url_real");
+            $norm_url_abs = Project::$SITES_DIR . $norm_url;
+            $template = new Template();
+            $template_path = $template->path;
+            if (strlen($template_path) > 4 && strlen($norm_url_abs) > 4) {
+                exec("cp -Rp $template_path* $norm_url_abs");//copy template into proj
             }
 
             return $this->redirect(['view', 'id' => $model->id]);
@@ -132,11 +131,16 @@ class ProjectController extends Controller
         $model = $this->findModel($id);
         chdir('../web/sites');
         $norm_url = PHPHelper::dbNormalizeString($model->url);
-        chdir($norm_url);
-        $norm_url_real = realpath(dirname("."));
-        if (strlen($norm_url_real) > 4) //we only delete non-system folders!!!
-        {
-            exec("rm -rf $norm_url_real");
+        try {
+            if (chdir($norm_url)) {
+                $norm_url_real = realpath(dirname("."));
+                if (strlen($norm_url_real) > 4) //we only delete non-system folders!!!
+                {
+                    exec("rm -rf $norm_url_real");
+                }
+            }
+        } catch (\Exception $exception) {
+
         }
         $model->deleteWithRelated();
 

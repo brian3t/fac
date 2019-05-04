@@ -61,8 +61,6 @@ $this->registerJs($search);
         'favicon',
         'type',
         'biz_contact_name',
-        'does_enable_phone_display',
-        'does_enable_email_display:email',
         'phone',
         'email:email',
         'sms',
