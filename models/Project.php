@@ -26,9 +26,9 @@ class Project extends BaseProject
             //create default pages
             $page = new Page();
             //index
-            $page->setAttributes(['project_id' => $this->id, 'name' => 'Home', 'type' => 'home']);
+            $page->setAttributes(['project_id' => $this->id, 'name' => 'Home', 'type' => 'index']);
             $template = new Template();
-            $page->html = $template->getHtml('home');
+            $page->html = $template->getHtml('index');
             $page->saveAndLogError();
         }
     }
