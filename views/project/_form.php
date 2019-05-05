@@ -176,12 +176,13 @@ use yii\widgets\ActiveForm;
                 'sideways' => true,
                 'enableCache' => false,
             ],
+            'headerOptions' => ['class'=>'disabled', 'id'=>'page_tab'],
         ]);
         ?>
     </div>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-        <?= Html::a('Preview', $model->full_url, ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Preview', $model->full_url, ['class' => 'btn btn-success preview_project']) ?>
         <?= Html::a(Yii::t('app', 'Cancel'), Yii::$app->request->referrer, ['class' => 'btn btn-danger']) ?>
     </div>
 

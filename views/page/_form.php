@@ -34,7 +34,7 @@ $this->registerJsFile('/js/page_update.js', ['depends' => \yii\web\JqueryAsset::
         ],
     ]); */ ?>
 
-    <?= $form->field($model, 'type')->dropDownList([ 'home' => 'Home', 'about' => 'About', 'content' => 'Content', 'blank' => 'Blank', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'type')->dropDownList([ 'index' => 'Index', 'about' => 'About', 'content' => 'Content', 'blank' => 'Blank', ], ['prompt' => '']) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true, 'placeholder' => 'Name']) ?>
 

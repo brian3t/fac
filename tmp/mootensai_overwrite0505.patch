@@ -1,0 +1,17 @@
+Index: vendor/mootensai/yii2-relation-trait/RelationTrait.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- vendor/mootensai/yii2-relation-trait/RelationTrait.php	(date 1556986856000)
++++ vendor/mootensai/yii2-relation-trait/RelationTrait.php	(date 1556986856000)
+@@ -324,6 +324,9 @@
+                     return false;
+                 }
+                 $trans->commit();
++                if (method_exists($this, 'afterSaveAll')) {
++                    $this->afterSaveAll($isNewRecord);
++                };
+                 return true;
+             } else {
+                 return false;

@@ -25,4 +25,8 @@ table.kv-grid-table input.form-control{
   width: initial;
 }
 .name{text-transform: capitalize ;  }
-div.project-create
+div.project-create{
+  & div#add-page,#page_tab, a.preview_project{
+    display: none
+  }
+}

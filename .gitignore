@@ -36,3 +36,4 @@ api/assets/
 
 web/index.php
 api/index.php
+/web/sites/*

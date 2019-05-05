@@ -1,10 +1,10 @@
 <div class="form-group" id="add-page">
 <?php
-use kartik\grid\GridView;
+
 use kartik\builder\TabularForm;
+use kartik\grid\GridView;
 use yii\data\ArrayDataProvider;
 use yii\helpers\Html;
-use yii\widgets\Pjax;
 
 $dataProvider = new ArrayDataProvider([
     'allModels' => $row,
@@ -33,7 +33,7 @@ echo TabularForm::widget([
             'columnOptions' => ['width' => '200px']
         ],*/
         'type' => ['type' => TabularForm::INPUT_DROPDOWN_LIST,
-            'items' => [ 'home' => 'Home', 'about' => 'About', 'content' => 'Content', 'blank' => 'Blank', ],
+            'items' => [ 'index' => 'Index', 'about' => 'About', 'content' => 'Content', 'blank' => 'Blank', ],
             'options' => [
                 'columnOptions' => ['width' => '185px'],
                 'options' => ['placeholder' => 'Choose Type'],
