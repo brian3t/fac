@@ -16,9 +16,9 @@
       </driver-properties>
     </data-source>
     <data-source source="LOCAL" name="MySQL - fac@localhost" uuid="f6de8775-1c47-4b8a-911f-111459e555cc">
-      <driver-ref>mysql.8</driver-ref>
+      <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/fac</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />

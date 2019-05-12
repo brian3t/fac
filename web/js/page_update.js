@@ -5,7 +5,7 @@ $(document).ready(function () {
         selector: '#page-html',
         skin: 'oxide',
         // width: 600,
-        // height: 300,
+        height: 800,
         plugins: [
             'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker code',
             'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',

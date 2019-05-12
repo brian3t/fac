@@ -77,7 +77,10 @@ class ProjectController extends Controller
     {
         $model = new Project();
 
-        if ($model->loadAll(Yii::$app->request->post()) && $model->saveAll()) {
+        if ($model->loadAll(Yii::$app->request->post()) && ($saveall_result = $model->saveAll())) {
+            if ($saveall_result){
+                $model->afterSaveAll(true);
+            }
             //we create project sites folder
             //FUTURE: then create sites-available, enable site, then restart apache
             chdir('../web/sites');

@@ -135,10 +135,11 @@ if($providerPage->totalCount){
     $gridColumnPage = [
         ['class' => 'yii\grid\SerialColumn'],
             ['attribute' => 'id', 'visible' => false],
-                        [
+                        /*[
                 'attribute' => 'microsite.id',
                 'label' => 'Microsite'
-            ],
+            ],*/
+            'type',
             'name',
     ];
     echo Gridview::widget([

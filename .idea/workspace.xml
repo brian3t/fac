@@ -2,172 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="todo: rename url&#10;to check: verify unique url?&#10;#todo: full_url generation - use WPF hosting&#10;&#10;#todo: gen page html using template header">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Project.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/page/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/page/_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/project/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/project/_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/project/_formPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/project/_formPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/project/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/project/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/project/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/project/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/page_update.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/page_update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/less/sass/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/less/sass/custom.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/less/stylesheets/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/less/stylesheets/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/less/stylesheets/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/less/stylesheets/custom.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_extra.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_rtl.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_class.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_config.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_effect.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_extra.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_preloader.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_reset.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_rtl.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/barfiller.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/magnific.pupup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/main.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/slicknav.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/404-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/about.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/brand1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/brand2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/brand3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/brand4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/client.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/fag-img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/gallery-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/gallery-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/gallery-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/gallery-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/gallery-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/logo-404.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/page-title.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/recent1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/recent2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/recent3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/slide1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/slide2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/slide3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/js/active.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/js/google.map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/js/jquery-2.2.4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/_color.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/_common.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/_index.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/_main.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/_mixin.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/style.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/career.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/coming-soon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/big-button.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/examples.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/github.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/patterns.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/patterns.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/flatdoc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/legacy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/Notes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/blur.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/business.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/dox2md.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/legacy-header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/theme.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/theme-white/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/theme-white/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/theme-white/style.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/faq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/index-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/index-3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/portfolio.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/pricing.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/service.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/team.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/testimonial.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap/" />
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap3-dialog/" />
@@ -281,6 +127,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -306,32 +155,29 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fac@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="MySQL - fac@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - fac@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="fac: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="MySQL - fac@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="fac: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="page: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii2helper/models/ModelB3tTrait.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/Project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="380">
+              <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
               <folding>
                 <element signature="e#30#73#0#PHP" expanded="true" />
               </folding>
@@ -340,28 +186,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/project/_formPage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-15">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/project/_detail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/project/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="141" column="19" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/page/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="36" column="64" lean-forward="true" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+            <state relative-caret-position="285">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/mootensai/yii2-relation-trait/RelationTrait.php">
+        <entry file="file://$PROJECT_DIR$/web/js/page_update.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="321" column="39" selection-start-line="321" selection-start-column="39" selection-end-line="321" selection-end-column="39" />
+            <state relative-caret-position="150">
+              <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Template.php">
+        <entry file="file://$PROJECT_DIR$/controllers/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="195">
+              <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="28726" column="73" selection-start-line="28726" selection-start-column="73" selection-end-line="28726" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -369,8 +251,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/project/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="184" column="93" selection-start-line="184" selection-start-column="93" selection-end-line="184" selection-end-column="93" />
+            <state relative-caret-position="148">
+              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -378,35 +260,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/less/sass/custom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/dump_db8_to_dropbox.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sql/dump_db_to_dropbox_STH_WRONG_HERE.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/less/stylesheets/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+            <state relative-caret-position="495">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -452,8 +307,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/baseuser/user/index.php" />
-        <option value="$PROJECT_DIR$/views/baseuser/user/view.php" />
         <option value="$PROJECT_DIR$/runtime/logs/console.log" />
         <option value="$PROJECT_DIR$/views/user-group/index.php" />
         <option value="$PROJECT_DIR$/views/user-group/create.php" />
@@ -479,15 +332,11 @@
         <option value="$PROJECT_DIR$/yii2helper/grid/EditColumn.php" />
         <option value="$PROJECT_DIR$/views/project/_dataPage.php" />
         <option value="$PROJECT_DIR$/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/web/js/page_update.js" />
         <option value="$PROJECT_DIR$/views/page/view.php" />
-        <option value="$PROJECT_DIR$/controllers/PageController.php" />
         <option value="$PROJECT_DIR$/views/project/update.php" />
         <option value="$PROJECT_DIR$/web/js/project_update.js" />
         <option value="$PROJECT_DIR$/web/static/templates/flattheme/index.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f6de8775-1c47-4b8a-911f-111459e555cc/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1bab20e5-f86f-43ce-8c58-e98b7eb6ff63/console.sql" />
-        <option value="$PROJECT_DIR$/views/project/view.php" />
         <option value="$PROJECT_DIR$/views/project/_detail.php" />
         <option value="$PROJECT_DIR$/models/base/Project.php" />
         <option value="$PROJECT_DIR$/views/project/index.php" />
@@ -497,12 +346,18 @@
         <option value="$PROJECT_DIR$/models/Page.php" />
         <option value="$PROJECT_DIR$/vendor/mootensai/yii2-relation-trait/RelationTrait.php" />
         <option value="$PROJECT_DIR$/yii2helper/models/ModelB3tTrait.php" />
-        <option value="$PROJECT_DIR$/runtime/logs/app.log" />
-        <option value="$PROJECT_DIR$/models/Project.php" />
         <option value="$PROJECT_DIR$/views/project/_form.php" />
+        <option value="$PROJECT_DIR$/views/project/_formPage.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f6de8775-1c47-4b8a-911f-111459e555cc/console.sql" />
+        <option value="$PROJECT_DIR$/config/params.php" />
+        <option value="$PROJECT_DIR$/views/project/view.php" />
         <option value="$PROJECT_DIR$/web/less/sass/custom.scss" />
         <option value="$PROJECT_DIR$/views/page/_form.php" />
-        <option value="$PROJECT_DIR$/views/project/_formPage.php" />
+        <option value="$PROJECT_DIR$/web/js/page_update.js" />
+        <option value="$PROJECT_DIR$/controllers/PageController.php" />
+        <option value="$PROJECT_DIR$/runtime/logs/app.log" />
+        <option value="$PROJECT_DIR$/models/Project.php" />
       </list>
     </option>
   </component>
@@ -640,14 +495,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
@@ -662,132 +522,28 @@
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="mootensai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="mootensai" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2-relation-trait" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="yiisoft" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="yiisoft" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="yiisoft" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="yiisoft" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-              <item name="custom.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="yii2helper" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="f6de8775-1c47-4b8a-911f-111459e555cc" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
           </expand>
           <select />
@@ -824,7 +580,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Bash.dump db to dropbox">
+  <component name="RunManager" selected="Bash.restore_db_fr_dropbox.sh">
     <configuration name="dump db to dropbox" type="BashConfigurationType" factoryName="Bash">
       <module name="fac" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -938,16 +694,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="-1" width="2566" height="1418" extended-state="6" />
+    <frame x="-1" y="-1" width="1922" height="1065" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48121646" visible="true" weight="0.11106688" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48121646" visible="true" weight="0.11288605" />
       <window_info id="Structure" order="1" sideWeight="0.51878357" side_tool="true" weight="0.14903846" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286638" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49761146" visible="true" weight="0.32583398" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.56011146" weight="0.28704423" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968051" weight="0.32484075" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.55910546" visible="true" weight="0.2866242" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -955,9 +711,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Migrations" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.33836207" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50238854" side_tool="true" visible="true" weight="0.32583398" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.44089457" side_tool="true" visible="true" weight="0.2866242" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49920383" weight="0.32816136" />
-      <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.4957265" weight="0.33692142" />
+      <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49520767" weight="0.33651805" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -965,7 +721,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Remote Host" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.12778662" />
+      <window_info anchor="right" id="Database" order="6" weight="0.27902022" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1027,6 +783,11 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>WEBROOT</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>$this</expression-string>
         <language-id>PHP</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -1066,41 +827,9 @@
         <language-id>PHP</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>'../static/templates/'</expression-string>
-        <language-id>PHP</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/js/project_update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/base/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="739" selection-start-line="739" selection-end-line="739" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/templates/flattheme/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/microsite_menu" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f6de8775-1c47-4b8a-911f-111459e555cc/console.sql" />
-    <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/gallery" />
-    <entry file="file://$PROJECT_DIR$/views/gallery/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/user-group/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1155,20 +884,6 @@
     <entry file="file://$PROJECT_DIR$/views/gallery/_form.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/project/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/project/_detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/widgets/ActiveField.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1204,15 +919,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://73fa18ec-dcc1-4bb0-9e7d-a8411a220382/schema/carpoolnowdb/table/cuser">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://73fa18ec-dcc1-4bb0-9e7d-a8411a220382/schema/carpoolnowdb/table/cuser" />
     <entry file="file://$PROJECT_DIR$/models/constants.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1244,19 +951,13 @@
     <entry file="das://8570ab36-b976-41a0-8309-4c1b2c4ad395/schema/fac/table/microsite_menu">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true">
+          <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8570ab36-b976-41a0-8309-4c1b2c4ad395/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8570ab36-b976-41a0-8309-4c1b2c4ad395/console.sql" />
     <entry file="file://$PROJECT_DIR$/models/Page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1277,7 +978,7 @@
     <entry file="das://8570ab36-b976-41a0-8309-4c1b2c4ad395/schema/fac/table/page">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true">
+          <filtering>
             <filter text="" />
           </filtering>
         </state>
@@ -1286,7 +987,7 @@
     <entry file="das://8570ab36-b976-41a0-8309-4c1b2c4ad395/schema/fac/table/project">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true">
+          <filtering>
             <filter text="" />
           </filtering>
         </state>
@@ -1306,13 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii2helper/models/ModelB3tTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/base/Widget.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -1323,62 +1017,39 @@
     <entry file="file://$PROJECT_DIR$/views/project/create.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Template.php">
+    <entry file="file://$PROJECT_DIR$/yii2helper/models/ModelB3tTrait.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/less/stylesheets/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/less/sass/custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state relative-caret-position="540">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/mootensai/yii2-relation-trait/RelationTrait.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="4635">
           <caret line="321" column="39" selection-start-line="321" selection-start-column="39" selection-end-line="321" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/project/_form.php">
+    <entry file="file://$PROJECT_DIR$/sql/dump_db_to_dropbox_STH_WRONG_HERE.sh" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f6de8775-1c47-4b8a-911f-111459e555cc/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="184" column="93" selection-start-line="184" selection-start-column="93" selection-end-line="184" selection-end-column="93" />
+        <state relative-caret-position="45">
+          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#30#73#0#PHP" expanded="true" />
-          </folding>
+    <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/page">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="158e3cc9-7a18-4d63-9811-f60ada361de9">
+          <filtering />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/project/_formPage.php">
+    <entry file="file://$PROJECT_DIR$/models/Template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="37" column="56" lean-forward="true" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/page/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="36" column="64" lean-forward="true" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+        <state relative-caret-position="360">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -1389,10 +1060,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/dump_db_to_dropbox_STH_WRONG_HERE.sh">
+    <entry file="file://$PROJECT_DIR$/web/less/stylesheets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="30">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/project/_formPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/project/_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/project/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="141" column="19" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/widgets/ActiveForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="320" column="20" selection-start-line="320" selection-start-column="20" selection-end-line="320" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/project/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/less/sass/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/page/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/page_update.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="28726" column="73" selection-start-line="28726" selection-start-column="73" selection-end-line="28726" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <folding>
+            <element signature="e#30#73#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

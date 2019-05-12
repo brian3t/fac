@@ -17,8 +17,8 @@ $this->registerJsFile('/js/page_update.js', ['depends' => \yii\web\JqueryAsset::
     <?= $form->errorSummary($model); ?>
 
     <?= $form->field($model, 'id', ['template' => '{input}'])->textInput(['style' => 'display:none']); ?>
-
-    <?= $form->field($model, 'project_id')->widget(\kartik\widgets\Select2::classname(), [
+<div class="row">
+    <?= $form->field($model, 'project_id', ['options'  => ['class' => 'col-md-4']])->widget(\kartik\widgets\Select2::classname(), [
         'data' => \yii\helpers\ArrayHelper::map(\app\models\Project::find()->orderBy('id')->asArray()->all(), 'id', 'name'),
         'options' => ['placeholder' => 'Choose Project','disabled'=>true],
         'pluginOptions' => [
@@ -34,10 +34,10 @@ $this->registerJsFile('/js/page_update.js', ['depends' => \yii\web\JqueryAsset::
         ],
     ]); */ ?>
 
-    <?= $form->field($model, 'type')->dropDownList([ 'index' => 'Index', 'about' => 'About', 'content' => 'Content', 'blank' => 'Blank', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'type', ['options'  => ['class' => 'col-md-4']])->dropDownList([ 'index' => 'Index', 'about' => 'About', 'content' => 'Content', 'blank' => 'Blank', ], ['prompt' => '']) ?>
 
-    <?= $form->field($model, 'name')->textInput(['maxlength' => true, 'placeholder' => 'Name']) ?>
-
+    <?= $form->field($model, 'name', ['options'  => ['class' => 'col-md-4']])->textInput(['maxlength' => true, 'placeholder' => 'Name']) ?>
+</div>
     <?= $form->field($model, 'html')->textarea(['rows' => 6]) ?>
 
     <div class="form-group">
