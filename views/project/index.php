@@ -68,8 +68,6 @@ $this->registerJs($search);
         'wechatid',
         'wechat_image',
         'email2:email',
-        'phone3',
-        'email3:email',
         [
             'class' => 'yii\grid\ActionColumn',
         ],

@@ -23,5 +23,23 @@ class Page extends BasePage
             [['name'], 'string', 'max' => 255]
         ]);
     }
-	
+
+    /**
+     * Before saving a page, we rewrite the url so that it points to the full_url of the Project
+     * e.g.
+     * <link rel="stylesheet" href="assets/a.css">
+     * will become:
+     * <link rel="stylesheet" href="https://website.com/fullurl/assets/a.css">
+     * @param bool $insert
+     * @return bool
+     */
+    public function beforeSave($insert)
+    {
+        $html = $this->html;
+        $search = '/<link rel="stylesheet" href=([a-zA-Z\/])"/i';//root dir or current dir
+        preg_match_all('/link rel/i', $html, $out);
+        $this->html = preg_replace($search, '<link rel="stylesheet" href=aaaa', $html);
+
+        return parent::beforeSave($insert);
+    }
 }

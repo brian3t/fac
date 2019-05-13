@@ -24,7 +24,7 @@ class Project extends BaseProject
     public function beforeSave($insert)
     {
         $new_url = PHPHelper::dbNormalizeString($this->url);
-        $this->full_url = WEBROOT . "/sites/" . $new_url;
+        $this->full_url = WEBROOT . "sites/" . $new_url;
         return parent::beforeSave($insert);
     }
 
@@ -41,7 +41,7 @@ class Project extends BaseProject
         if (file_exists($old_url)) {
             try {
                 rename($old_url, $new_url);
-                $this->full_url = WEBROOT . "/sites/" . $new_url;
+                $this->full_url = WEBROOT . "sites/" . $new_url;
                 $this->save();
             } catch (\Exception $exception) {
                 \Yii::error($exception->getMessage());
