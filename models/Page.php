@@ -36,10 +36,12 @@ class Page extends BasePage
     public function beforeSave($insert)
     {
         $html = $this->html;
-        $search = '/<link rel="stylesheet" href=([a-zA-Z\/])"/i';//root dir or current dir
-        preg_match_all('/link rel/i', $html, $out);
-        $this->html = preg_replace($search, '<link rel="stylesheet" href=aaaa', $html);
 
+        $search = '/<link rel="stylesheet" href="(?!http)/';
+//        preg_match_all('/link rel/i', $html, $out);
+        $replaced = preg_replace($search, '<link rel="stylesheet" href="' . WEBROOT . $this->project->url . '/', $html);
+
+        $this->html = $replaced;
         return parent::beforeSave($insert);
     }
 }

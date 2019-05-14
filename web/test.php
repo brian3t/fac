@@ -1,52 +1,15 @@
 <?php
-ob_start();
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen"/>
-</head>
-<body>
 
-<?php
-require_once __DIR__. '/../vendor/autoload.php';
+define('WEBROOT', 'http://fac/');
 
-//use phpQuery;
+$html = file_get_contents(dirname(__DIR__) . "/web/sites/project4url/index.html");
+$html = '    <link rel="stylesheet" href="hattp://sa/assets/css/owl.carousel.css">';
 
-// instantiate and use the dompdf class
-$pdf = new mPDF();
-$pdf->WriteHTML('<h1>Hello world!</h1>');
-$pdf->Output();
+//$search = '/<link rel="stylesheet" href=([a-zA-Z\/])"/i';//root dir or current dir
+$search = '/<link rel="stylesheet" href="(?!http)/';
+//$search = '/\<link rel=\"/';
+preg_match_all($search, $html, $out);
+$replaced = preg_replace($search, '<link rel="stylesheet" href="' . WEBROOT, $html);
 
-exit(1);
-// Create a HTML object with a basic div container
-phpQuery::newDocument();
-
-$body = pq('<div>');
-$div = pq('<div>');
-$div->addClass('row')->text('hi there');
-
-$div2 = pq('<div>');
-$div2->addClass('row')->text('hi again');
-
-$body->append($div)->append($div2);
-
-// (Optional) Setup the paper size and orientation
-$pdf->setPaper('A4', 'landscape');
-
-// Render the HTML to ob
-echo $body->html();
-
-$output = ob_get_clean();
-$pdf->loadHtml($output);
-echo $output;
-$pdf->render();
-
-// Output the generated PDF to Browser
-$pdf->stream();
-
-?>
-</body>
-</html>
+$a = 1;
 

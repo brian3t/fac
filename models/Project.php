@@ -23,6 +23,7 @@ class Project extends BaseProject
 
     public function beforeSave($insert)
     {
+        $this->url = trim($this->url);
         $new_url = PHPHelper::dbNormalizeString($this->url);
         $this->full_url = WEBROOT . "sites/" . $new_url;
         return parent::beforeSave($insert);
