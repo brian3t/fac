@@ -12,6 +12,7 @@ $dataProvider = new ArrayDataProvider([
         'pageSize' => -1
     ]
 ]);
+/** @var $model \app\models\Page */
 echo TabularForm::widget([
     'dataProvider' => $dataProvider,
     'formName' => 'Page',
@@ -47,6 +48,12 @@ echo TabularForm::widget([
             } else {
                 return '';
             }
+        }],
+        'preview' => ['type' => 'raw', 'value' => function($model){
+            /** @var $model \app\models\Page */
+            $project = \app\models\Project::findOne($model['project_id']);
+            /** @var \app\models\Project $project */
+            return Html::a(ucwords($model['type']), $project->full_url. "/". $model['type'] . '.html');
         }],
         'del' => [
             'type' => 'raw',

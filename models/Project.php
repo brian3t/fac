@@ -21,6 +21,11 @@ class Project extends BaseProject
         chdir($norm_url);
     }
 
+    public function beforeValidate()
+    {
+        return parent::beforeValidate();
+    }
+
     public function beforeSave($insert)
     {
         $this->url = trim($this->url);
