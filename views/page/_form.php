@@ -43,6 +43,7 @@ $this->registerJsFile('/js/page_update.js', ['depends' => \yii\web\JqueryAsset::
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
         <?= Html::a(Yii::t('app', 'Cancel'), Yii::$app->request->referrer , ['class'=> 'btn btn-danger']) ?>
+        <?= Html::a('Preview', $model->getPreviewUrl() , ['class' => 'btn', 'target'=> '_blank']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

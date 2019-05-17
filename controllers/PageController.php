@@ -91,7 +91,10 @@ class PageController extends Controller
         $model = $this->findModel($id);
 
         if ($model->loadAll(Yii::$app->request->post()) && $model->saveAll()) {
-            return $this->redirect(['/project/index']);
+//            return $this->redirect(['/project/index']);
+            return $this->render('update', [
+                'model' => $model,
+            ]);
         } else {
             return $this->render('update', [
                 'model' => $model,

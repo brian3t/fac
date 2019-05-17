@@ -11,6 +11,8 @@ use usv\yii2helper\models\ModelB3tTrait;
 class Page extends BasePage
 {
     use ModelB3tTrait;
+
+    public static $SITES_FOLDER = '/var/www/fac/web/sites/';
     /**
      * @inheritdoc
      */
@@ -38,10 +40,21 @@ class Page extends BasePage
         $html = $this->html;
 
         $search = '/<link rel="stylesheet" href="(?!http)/';
-//        preg_match_all('/link rel/i', $html, $out);
-        $replaced = preg_replace($search, '<link rel="stylesheet" href="' . WEBROOT . $this->project->url . '/', $html);
+        $html = preg_replace($search, '<link rel="stylesheet" href="' . WEBROOT . 'sites/' . $this->project->url . '/', $html);
 
-        $this->html = $replaced;
+        $search = '/img(.+)src="(?!http)/';
+        $html = preg_replace($search, 'img${1}src="' . WEBROOT . 'sites/' . $this->project->url . '/', $html);
+
+        $this->html = $html;
+
+        //now output this back to html raw file
+        $my_output_file_path = self::$SITES_FOLDER . $this->project->url. '/' . $this->type . '.html';
+        file_put_contents($my_output_file_path, $this->html);
+
         return parent::beforeSave($insert);
+    }
+
+    public function getPreviewUrl(){
+        return WEBROOT . 'sites/' . $this->project->url . '/' . $this->type. '.html';
     }
 }

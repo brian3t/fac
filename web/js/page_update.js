@@ -12,6 +12,13 @@ $(document).ready(function () {
             'save table contextmenu directionality emoticons template paste textcolor fullpage'
         ],
         toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons code',
-        content_css: '/test.css'
+        relative_urls : false,
+        convert_urls : false,
+        remove_script_host : false,
+        allow_script_urls: true
+
+
+
+        // content_css: '/test.css'
     });
 });

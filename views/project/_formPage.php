@@ -44,7 +44,7 @@ echo TabularForm::widget([
         'html' => ['type' => 'raw', 'value' => function ($model) {
             $id = $model['id'] ?? null;
             if (is_int($id) && $id > 0) {
-                return Html::a('WYSIWYG edit', "/page/update?id=$id");
+                return Html::a('WYSIWYG edit', "/page/update?id=$id", ['target'=>'_blank']);
             } else {
                 return '';
             }
@@ -53,7 +53,7 @@ echo TabularForm::widget([
             /** @var $model \app\models\Page */
             $project = \app\models\Project::findOne($model['project_id']);
             /** @var \app\models\Project $project */
-            return Html::a(ucwords($model['type']), $project->full_url. "/". $model['type'] . '.html');
+            return Html::a(ucwords($model['type']), $project->full_url. "/". $model['type'] . '.html', ['target' => '_blank']);
         }],
         'del' => [
             'type' => 'raw',
