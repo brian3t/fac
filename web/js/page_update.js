@@ -15,7 +15,7 @@ $(document).ready(function () {
         relative_urls : false,
         convert_urls : false,
         remove_script_host : false,
-        allow_script_urls: true
+        // allow_script_urls: true
 
 
 

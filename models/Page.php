@@ -45,6 +45,11 @@ class Page extends BasePage
         $search = '/img(.+)src="(?!http)/';
         $html = preg_replace($search, 'img${1}src="' . WEBROOT . 'sites/' . $this->project->url . '/', $html);
 
+        $search = '/style="background-image: url\(\'(?!http)/';
+        $html = preg_replace($search, 'style="background-image: url(\'' . WEBROOT . 'sites/' . $this->project->url . '/', $html);
+//        $html = preg_replace($search, 'style="background-image: url(abcde', $html);
+
+
         $this->html = $html;
 
         //now output this back to html raw file
