@@ -7,7 +7,8 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\Page */
 /* @var $form yii\widgets\ActiveForm */
 
-$this->registerJsFile('/js/tinymce/tinymce.min.js', ['depends' => \yii\web\JqueryAsset::class, 'position' => \yii\web\View::POS_END]);
+//$this->registerJsFile('/js/tinymce/tinymce.min.js', ['depends' => \yii\web\JqueryAsset::class, 'position' => \yii\web\View::POS_END]);
+$this->registerJsFile('/js/ckeditor/ckeditor.js', ['depends' => \yii\web\JqueryAsset::class, 'position' => \yii\web\View::POS_END]);
 $this->registerJsFile('/js/page_update.js', ['depends' => \yii\web\JqueryAsset::class, 'position' => \yii\web\View::POS_END]);
 ?>
 <div class="page-form">

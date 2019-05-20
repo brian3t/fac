@@ -1,7 +1,22 @@
 $(document).ready(function () {
     console.log(`page_update ready`);
-
-    tinymce.init({
+    /*
+    ck5
+    ClassicEditor
+        .create(document.querySelector('#page-html'), {
+            allowedContent: true,
+            fullPage: true
+        })
+        .catch(error => {
+            console.error(error);
+        });*/
+    CKEDITOR.replace( 'page-html',
+        {
+            fullPage : true,
+            uiColor : '#efe8ce',
+            extraAllowedContent: 'header section'
+        });
+    /*tinymce.init({
         selector: '#page-html',
         skin: 'oxide',
         // width: 600,
@@ -20,5 +35,5 @@ $(document).ready(function () {
 
 
         // content_css: '/test.css'
-    });
+    });*/
 });

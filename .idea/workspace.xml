@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/simplified.html" afterDir="false" />
+    <list default="true" id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="todo: tiny removing head/foot. try ckeditor?&#10;to check: verify unique url?&#10;#todo: full_url generation - use WPF hosting&#10;&#10;#todo: gen page html using template header">
+      <change afterPath="$PROJECT_DIR$/commands/compare_page_with_template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/populate_page_sample_content.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/PageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/page/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/page/_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/project/_formPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/project/_formPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/ckeditor/ckeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/ckeditor/ckeditor.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/ckeditor/sample.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/page_update.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/page_update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/templates/flattheme/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/templates/flattheme/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/simplified.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/simplified.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap/" />
     <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap3-dialog/" />
@@ -170,28 +172,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/project/index.php">
+        <entry file="file://$PROJECT_DIR$/web/simplified.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="57" column="85" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -199,15 +183,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/sites/project6url/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-488" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/simplified.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="81" column="14" selection-end-line="100" />
+            <state relative-caret-position="465">
+              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -215,7 +192,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/page">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="6d21a354-f7fa-4d4c-a7f8-29c46acb528f">
+            <state projectRestartId="9d720285-6fcd-4131-bde9-bc3475e19297">
               <filtering>
                 <filter text="" />
               </filtering>
@@ -223,20 +200,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/PageController.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/Page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+            <state relative-caret-position="350">
+              <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/page/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+            <state relative-caret-position="150">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -253,6 +230,29 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/page_update.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commands/populate_page_sample_content.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runtime/logs/console.log">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -275,8 +275,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>RE Boost</find>
-      <find>gii</find>
       <find>gridview</find>
       <find>User Group</find>
       <find>getIsAdmin</find>
@@ -303,6 +301,10 @@
       <find>logo.</find>
       <find>brand1</find>
       <find>slide1</find>
+      <find>slide1.</find>
+      <find>.css</find>
+      <find>p</find>
+      <find>preloader</find>
     </findStrings>
     <replaceStrings>
       <replace>Agent Team</replace>
@@ -314,10 +316,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/user/admin/_profile.php" />
-        <option value="$PROJECT_DIR$/views/baseuser/baseuser/index.php" />
-        <option value="$PROJECT_DIR$/models/base/User.php" />
-        <option value="$PROJECT_DIR$/views/user-group/_dataUser.php" />
         <option value="$PROJECT_DIR$/views/user-group/_formUser.php" />
         <option value="$PROJECT_DIR$/views/user-group/view.php" />
         <option value="$PROJECT_DIR$/views/baseuser/baseuser/_form.php" />
@@ -355,20 +353,23 @@
         <option value="$PROJECT_DIR$/models/base/Project.php" />
         <option value="$PROJECT_DIR$/views/project/_formPage.php" />
         <option value="$PROJECT_DIR$/config/params.php" />
-        <option value="$PROJECT_DIR$/runtime/logs/app.log" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html" />
         <option value="$PROJECT_DIR$/web/static/templates/flattheme/index.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.html" />
-        <option value="$PROJECT_DIR$/web/js/page_update.js" />
-        <option value="$PROJECT_DIR$/web/simplified.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/controllers/PageController.php" />
-        <option value="$PROJECT_DIR$/models/Page.php" />
+        <option value="$PROJECT_DIR$/web/sites/project6url/index.html" />
         <option value="$PROJECT_DIR$/views/page/_form.php" />
+        <option value="$PROJECT_DIR$/web/simplified.html" />
+        <option value="$PROJECT_DIR$/runtime/logs/app.log" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/commands/compare_page_with_template.php" />
+        <option value="$PROJECT_DIR$/web/js/page_update.js" />
+        <option value="$PROJECT_DIR$/commands/populate_page_sample_content.php" />
+        <option value="$PROJECT_DIR$/runtime/logs/console.log" />
+        <option value="$PROJECT_DIR$/models/Page.php" />
       </list>
     </option>
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="fac" id="1f610a5d-83cc-46be-9298-c68d0a3617c6" name="fac" />
@@ -513,12 +514,7 @@
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
@@ -539,6 +535,11 @@
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
+              <item name="tmp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -546,18 +547,6 @@
               <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="social-account" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
@@ -574,6 +563,13 @@
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
               <item name="fac" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="ckeditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="sites" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -582,6 +578,27 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="sites" type="462c0819:PsiDirectoryNode" />
               <item name="project6url" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fac" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="flattheme" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fac" type="b2602c69:ProjectViewProjectNode" />
@@ -607,8 +624,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -617,18 +634,19 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/test.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/commands/compare_page_with_template.php" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sql" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/views/social-account" />
       <recent name="$PROJECT_DIR$/views/baseuser/baseuser" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/commands" />
+      <recent name="$PROJECT_DIR$/sql" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -643,7 +661,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.test">
+  <component name="RunManager" selected="PHP Script.compare_page_with_template">
     <configuration name="dump db to dropbox" type="BashConfigurationType" factoryName="Bash">
       <module name="fac" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -696,6 +714,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="compare_page_with_template" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/commands/compare_page_with_template.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="populate_page_sample_content.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/commands/populate_page_sample_content.php">
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/web/test.php">
       <method v="2" />
     </configuration>
@@ -705,6 +729,8 @@
       <item itemvalue="Bash.restore_db_8_fr_dropbox.sh" />
       <item itemvalue="Bash.restore_db_fr_dropbox.sh" />
       <item itemvalue="PHP Script.test" />
+      <item itemvalue="PHP Script.populate_page_sample_content.php" />
+      <item itemvalue="PHP Script.compare_page_with_template" />
     </list>
   </component>
   <component name="TaskManager">
@@ -764,21 +790,28 @@
       <option name="project" value="LOCAL" />
       <updated>1557984910377</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="todo: tiny removing head/foot. try ckeditor?&#10;to check: verify unique url?&#10;#todo: full_url generation - use WPF hosting&#10;&#10;#todo: gen page html using template header">
+      <created>1558155478668</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558155478668</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1922" height="1065" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48121646" visible="true" weight="0.1171459" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48121646" visible="true" weight="0.11927582" />
       <window_info id="Structure" order="1" sideWeight="0.51878357" side_tool="true" weight="0.14903846" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286638" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48402557" weight="0.3237792" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.5468584" visible="true" weight="0.28556263" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4824281" visible="true" weight="0.3237792" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5457934" weight="0.28556263" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -786,8 +819,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Migrations" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.33836207" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.45314163" side_tool="true" visible="true" weight="0.28556263" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49840257" weight="0.3280255" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51757187" side_tool="true" visible="true" weight="0.3237792" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4978701" weight="0.3280255" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.4946752" weight="0.3364979" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -853,7 +886,8 @@
     <MESSAGE value="todo: rename url&#10;to check: verify unique url?&#10;#todo: full_url generation - use WPF hosting&#10;&#10;#todo: gen page html using template header" />
     <MESSAGE value="trying to hide create page &#10;saved mootensai patch" />
     <MESSAGE value="todo: preview a target blank&#10;to check: verify unique url?&#10;#todo: full_url generation - use WPF hosting&#10;&#10;#todo: gen page html using template header" />
-    <option name="LAST_COMMIT_MESSAGE" value="todo: preview a target blank&#10;to check: verify unique url?&#10;#todo: full_url generation - use WPF hosting&#10;&#10;#todo: gen page html using template header" />
+    <MESSAGE value="todo: tiny removing head/foot. try ckeditor?&#10;to check: verify unique url?&#10;#todo: full_url generation - use WPF hosting&#10;&#10;#todo: gen page html using template header" />
+    <option name="LAST_COMMIT_MESSAGE" value="todo: tiny removing head/foot. try ckeditor?&#10;to check: verify unique url?&#10;#todo: full_url generation - use WPF hosting&#10;&#10;#todo: gen page html using template header" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -917,35 +951,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/widgets/ActiveField.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="640" column="20" selection-start-line="640" selection-start-column="20" selection-end-line="640" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Token.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/stubs/standard/standard_5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="1057" column="9" selection-start-line="1057" selection-start-column="9" selection-end-line="1057" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/base/ErrorHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii2helper/PHPHelper.php" />
     <entry file="das://73fa18ec-dcc1-4bb0-9e7d-a8411a220382/schema/carpoolnowdb/table/cuser" />
     <entry file="file://$PROJECT_DIR$/models/constants.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1051,9 +1056,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/sites/project4url/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sites/project4url/index.html" />
     <entry file="file://$PROJECT_DIR$/views/project/_detail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -1108,32 +1111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/templates/flattheme/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="81" column="14" selection-end-line="609" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/page_update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/project/_formPage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -1162,6 +1139,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/commands/OshinController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/templates/flattheme/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1215">
@@ -1181,45 +1188,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/sites/project6url/index.html">
+    <entry file="file://$PROJECT_DIR$/views/page/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-488" />
+        <state relative-caret-position="150">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/simplified.html">
+    <entry file="file://$PROJECT_DIR$/web/js/ckeditor/ckeditor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="81" column="14" selection-end-line="100" />
+        <state relative-caret-position="-135">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/compare_page_with_template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#6#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/page_update.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/page">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="6d21a354-f7fa-4d4c-a7f8-29c46acb528f">
+        <state projectRestartId="9d720285-6fcd-4131-bde9-bc3475e19297">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/PageController.php">
+    <entry file="file://$PROJECT_DIR$/commands/populate_page_sample_content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+        <state relative-caret-position="45">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/logs/console.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/simplified.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sites/project6url/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="57" column="85" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/page/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+        <state relative-caret-position="350">
+          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
         </state>
       </provider>
     </entry>
