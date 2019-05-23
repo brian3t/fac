@@ -78,10 +78,7 @@ class ProjectController extends Controller
         $model = new Project();
 
         if ($model->loadAll(Yii::$app->request->post()) && ($saveall_result = $model->saveAll())) {
-            if ($saveall_result){
-                $model->afterSaveAll(true);
-            }
-            //we create project sites folder
+//we create project sites folder
             //FUTURE: then create sites-available, enable site, then restart apache
             chdir('../web/sites');
             $norm_url = PHPHelper::dbNormalizeString($model->url);
@@ -91,6 +88,9 @@ class ProjectController extends Controller
             $template_path = $template->path;
             if (strlen($template_path) > 4 && strlen($norm_url_abs) > 4) {
                 exec("cp -Rp $template_path* $norm_url_abs");//copy template into proj
+            }
+            if ($saveall_result){
+                $model->afterSaveAll(true);
             }
 
             return $this->redirect(['view', 'id' => $model->id]);

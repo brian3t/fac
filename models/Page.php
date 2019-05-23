@@ -53,7 +53,7 @@ class Page extends BasePage
 
 //<div class="preloader">
 //    <span class="preloader-spin"></span>
-//</div>
+//</div>w
         $search = '/<div class="preloader">(.*?)<\/div>/s';
         $html = preg_replace($search, '', $html);
 

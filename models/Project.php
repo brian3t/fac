@@ -31,6 +31,14 @@ class Project extends BaseProject
         $this->url = trim($this->url);
         $new_url = PHPHelper::dbNormalizeString($this->url);
         $this->full_url = WEBROOT . "sites/" . $new_url;
+        /*chdir('../web/sites');
+        if (! file_exists($new_url)) {
+            try {
+                mkdir($new_url);
+            } catch (\Exception $exception) {
+                \Yii::error($exception->getMessage());
+            }
+        }*/
         return parent::beforeSave($insert);
     }
 
