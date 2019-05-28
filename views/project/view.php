@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <h2><?= 'Project'.' '. Html::encode($this->title) ?></h2>
         </div>
         <div class="col-sm-3" style="margin-top: 15px">
-            
+
             <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
             <?= Html::a('Delete', ['delete', 'id' => $model->id], [
                 'class' => 'btn btn-danger',
@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
     <div class="row">
-<?php 
+<?php
     $gridColumn = [
         ['attribute' => 'id', 'visible' => false],
         [
@@ -43,7 +43,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'use_own_domain',
         'domain',
         'url',
-        'full_url:url',
+        ['attribute' => 'full_url','format' => 'raw',
+            'value' => function ($model) {
+                $full_url = $model->full_url;
+                return "<a target='_blank' href='$full_url'>$full_url</a>";
+            }],
         'country_code',
         'logo',
         'favicon',
@@ -90,7 +94,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
 ?>
     </div>
-    
+
     <div class="row">
 <?php
 if($gallery): ?>
@@ -98,7 +102,7 @@ if($gallery): ?>
 <?php endif; ?>
 
     </div>
-    
+
     <div class="row">
 <?php
 if($providerMicrosite->totalCount){
@@ -128,7 +132,7 @@ if($providerMicrosite->totalCount){
 ?>
 
     </div>
-    
+
     <div class="row">
 <?php
 if($providerPage->totalCount){
