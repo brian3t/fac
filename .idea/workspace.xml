@@ -2,273 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/project/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/project/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/07cdb354ac9c10b330a4ce7adc2394d4d70c5b1a/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_extra.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/_rtl.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/4a80ec431289f6d0f26c20e9a73ca4f2aade91ca/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/508e72fb4dd6e4d0f74457ed975f2979efea90a9/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_class.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_config.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_effect.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_extra.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_preloader.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_reset.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/_rtl.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/75f2a84627d918ff8323ab8f55eab1ec58c4981b/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/8b7c6d41cb8239866ab54b165011b96b40fcaa2b/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/96ffa4bedb2af3e4d7d921d3f8944642b158b6d2/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/e361fc23583e732b91989a8f8579d105eacc63f2/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_color.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_common.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_index.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_main.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/_mixin.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/.sass-cache/f27ce531f863014ccb22b74e8d266138d74693af/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/barfiller.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/magnific.pupup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/main.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/css/slicknav.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/404-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/about.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/brand1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/brand2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/brand3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/brand4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/client.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/fag-img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/gallery-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/gallery-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/gallery-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/gallery-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/gallery-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/logo-404.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/page-title.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/portfolio6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/recent1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/recent2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/recent3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/slide1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/slide2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/slide3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/img/team8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/js/active.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/js/google.map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/js/jquery-2.2.4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/_color.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/_common.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/_index.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/_main.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/_mixin.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/assets/sass/style.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/career.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/coming-soon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/big-button.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/examples.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/github.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/patterns.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/examples/patterns.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/flatdoc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/legacy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/Notes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/blur.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/business.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/dox2md.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/legacy-header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/support/theme.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/theme-white/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/theme-white/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/documentation/theme-white/style.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/faq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/index-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/index-3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/portfolio.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/pricing.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/service.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/team.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/project1url/testimonial.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower-asset/bootstrap3-dialog/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower-asset/inputmask/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower-asset/jquery/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower-asset/punycode/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower-asset/typeahead.js/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower-asset/yii2-pjax/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower/bootstrap/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower/bootstrap3-dialog/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower/inputmask/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower/jquery/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower/punycode/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower/typeahead.js/" />
-    <ignored path="$PROJECT_DIR$/vendor/bower/yii2-pjax/" />
-    <ignored path="$PROJECT_DIR$/vendor/cebe/js-search/" />
-    <ignored path="$PROJECT_DIR$/vendor/cebe/markdown/" />
-    <ignored path="$PROJECT_DIR$/vendor/cebe/markdown-latex/" />
-    <ignored path="$PROJECT_DIR$/vendor/composer/" />
-    <ignored path="$PROJECT_DIR$/vendor/creocoder/yii2-nested-sets/" />
-    <ignored path="$PROJECT_DIR$/vendor/dektrium/yii2-user/" />
-    <ignored path="$PROJECT_DIR$/vendor/doctrine/lexer/" />
-    <ignored path="$PROJECT_DIR$/vendor/egulias/email-validator/" />
-    <ignored path="$PROJECT_DIR$/vendor/electrolinux/phpquery/" />
-    <ignored path="$PROJECT_DIR$/vendor/ezyang/htmlpurifier/" />
-    <ignored path="$PROJECT_DIR$/vendor/fabpot/goutte/" />
-    <ignored path="$PROJECT_DIR$/vendor/fzaninotto/faker/" />
-    <ignored path="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/" />
-    <ignored path="$PROJECT_DIR$/vendor/guzzlehttp/promises/" />
-    <ignored path="$PROJECT_DIR$/vendor/guzzlehttp/psr7/" />
-    <ignored path="$PROJECT_DIR$/vendor/jstayton/google-maps-geocoder/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/bootstrap-fileinput/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/bootstrap-star-rating/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/bootstrap-tabs-x/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/dependent-dropdown/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/php-date-formatter/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-builder/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-date-range/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-datecontrol/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-dialog/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-dynagrid/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-export/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-field-range/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-grid/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-helpers/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-krajee-base/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-mpdf/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-sortable/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-tabs-x/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-tree-manager/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-activeform/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-affix/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-alert/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-colorinput/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-datepicker/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-datetimepicker/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-depdrop/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-fileinput/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-growl/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-rangeinput/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-rating/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-select2/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-sidenav/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-spinner/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-switchinput/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-timepicker/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-touchspin/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-typeahead/" />
-    <ignored path="$PROJECT_DIR$/vendor/kartik-v/yii2-widgets/" />
-    <ignored path="$PROJECT_DIR$/vendor/mikevanriel/text-to-latex/" />
-    <ignored path="$PROJECT_DIR$/vendor/mootensai/yii2-enhanced-gii/" />
-    <ignored path="$PROJECT_DIR$/vendor/mootensai/yii2-jsblock/" />
-    <ignored path="$PROJECT_DIR$/vendor/mootensai/yii2-optimistic-lock-validator/" />
-    <ignored path="$PROJECT_DIR$/vendor/mootensai/yii2-relation-trait/" />
-    <ignored path="$PROJECT_DIR$/vendor/mootensai/yii2-uuid-behavior/" />
-    <ignored path="$PROJECT_DIR$/vendor/mpdf/mpdf/" />
-    <ignored path="$PROJECT_DIR$/vendor/nikic/php-parser/" />
-    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/reflection/" />
-    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/" />
-    <ignored path="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/" />
-    <ignored path="$PROJECT_DIR$/vendor/phpspec/php-diff/" />
-    <ignored path="$PROJECT_DIR$/vendor/psr/http-message/" />
-    <ignored path="$PROJECT_DIR$/vendor/psr/log/" />
-    <ignored path="$PROJECT_DIR$/vendor/psr/simple-cache/" />
-    <ignored path="$PROJECT_DIR$/vendor/scrivo/highlight.php/" />
-    <ignored path="$PROJECT_DIR$/vendor/setasign/fpdi/" />
-    <ignored path="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/" />
-    <ignored path="$PROJECT_DIR$/vendor/symfony/browser-kit/" />
-    <ignored path="$PROJECT_DIR$/vendor/symfony/css-selector/" />
-    <ignored path="$PROJECT_DIR$/vendor/symfony/dom-crawler/" />
-    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-ctype/" />
-    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/" />
-    <ignored path="$PROJECT_DIR$/vendor/voskobovich/yii2-many-many-behavior/" />
-    <ignored path="$PROJECT_DIR$/vendor/vova07/yii2-console-runner-extension/" />
-    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2/" />
-    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-apidoc/" />
-    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-authclient/" />
-    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-bootstrap/" />
-    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-composer/" />
-    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-debug/" />
-    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-faker/" />
-    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-gii/" />
-    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-httpclient/" />
-    <ignored path="$PROJECT_DIR$/vendor/yiisoft/yii2-swiftmailer/" />
-    <ignored path="$PROJECT_DIR$/web/scrape/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -276,130 +13,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set>
-        <option value="collation" />
-      </set>
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fac8" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fac@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
-    <select />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/ProjectController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/static/templates/flattheme/index_orig.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/simplified.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
-              <folding>
-                <element signature="e#30#67#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Project.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/params.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="195">
-                <caret line="13" selection-start-line="13" selection-end-line="13" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/project/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -447,63 +61,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/views/user-group/view.php" />
-        <option value="$PROJECT_DIR$/views/baseuser/baseuser/_form.php" />
-        <option value="$PROJECT_DIR$/views/baseuser/baseuser/view.php" />
-        <option value="$PROJECT_DIR$/models/constants.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/web/index.php" />
-        <option value="$PROJECT_DIR$/models/User.php" />
-        <option value="$PROJECT_DIR$/views/project/_formGallery.php" />
-        <option value="$PROJECT_DIR$/views/project/_dataGallery.php" />
-        <option value="$PROJECT_DIR$/views/project/_expand.php" />
-        <option value="$PROJECT_DIR$/models/base/Gallery.php" />
-        <option value="$PROJECT_DIR$/yii2helper/grid/EditColumn.php" />
-        <option value="$PROJECT_DIR$/views/project/_dataPage.php" />
-        <option value="$PROJECT_DIR$/views/page/view.php" />
-        <option value="$PROJECT_DIR$/views/project/update.php" />
-        <option value="$PROJECT_DIR$/web/js/project_update.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1bab20e5-f86f-43ce-8c58-e98b7eb6ff63/console.sql" />
-        <option value="$PROJECT_DIR$/views/project/_detail.php" />
-        <option value="$PROJECT_DIR$/models/Template.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8570ab36-b976-41a0-8309-4c1b2c4ad395/console.sql" />
-        <option value="$PROJECT_DIR$/vendor/mootensai/yii2-relation-trait/RelationTrait.php" />
-        <option value="$PROJECT_DIR$/yii2helper/models/ModelB3tTrait.php" />
-        <option value="$PROJECT_DIR$/views/project/_form.php" />
-        <option value="$PROJECT_DIR$/web/less/sass/custom.scss" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f6de8775-1c47-4b8a-911f-111459e555cc/console.sql" />
-        <option value="$PROJECT_DIR$/config/db.php" />
-        <option value="$PROJECT_DIR$/views/project/index.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.html" />
-        <option value="$PROJECT_DIR$/web/test.php" />
-        <option value="$PROJECT_DIR$/models/base/Project.php" />
-        <option value="$PROJECT_DIR$/views/project/_formPage.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.html" />
-        <option value="$PROJECT_DIR$/controllers/PageController.php" />
-        <option value="$PROJECT_DIR$/web/sites/project6url/index.html" />
-        <option value="$PROJECT_DIR$/views/page/_form.php" />
-        <option value="$PROJECT_DIR$/web/simplified.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/commands/compare_page_with_template.php" />
-        <option value="$PROJECT_DIR$/web/js/page_update.js" />
-        <option value="$PROJECT_DIR$/commands/populate_page_sample_content.php" />
-        <option value="$PROJECT_DIR$/runtime/logs/console.log" />
-        <option value="$PROJECT_DIR$/models/Page.php" />
-        <option value="$PROJECT_DIR$/web/static/templates/flattheme/index.html" />
-        <option value="$PROJECT_DIR$/controllers/ProjectController.php" />
-        <option value="$PROJECT_DIR$/models/Project.php" />
-        <option value="$PROJECT_DIR$/runtime/logs/app.log" />
-        <option value="$PROJECT_DIR$/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/config/params.php" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/views/project/view.php" />
-      </list>
-    </option>
   </component>
   <component name="PhpServers">
     <servers>
@@ -629,70 +186,15 @@
     <option name="width" value="1922" />
     <option name="height" value="1055" />
   </component>
+  <component name="ProjectId" id="1hqt54e6sshSb4tacQEe8rd5F4x" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <autoscrollToSource ProjectPane="true" />
-      <autoscrollFromSource ProjectPane="true" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fac" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-            <path>
-              <item name="fac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
@@ -700,7 +202,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/static/templates/flattheme" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -715,18 +217,6 @@
       <recent name="$PROJECT_DIR$/commands" />
       <recent name="$PROJECT_DIR$/sql" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="PHP Script.compare_page_with_template">
     <configuration name="dump db to dropbox" type="BashConfigurationType" factoryName="Bash">
@@ -791,15 +281,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Bash.dump db to dropbox" />
-      <item itemvalue="Bash.dump db8 to dropbox" />
-      <item itemvalue="Bash.restore_db_8_fr_dropbox.sh" />
-      <item itemvalue="Bash.restore_db_fr_dropbox.sh" />
       <item itemvalue="PHP Script.compare_page_with_template" />
       <item itemvalue="PHP Script.populate_page_sample_content.php" />
       <item itemvalue="PHP Script.test" />
     </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="31e606ad-2804-4e81-8a71-bda2bbe5d473" name="Default Changelist" comment="" />
@@ -874,62 +361,15 @@
     <option name="localTasksCounter" value="10" />
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="1919" y="0" width="1922" height="1081" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48121646" visible="true" weight="0.12140575" />
-      <window_info id="Structure" order="1" sideWeight="0.51878357" side_tool="true" weight="0.14903846" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286638" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4824281" visible="true" weight="0.3237792" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5457934" weight="0.28556263" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Migrations" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33836207" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51757187" side_tool="true" visible="true" weight="0.32285115" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4978701" weight="0.3280255" />
-      <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.4946752" weight="0.3364979" />
-      <window_info anchor="bottom" id="Messages" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Remote Host" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.17625134" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -948,6 +388,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -964,6 +405,12 @@
     <MESSAGE value="ck4to check: verify unique url?&#10;#todo: full_url generation - use WPF hosting&#10;&#10;#todo: gen page html using template header" />
     <option name="LAST_COMMIT_MESSAGE" value="ck4to check: verify unique url?&#10;#todo: full_url generation - use WPF hosting&#10;&#10;#todo: gen page html using template header" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="623" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1600750518297">
+      <screen x="0" y="0" width="1920" height="1058" />
+    </state>
+    <state x="623" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1058@0.0.1920.1058" timestamp="1600750518297" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1024,298 +471,5 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="das://8570ab36-b976-41a0-8309-4c1b2c4ad395/schema/fac/table/microsite_menu" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8570ab36-b976-41a0-8309-4c1b2c4ad395/console.sql" />
-    <entry file="file://$PROJECT_DIR$/controllers/ProjectMenuController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://8570ab36-b976-41a0-8309-4c1b2c4ad395/schema/fac/table/page" />
-    <entry file="das://8570ab36-b976-41a0-8309-4c1b2c4ad395/schema/fac/table/project" />
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/ActiveRecord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="612" selection-start-line="612" selection-end-line="612" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/base/Widget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="129" column="27" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/project/create.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii2helper/models/ModelB3tTrait.php" />
-    <entry file="file://$PROJECT_DIR$/sql/dump_db_to_dropbox_STH_WRONG_HERE.sh" />
-    <entry file="file://$PROJECT_DIR$/sql/dump_db8_to_dropbox.sh" />
-    <entry file="file://$PROJECT_DIR$/web/less/stylesheets/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/widgets/ActiveForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="320" column="20" selection-start-line="320" selection-start-column="20" selection-end-line="320" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f6de8775-1c47-4b8a-911f-111459e555cc/console.sql" />
-    <entry file="file://$PROJECT_DIR$/config/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/project/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/less/sass/custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sites/project4url/index.html" />
-    <entry file="file://$PROJECT_DIR$/views/project/_detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/base/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="93" column="10" lean-forward="true" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/helpers/BaseHtml.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="408" column="27" selection-start-line="408" selection-start-column="27" selection-end-line="408" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/project" />
-    <entry file="file://$PROJECT_DIR$/views/project/_formPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/project/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/params.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commands/OshinController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/page/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/ckeditor/ckeditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commands/compare_page_with_template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="e#6#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/page_update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f6de8775-1c47-4b8a-911f-111459e555cc/schema/fac/table/page" />
-    <entry file="file://$PROJECT_DIR$/commands/populate_page_sample_content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/logs/console.log" />
-    <entry file="file://$PROJECT_DIR$/web/simplified.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sites/project6url/index.html" />
-    <entry file="file://$PROJECT_DIR$/web/static/templates/flattheme/index_orig.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="e#30#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sites/project7url/index.html" />
-    <entry file="file://$PROJECT_DIR$/controllers/ProjectController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/templates/flattheme/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/mootensai/yii2-relation-trait/RelationTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="284" column="71" selection-start-line="284" selection-start-column="71" selection-end-line="284" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="13" selection-start-line="13" selection-end-line="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/project/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
